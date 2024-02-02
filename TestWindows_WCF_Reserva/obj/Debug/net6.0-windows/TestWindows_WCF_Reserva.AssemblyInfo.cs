@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TestWindows_WCF_Reserva")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a6f238d7b5671c59e295fe20b2a9b21f1ee8d409")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+477c086a9f784f8b1298e017a156202052508034")]
 [assembly: System.Reflection.AssemblyProductAttribute("TestWindows_WCF_Reserva")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TestWindows_WCF_Reserva")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
