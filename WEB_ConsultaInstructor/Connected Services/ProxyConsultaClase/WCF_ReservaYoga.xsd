@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/WCF_ReservaYoga" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WCF_ReservaYoga" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfConsultaDC">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ConsultaDC" nillable="true" type="tns:ConsultaDC" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfConsultaDC" nillable="true" type="tns:ArrayOfConsultaDC" />
+  <xs:complexType name="ConsultaDC">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Est_clase" type="xs:short" />
+      <xs:element minOccurs="0" name="EstadoClase" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Fec_Clase" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Hora_Emp" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Hora_Term" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Id_Salon" type="xs:short" />
+      <xs:element minOccurs="0" name="NombreSalon" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ConsultaDC" nillable="true" type="tns:ConsultaDC" />
+</xs:schema>
