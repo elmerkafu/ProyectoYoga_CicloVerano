@@ -1,0 +1,740 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ReservaYogaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Tb_Administrador">
+    <Key>
+      <PropertyRef Name="Id_Admin" />
+    </Key>
+    <Property Name="Id_Admin" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nom_Admin" Type="nvarchar" MaxLength="25" />
+    <Property Name="Ape_Admin" Type="nvarchar" MaxLength="25" />
+    <Property Name="Dni_Admin" Type="nchar" MaxLength="8" />
+    <Property Name="Correo_Admin" Type="varchar" MaxLength="50" />
+    <Property Name="Fec_Reg" Type="datetime" />
+    <Property Name="Estado" Type="int" />
+  </EntityType>
+  <EntityType Name="Tb_Categoria">
+    <Key>
+      <PropertyRef Name="Id_Cat" />
+    </Key>
+    <Property Name="Id_Cat" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="20" />
+    <Property Name="Descripcion" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Tb_Clase_Programada">
+    <Key>
+      <PropertyRef Name="Id_Clase_Prog" />
+    </Key>
+    <Property Name="Id_Clase_Prog" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Id_Salon" Type="int" />
+    <Property Name="Id_Inst_Disp" Type="nchar" MaxLength="6" />
+    <Property Name="Fec_Clase" Type="datetime" Nullable="false" />
+    <Property Name="Hora_Emp" Type="datetime" />
+    <Property Name="Hora_Term" Type="datetime" />
+    <Property Name="Est_clase" Type="int" />
+    <Property Name="Fec_reg" Type="datetime" />
+    <Property Name="Usu_reg" Type="varchar" MaxLength="20" />
+    <Property Name="Usu_Ult_Mod" Type="varchar" MaxLength="20" />
+    <Property Name="Fec_Ult_Mod" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Tb_Cliente">
+    <Key>
+      <PropertyRef Name="Id_Cliente" />
+    </Key>
+    <Property Name="Id_Cliente" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombres" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="ApePaterno" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="ApeMaterno" Type="varchar" MaxLength="25" />
+    <Property Name="Correo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Tel_cli" Type="nvarchar" MaxLength="10" />
+    <Property Name="Dir_cli" Type="nvarchar" MaxLength="50" />
+    <Property Name="Dni_cli" Type="nchar" MaxLength="8" Nullable="false" />
+    <Property Name="Sexo" Type="nchar" MaxLength="1" />
+    <Property Name="Fec_nac" Type="datetime" />
+    <Property Name="Est_cli" Type="int" />
+    <Property Name="Id_Ubigeo" Type="nchar" MaxLength="6" />
+    <Property Name="Foto" Type="image" />
+    <Property Name="Fec_reg" Type="datetime" />
+    <Property Name="Usu_reg" Type="varchar" MaxLength="20" />
+    <Property Name="Usu_Ult_Mod" Type="varchar" MaxLength="20" />
+    <Property Name="Fec_Ult_Mod" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Tb_Detalle_Reserva">
+    <Key>
+      <PropertyRef Name="Cod_resv" />
+      <PropertyRef Name="Id_Clase_Prog" />
+    </Key>
+    <Property Name="Cod_resv" Type="char" MaxLength="4" Nullable="false" />
+    <Property Name="Id_Clase_Prog" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Tb_Disciplina">
+    <Key>
+      <PropertyRef Name="Cod_disp" />
+    </Key>
+    <Property Name="Cod_disp" Type="nchar" MaxLength="3" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" />
+    <Property Name="Duracion" Type="nvarchar" MaxLength="20" />
+    <Property Name="Intensidad" Type="varchar" MaxLength="20" />
+    <Property Name="Precio" Type="money" />
+    <Property Name="Id_Cat" Type="int" />
+  </EntityType>
+  <EntityType Name="Tb_Instructor">
+    <Key>
+      <PropertyRef Name="Id_Instructor" />
+    </Key>
+    <Property Name="Id_Instructor" Type="nchar" MaxLength="3" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="ApePaterno" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="ApeMaterno" Type="varchar" MaxLength="25" />
+    <Property Name="Correo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Tel_inst" Type="nvarchar" MaxLength="10" />
+    <Property Name="Dni_inst" Type="nchar" MaxLength="8" Nullable="false" />
+    <Property Name="Dir_inst" Type="nvarchar" MaxLength="50" />
+    <Property Name="Fec_nac" Type="datetime" />
+    <Property Name="Id_Ubigeo" Type="nchar" MaxLength="6" />
+    <Property Name="Foto" Type="image" />
+    <Property Name="Est_ins" Type="int" />
+    <Property Name="Fec_reg" Type="datetime" />
+    <Property Name="Usu_reg" Type="varchar" MaxLength="20" />
+    <Property Name="Usu_Ult_Mod" Type="varchar" MaxLength="20" />
+    <Property Name="Fec_Ult_Mod" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Tb_Instructor_Disciplina">
+    <Key>
+      <PropertyRef Name="Id_Inst_Disp" />
+    </Key>
+    <Property Name="Id_Inst_Disp" Type="nchar" MaxLength="6" Nullable="false" />
+    <Property Name="Id_Instructor" Type="nchar" MaxLength="3" />
+    <Property Name="Cod_disp" Type="nchar" MaxLength="3" />
+  </EntityType>
+  <EntityType Name="Tb_Reserva">
+    <Key>
+      <PropertyRef Name="Cod_resv" />
+    </Key>
+    <Property Name="Id_Cliente" Type="int" />
+    <Property Name="Est_resv" Type="int" />
+    <Property Name="Fec_resv" Type="datetime" />
+    <Property Name="Observacion" Type="varchar" MaxLength="100" />
+    <Property Name="Fec_reg" Type="datetime" />
+    <Property Name="Usu_reg" Type="varchar" MaxLength="20" />
+    <Property Name="Usu_Ult_Mod" Type="varchar" MaxLength="20" />
+    <Property Name="Fec_Ult_Mod" Type="datetime" />
+    <Property Name="Cod_resv" Type="char" MaxLength="4" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Tb_Salon">
+    <Key>
+      <PropertyRef Name="Id_Salon" />
+    </Key>
+    <Property Name="Id_Salon" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="30" />
+    <Property Name="Area" Type="nvarchar" MaxLength="50" />
+    <Property Name="Capacidad" Type="int" />
+    <Property Name="Estado" Type="int" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Tb_Ubigeo">
+    <Key>
+      <PropertyRef Name="Id_Ubigeo" />
+    </Key>
+    <Property Name="Id_Ubigeo" Type="nchar" MaxLength="6" Nullable="false" />
+    <Property Name="IdDepa" Type="nvarchar" MaxLength="255" />
+    <Property Name="IdProv" Type="nvarchar" MaxLength="255" />
+    <Property Name="IdDist" Type="nvarchar" MaxLength="255" />
+    <Property Name="Departamento" Type="nvarchar" MaxLength="255" />
+    <Property Name="Provincia" Type="nvarchar" MaxLength="255" />
+    <Property Name="Distrito" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Tb_Usuario">
+    <Key>
+      <PropertyRef Name="Login_Usuario" />
+    </Key>
+    <Property Name="Login_Usuario" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Pass_Usuario" Type="varchar" MaxLength="20" />
+    <Property Name="Niv_Usuario" Type="int" />
+    <Property Name="Est_Usuario" Type="int" />
+    <Property Name="Fec_Registro" Type="datetime" />
+    <Property Name="Usu_Registro" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'ReservaYoga.dbo.vw_VistaAdministrador' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="vw_VistaAdministrador">
+    <Key>
+      <PropertyRef Name="Id_Admin" />
+    </Key>
+    <Property Name="Id_Admin" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nom_Admin" Type="nvarchar" MaxLength="25" />
+    <Property Name="Ape_Admin" Type="nvarchar" MaxLength="25" />
+    <Property Name="Dni_Admin" Type="nchar" MaxLength="8" />
+    <Property Name="Correo_Admin" Type="varchar" MaxLength="50" />
+    <Property Name="Fec_Reg" Type="datetime" />
+    <Property Name="Estado" Type="varchar" MaxLength="8" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'ReservaYoga.dbo.vw_VistaCategoria' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="vw_VistaCategoria">
+    <Key>
+      <PropertyRef Name="Id_Cat" />
+    </Key>
+    <Property Name="Id_Cat" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="20" />
+    <Property Name="Descripcion" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'ReservaYoga.dbo.vw_VistaClaseProgramada' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="vw_VistaClaseProgramada">
+    <Key>
+      <PropertyRef Name="Id_Clase_Prog" />
+      <PropertyRef Name="Id_Instructor" />
+      <PropertyRef Name="Nombre_Instructor" />
+      <PropertyRef Name="ApePaterno" />
+      <PropertyRef Name="Disciplina" />
+      <PropertyRef Name="Intensidad" />
+      <PropertyRef Name="Fec_Clase" />
+    </Key>
+    <Property Name="Id_Clase_Prog" Type="int" Nullable="false" />
+    <Property Name="Id_Salon" Type="int" />
+    <Property Name="Salon" Type="varchar" MaxLength="30" />
+    <Property Name="Capacidad" Type="int" />
+    <Property Name="Id_Inst_Disp" Type="nchar" MaxLength="6" />
+    <Property Name="Id_Instructor" Type="nchar" MaxLength="2" Nullable="false" />
+    <Property Name="Nombre_Instructor" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="ApePaterno" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="ApeMaterno" Type="varchar" MaxLength="25" />
+    <Property Name="Disciplina" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Intensidad" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Fec_Clase" Type="datetime" Nullable="false" />
+    <Property Name="Hora_Emp" Type="datetime" />
+    <Property Name="Hora_Term" Type="datetime" />
+    <Property Name="Usu_Reg" Type="varchar" MaxLength="20" />
+    <Property Name="Usu_Ult_Mod" Type="varchar" MaxLength="20" />
+    <Property Name="Fec_Ult_Mod" Type="datetime" />
+    <Property Name="Est_clase" Type="int" />
+    <Property Name="Estado" Type="varchar" MaxLength="8" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'ReservaYoga.dbo.vw_VistaCliente' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="vw_VistaCliente">
+    <Key>
+      <PropertyRef Name="Id_Cliente" />
+      <PropertyRef Name="Nombres" />
+      <PropertyRef Name="ApePaterno" />
+      <PropertyRef Name="Correo" />
+      <PropertyRef Name="Dni_cli" />
+    </Key>
+    <Property Name="Id_Cliente" Type="int" Nullable="false" />
+    <Property Name="Nombres" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="ApePaterno" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="ApeMaterno" Type="varchar" MaxLength="25" />
+    <Property Name="Correo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Tel_cli" Type="nvarchar" MaxLength="10" />
+    <Property Name="Dir_cli" Type="nvarchar" MaxLength="50" />
+    <Property Name="Dni_cli" Type="nchar" MaxLength="8" Nullable="false" />
+    <Property Name="Genero" Type="varchar" MaxLength="9" />
+    <Property Name="Sexo" Type="nchar" MaxLength="1" />
+    <Property Name="Fec_nac" Type="datetime" />
+    <Property Name="Edad" Type="int" />
+    <Property Name="Est_cli" Type="int" />
+    <Property Name="Estado" Type="varchar" MaxLength="8" />
+    <Property Name="Id_Ubigeo" Type="nchar" MaxLength="6" />
+    <Property Name="Departamento" Type="nvarchar" MaxLength="255" />
+    <Property Name="Provincia" Type="nvarchar" MaxLength="255" />
+    <Property Name="Distrito" Type="nvarchar" MaxLength="255" />
+    <Property Name="Foto" Type="image" />
+    <Property Name="Fec_reg" Type="datetime" />
+    <Property Name="Usu_Reg" Type="varchar" MaxLength="20" />
+    <Property Name="Usu_Ult_Mod" Type="varchar" MaxLength="20" />
+    <Property Name="Fec_Ult_Mod" Type="datetime" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'ReservaYoga.dbo.vw_VistaDisciplina' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="vw_VistaDisciplina">
+    <Key>
+      <PropertyRef Name="Cod_disp" />
+      <PropertyRef Name="Nombre" />
+      <PropertyRef Name="Duracion" />
+      <PropertyRef Name="Intensidad" />
+      <PropertyRef Name="Precio" />
+    </Key>
+    <Property Name="Cod_disp" Type="nchar" MaxLength="2" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Duracion" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="Intensidad" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Precio" Type="money" Nullable="false" />
+    <Property Name="Categoria" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'ReservaYoga.dbo.vw_VistaInstructor' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="vw_VistaInstructor">
+    <Key>
+      <PropertyRef Name="Id_Instructor" />
+      <PropertyRef Name="Nombre" />
+      <PropertyRef Name="ApePaterno" />
+      <PropertyRef Name="Correo" />
+      <PropertyRef Name="Dni_inst" />
+      <PropertyRef Name="Id_Ubigeo" />
+    </Key>
+    <Property Name="Id_Instructor" Type="nchar" MaxLength="2" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="ApePaterno" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="ApeMaterno" Type="varchar" MaxLength="25" />
+    <Property Name="Correo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Tel_inst" Type="nvarchar" MaxLength="10" />
+    <Property Name="Dni_inst" Type="nchar" MaxLength="8" Nullable="false" />
+    <Property Name="Dir_inst" Type="nvarchar" MaxLength="50" />
+    <Property Name="Fec_nac" Type="datetime" />
+    <Property Name="Edad" Type="int" />
+    <Property Name="Id_Ubigeo" Type="nchar" MaxLength="6" Nullable="false" />
+    <Property Name="Departamento" Type="nvarchar" MaxLength="255" />
+    <Property Name="Distrito" Type="nvarchar" MaxLength="255" />
+    <Property Name="Provincia" Type="nvarchar" MaxLength="255" />
+    <Property Name="Foto" Type="image" />
+    <Property Name="Estado" Type="varchar" MaxLength="8" />
+    <Property Name="Est_ins" Type="int" />
+    <Property Name="Fec_reg" Type="datetime" />
+    <Property Name="Usu_Reg" Type="varchar" MaxLength="20" />
+    <Property Name="Usu_Ult_Mod" Type="varchar" MaxLength="20" />
+    <Property Name="Fec_Ult_Mod" Type="datetime" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'ReservaYoga.dbo.vw_VistaInstructorDisciplina' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="vw_VistaInstructorDisciplina">
+    <Key>
+      <PropertyRef Name="Id_Inst_Disp" />
+      <PropertyRef Name="Id_Instructor" />
+      <PropertyRef Name="Cod_disp" />
+      <PropertyRef Name="Disciplina" />
+      <PropertyRef Name="Duracion" />
+      <PropertyRef Name="Intensidad" />
+    </Key>
+    <Property Name="Id_Inst_Disp" Type="nchar" MaxLength="6" Nullable="false" />
+    <Property Name="Id_Instructor" Type="nchar" MaxLength="2" Nullable="false" />
+    <Property Name="Nombre del Instructor" Type="varchar" MaxLength="77" />
+    <Property Name="Cod_disp" Type="nchar" MaxLength="2" Nullable="false" />
+    <Property Name="Disciplina" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Duracion" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="Intensidad" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'ReservaYoga.dbo.vw_VistaSalon' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="vw_VistaSalon">
+    <Key>
+      <PropertyRef Name="Id_Salon" />
+    </Key>
+    <Property Name="Id_Salon" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="30" />
+    <Property Name="Area" Type="nvarchar" MaxLength="50" />
+    <Property Name="Capacidad" Type="int" />
+    <Property Name="Estado" Type="int" />
+    <Property Name="Descripcion" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <Association Name="FKCat">
+    <End Role="Tb_Categoria" Type="Self.Tb_Categoria" Multiplicity="0..1" />
+    <End Role="Tb_Disciplina" Type="Self.Tb_Disciplina" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tb_Categoria">
+        <PropertyRef Name="Id_Cat" />
+      </Principal>
+      <Dependent Role="Tb_Disciplina">
+        <PropertyRef Name="Id_Cat" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKClaseP">
+    <End Role="Tb_Clase_Programada" Type="Self.Tb_Clase_Programada" Multiplicity="1" />
+    <End Role="Tb_Detalle_Reserva" Type="Self.Tb_Detalle_Reserva" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tb_Clase_Programada">
+        <PropertyRef Name="Id_Clase_Prog" />
+      </Principal>
+      <Dependent Role="Tb_Detalle_Reserva">
+        <PropertyRef Name="Id_Clase_Prog" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKCliente">
+    <End Role="Tb_Cliente" Type="Self.Tb_Cliente" Multiplicity="0..1" />
+    <End Role="Tb_Reserva" Type="Self.Tb_Reserva" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tb_Cliente">
+        <PropertyRef Name="Id_Cliente" />
+      </Principal>
+      <Dependent Role="Tb_Reserva">
+        <PropertyRef Name="Id_Cliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKDisp">
+    <End Role="Tb_Disciplina" Type="Self.Tb_Disciplina" Multiplicity="0..1" />
+    <End Role="Tb_Instructor_Disciplina" Type="Self.Tb_Instructor_Disciplina" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tb_Disciplina">
+        <PropertyRef Name="Cod_disp" />
+      </Principal>
+      <Dependent Role="Tb_Instructor_Disciplina">
+        <PropertyRef Name="Cod_disp" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKID">
+    <End Role="Tb_Instructor_Disciplina" Type="Self.Tb_Instructor_Disciplina" Multiplicity="0..1" />
+    <End Role="Tb_Clase_Programada" Type="Self.Tb_Clase_Programada" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tb_Instructor_Disciplina">
+        <PropertyRef Name="Id_Inst_Disp" />
+      </Principal>
+      <Dependent Role="Tb_Clase_Programada">
+        <PropertyRef Name="Id_Inst_Disp" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKInstructor">
+    <End Role="Tb_Instructor" Type="Self.Tb_Instructor" Multiplicity="0..1" />
+    <End Role="Tb_Instructor_Disciplina" Type="Self.Tb_Instructor_Disciplina" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tb_Instructor">
+        <PropertyRef Name="Id_Instructor" />
+      </Principal>
+      <Dependent Role="Tb_Instructor_Disciplina">
+        <PropertyRef Name="Id_Instructor" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKResv">
+    <End Role="Tb_Reserva" Type="Self.Tb_Reserva" Multiplicity="1" />
+    <End Role="Tb_Detalle_Reserva" Type="Self.Tb_Detalle_Reserva" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tb_Reserva">
+        <PropertyRef Name="Cod_resv" />
+      </Principal>
+      <Dependent Role="Tb_Detalle_Reserva">
+        <PropertyRef Name="Cod_resv" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKSalon">
+    <End Role="Tb_Salon" Type="Self.Tb_Salon" Multiplicity="0..1" />
+    <End Role="Tb_Clase_Programada" Type="Self.Tb_Clase_Programada" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tb_Salon">
+        <PropertyRef Name="Id_Salon" />
+      </Principal>
+      <Dependent Role="Tb_Clase_Programada">
+        <PropertyRef Name="Id_Salon" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKUbig">
+    <End Role="Tb_Ubigeo" Type="Self.Tb_Ubigeo" Multiplicity="0..1" />
+    <End Role="Tb_Instructor" Type="Self.Tb_Instructor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tb_Ubigeo">
+        <PropertyRef Name="Id_Ubigeo" />
+      </Principal>
+      <Dependent Role="Tb_Instructor">
+        <PropertyRef Name="Id_Ubigeo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKUbigeo">
+    <End Role="Tb_Ubigeo" Type="Self.Tb_Ubigeo" Multiplicity="0..1" />
+    <End Role="Tb_Cliente" Type="Self.Tb_Cliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tb_Ubigeo">
+        <PropertyRef Name="Id_Ubigeo" />
+      </Principal>
+      <Dependent Role="Tb_Cliente">
+        <PropertyRef Name="Id_Ubigeo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="usp_ActualizarCliente" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="vcod" Type="int" Mode="In" />
+    <Parameter Name="vNombres" Type="varchar" Mode="In" />
+    <Parameter Name="vApePaterno" Type="varchar" Mode="In" />
+    <Parameter Name="vApeMaterno" Type="varchar" Mode="In" />
+    <Parameter Name="vCorreo" Type="varchar" Mode="In" />
+    <Parameter Name="vTel_cli" Type="nvarchar" Mode="In" />
+    <Parameter Name="vDir_cli" Type="nvarchar" Mode="In" />
+    <Parameter Name="vDni_cli" Type="nchar" Mode="In" />
+    <Parameter Name="vSexo" Type="nchar" Mode="In" />
+    <Parameter Name="vFec_nac" Type="date" Mode="In" />
+    <Parameter Name="vEst_cli" Type="int" Mode="In" />
+    <Parameter Name="vId_Ubigeo" Type="nchar" Mode="In" />
+    <Parameter Name="vUsu_Ult_Mod" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="usp_ActualizarDisciplina" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="vCod" Type="nchar" Mode="In" />
+    <Parameter Name="vNombre" Type="varchar" Mode="In" />
+    <Parameter Name="vDuracion" Type="nvarchar" Mode="In" />
+    <Parameter Name="vIntensidad" Type="varchar" Mode="In" />
+    <Parameter Name="vPrecio" Type="money" Mode="In" />
+    <Parameter Name="vId_Cat" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_ActualizarInstructor" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="vCod" Type="nchar" Mode="In" />
+    <Parameter Name="vNombre" Type="varchar" Mode="In" />
+    <Parameter Name="vApePaterno" Type="varchar" Mode="In" />
+    <Parameter Name="vApeMaterno" Type="varchar" Mode="In" />
+    <Parameter Name="vCorreo" Type="varchar" Mode="In" />
+    <Parameter Name="vTel_inst" Type="nvarchar" Mode="In" />
+    <Parameter Name="vDni_inst" Type="nvarchar" Mode="In" />
+    <Parameter Name="vDir_inst" Type="nvarchar" Mode="In" />
+    <Parameter Name="vFec_nac" Type="date" Mode="In" />
+    <Parameter Name="vUbigeo" Type="nchar" Mode="In" />
+    <Parameter Name="vUsu_Ult_Mod" Type="varchar" Mode="In" />
+    <Parameter Name="vEst_ins" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_Combo_Instructor" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="usp_Combo_InstructorDisciplina" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Id_Instructor" Type="nchar" Mode="In" />
+  </Function>
+  <Function Name="usp_EliminarCliente" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="vcod" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_EliminarDisciplina" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="vCod" Type="nchar" Mode="In" />
+  </Function>
+  <Function Name="usp_EliminarInstructor" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="vcod" Type="nchar" Mode="In" />
+  </Function>
+  <Function Name="usp_InsertarClaseProgramada" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="vsalon" Type="int" Mode="In" />
+    <Parameter Name="vIns_disp" Type="nchar" Mode="In" />
+    <Parameter Name="vFec_clas" Type="date" Mode="In" />
+    <Parameter Name="vH_emp" Type="datetime" Mode="In" />
+    <Parameter Name="vH_term" Type="datetime" Mode="In" />
+    <Parameter Name="vEst_clase" Type="int" Mode="In" />
+    <Parameter Name="vUsu_Reg" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="usp_InsertarCliente" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="vNombres" Type="varchar" Mode="In" />
+    <Parameter Name="vApePaterno" Type="varchar" Mode="In" />
+    <Parameter Name="vApeMaterno" Type="varchar" Mode="In" />
+    <Parameter Name="vCorreo" Type="varchar" Mode="In" />
+    <Parameter Name="vTel_cli" Type="nvarchar" Mode="In" />
+    <Parameter Name="vDir_cli" Type="nvarchar" Mode="In" />
+    <Parameter Name="vDni_cli" Type="nchar" Mode="In" />
+    <Parameter Name="vSexo" Type="nchar" Mode="In" />
+    <Parameter Name="vFec_nac" Type="date" Mode="In" />
+    <Parameter Name="vEst_cli" Type="int" Mode="In" />
+    <Parameter Name="vId_Ubigeo" Type="nchar" Mode="In" />
+    <Parameter Name="vUsu_Registro" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="usp_InsertarDisciplina" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="vNombre" Type="varchar" Mode="In" />
+    <Parameter Name="vDuracion" Type="nvarchar" Mode="In" />
+    <Parameter Name="vIntensidad" Type="varchar" Mode="In" />
+    <Parameter Name="vPrecio" Type="money" Mode="In" />
+    <Parameter Name="vId_Cat" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_InsertarInstructor" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="vNombre" Type="varchar" Mode="In" />
+    <Parameter Name="vApePaterno" Type="varchar" Mode="In" />
+    <Parameter Name="vApeMaterno" Type="varchar" Mode="In" />
+    <Parameter Name="vCorreo" Type="varchar" Mode="In" />
+    <Parameter Name="vTel_inst" Type="nvarchar" Mode="In" />
+    <Parameter Name="vDni_inst" Type="nvarchar" Mode="In" />
+    <Parameter Name="vDir_inst" Type="nvarchar" Mode="In" />
+    <Parameter Name="vFec_nac" Type="date" Mode="In" />
+    <Parameter Name="vUbigeo" Type="nchar" Mode="In" />
+    <Parameter Name="vEst_ins" Type="int" Mode="In" />
+    <Parameter Name="vUsu_Reg" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="usp_ListarCliente" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="usp_Ubigeo_Departamentos" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="usp_Ubigeo_DistritosProvinciaDepartamento" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IdDepartamento" Type="char" Mode="In" />
+    <Parameter Name="IdProvincia" Type="char" Mode="In" />
+  </Function>
+  <Function Name="usp_Ubigeo_ProvinciasDepartamento" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IdDepartamento" Type="char" Mode="In" />
+  </Function>
+  <EntityContainer Name="ReservaYogaModelStoreContainer">
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tb_Administrador" EntityType="Self.Tb_Administrador" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tb_Categoria" EntityType="Self.Tb_Categoria" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tb_Clase_Programada" EntityType="Self.Tb_Clase_Programada" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tb_Cliente" EntityType="Self.Tb_Cliente" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tb_Detalle_Reserva" EntityType="Self.Tb_Detalle_Reserva" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tb_Disciplina" EntityType="Self.Tb_Disciplina" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tb_Instructor" EntityType="Self.Tb_Instructor" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tb_Instructor_Disciplina" EntityType="Self.Tb_Instructor_Disciplina" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tb_Reserva" EntityType="Self.Tb_Reserva" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tb_Salon" EntityType="Self.Tb_Salon" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tb_Ubigeo" EntityType="Self.Tb_Ubigeo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tb_Usuario" EntityType="Self.Tb_Usuario" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="vw_VistaAdministrador" EntityType="Self.vw_VistaAdministrador" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vw_VistaAdministrador].[Id_Admin] AS [Id_Admin], 
+    [vw_VistaAdministrador].[Nom_Admin] AS [Nom_Admin], 
+    [vw_VistaAdministrador].[Ape_Admin] AS [Ape_Admin], 
+    [vw_VistaAdministrador].[Dni_Admin] AS [Dni_Admin], 
+    [vw_VistaAdministrador].[Correo_Admin] AS [Correo_Admin], 
+    [vw_VistaAdministrador].[Fec_Reg] AS [Fec_Reg], 
+    [vw_VistaAdministrador].[Estado] AS [Estado]
+    FROM [dbo].[vw_VistaAdministrador] AS [vw_VistaAdministrador]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vw_VistaCategoria" EntityType="Self.vw_VistaCategoria" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vw_VistaCategoria].[Id_Cat] AS [Id_Cat], 
+    [vw_VistaCategoria].[Nombre] AS [Nombre], 
+    [vw_VistaCategoria].[Descripcion] AS [Descripcion]
+    FROM [dbo].[vw_VistaCategoria] AS [vw_VistaCategoria]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vw_VistaClaseProgramada" EntityType="Self.vw_VistaClaseProgramada" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vw_VistaClaseProgramada].[Id_Clase_Prog] AS [Id_Clase_Prog], 
+    [vw_VistaClaseProgramada].[Id_Salon] AS [Id_Salon], 
+    [vw_VistaClaseProgramada].[Salon] AS [Salon], 
+    [vw_VistaClaseProgramada].[Capacidad] AS [Capacidad], 
+    [vw_VistaClaseProgramada].[Id_Inst_Disp] AS [Id_Inst_Disp], 
+    [vw_VistaClaseProgramada].[Id_Instructor] AS [Id_Instructor], 
+    [vw_VistaClaseProgramada].[Nombre_Instructor] AS [Nombre_Instructor], 
+    [vw_VistaClaseProgramada].[ApePaterno] AS [ApePaterno], 
+    [vw_VistaClaseProgramada].[ApeMaterno] AS [ApeMaterno], 
+    [vw_VistaClaseProgramada].[Disciplina] AS [Disciplina], 
+    [vw_VistaClaseProgramada].[Intensidad] AS [Intensidad], 
+    [vw_VistaClaseProgramada].[Fec_Clase] AS [Fec_Clase], 
+    [vw_VistaClaseProgramada].[Hora_Emp] AS [Hora_Emp], 
+    [vw_VistaClaseProgramada].[Hora_Term] AS [Hora_Term], 
+    [vw_VistaClaseProgramada].[Usu_Reg] AS [Usu_Reg], 
+    [vw_VistaClaseProgramada].[Usu_Ult_Mod] AS [Usu_Ult_Mod], 
+    [vw_VistaClaseProgramada].[Fec_Ult_Mod] AS [Fec_Ult_Mod], 
+    [vw_VistaClaseProgramada].[Est_clase] AS [Est_clase], 
+    [vw_VistaClaseProgramada].[Estado] AS [Estado]
+    FROM [dbo].[vw_VistaClaseProgramada] AS [vw_VistaClaseProgramada]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vw_VistaCliente" EntityType="Self.vw_VistaCliente" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vw_VistaCliente].[Id_Cliente] AS [Id_Cliente], 
+    [vw_VistaCliente].[Nombres] AS [Nombres], 
+    [vw_VistaCliente].[ApePaterno] AS [ApePaterno], 
+    [vw_VistaCliente].[ApeMaterno] AS [ApeMaterno], 
+    [vw_VistaCliente].[Correo] AS [Correo], 
+    [vw_VistaCliente].[Tel_cli] AS [Tel_cli], 
+    [vw_VistaCliente].[Dir_cli] AS [Dir_cli], 
+    [vw_VistaCliente].[Dni_cli] AS [Dni_cli], 
+    [vw_VistaCliente].[Genero] AS [Genero], 
+    [vw_VistaCliente].[Sexo] AS [Sexo], 
+    [vw_VistaCliente].[Fec_nac] AS [Fec_nac], 
+    [vw_VistaCliente].[Edad] AS [Edad], 
+    [vw_VistaCliente].[Est_cli] AS [Est_cli], 
+    [vw_VistaCliente].[Estado] AS [Estado], 
+    [vw_VistaCliente].[Id_Ubigeo] AS [Id_Ubigeo], 
+    [vw_VistaCliente].[Departamento] AS [Departamento], 
+    [vw_VistaCliente].[Provincia] AS [Provincia], 
+    [vw_VistaCliente].[Distrito] AS [Distrito], 
+    [vw_VistaCliente].[Foto] AS [Foto], 
+    [vw_VistaCliente].[Fec_reg] AS [Fec_reg], 
+    [vw_VistaCliente].[Usu_Reg] AS [Usu_Reg], 
+    [vw_VistaCliente].[Usu_Ult_Mod] AS [Usu_Ult_Mod], 
+    [vw_VistaCliente].[Fec_Ult_Mod] AS [Fec_Ult_Mod]
+    FROM [dbo].[vw_VistaCliente] AS [vw_VistaCliente]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vw_VistaDisciplina" EntityType="Self.vw_VistaDisciplina" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vw_VistaDisciplina].[Cod_disp] AS [Cod_disp], 
+    [vw_VistaDisciplina].[Nombre] AS [Nombre], 
+    [vw_VistaDisciplina].[Duracion] AS [Duracion], 
+    [vw_VistaDisciplina].[Intensidad] AS [Intensidad], 
+    [vw_VistaDisciplina].[Precio] AS [Precio], 
+    [vw_VistaDisciplina].[Categoria] AS [Categoria]
+    FROM [dbo].[vw_VistaDisciplina] AS [vw_VistaDisciplina]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vw_VistaInstructor" EntityType="Self.vw_VistaInstructor" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vw_VistaInstructor].[Id_Instructor] AS [Id_Instructor], 
+    [vw_VistaInstructor].[Nombre] AS [Nombre], 
+    [vw_VistaInstructor].[ApePaterno] AS [ApePaterno], 
+    [vw_VistaInstructor].[ApeMaterno] AS [ApeMaterno], 
+    [vw_VistaInstructor].[Correo] AS [Correo], 
+    [vw_VistaInstructor].[Tel_inst] AS [Tel_inst], 
+    [vw_VistaInstructor].[Dni_inst] AS [Dni_inst], 
+    [vw_VistaInstructor].[Dir_inst] AS [Dir_inst], 
+    [vw_VistaInstructor].[Fec_nac] AS [Fec_nac], 
+    [vw_VistaInstructor].[Edad] AS [Edad], 
+    [vw_VistaInstructor].[Id_Ubigeo] AS [Id_Ubigeo], 
+    [vw_VistaInstructor].[Departamento] AS [Departamento], 
+    [vw_VistaInstructor].[Distrito] AS [Distrito], 
+    [vw_VistaInstructor].[Provincia] AS [Provincia], 
+    [vw_VistaInstructor].[Foto] AS [Foto], 
+    [vw_VistaInstructor].[Estado] AS [Estado], 
+    [vw_VistaInstructor].[Est_ins] AS [Est_ins], 
+    [vw_VistaInstructor].[Fec_reg] AS [Fec_reg], 
+    [vw_VistaInstructor].[Usu_Reg] AS [Usu_Reg], 
+    [vw_VistaInstructor].[Usu_Ult_Mod] AS [Usu_Ult_Mod], 
+    [vw_VistaInstructor].[Fec_Ult_Mod] AS [Fec_Ult_Mod]
+    FROM [dbo].[vw_VistaInstructor] AS [vw_VistaInstructor]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vw_VistaInstructorDisciplina" EntityType="Self.vw_VistaInstructorDisciplina" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vw_VistaInstructorDisciplina].[Id_Inst_Disp] AS [Id_Inst_Disp], 
+    [vw_VistaInstructorDisciplina].[Id_Instructor] AS [Id_Instructor], 
+    [vw_VistaInstructorDisciplina].[Nombre del Instructor] AS [Nombre del Instructor], 
+    [vw_VistaInstructorDisciplina].[Cod_disp] AS [Cod_disp], 
+    [vw_VistaInstructorDisciplina].[Disciplina] AS [Disciplina], 
+    [vw_VistaInstructorDisciplina].[Duracion] AS [Duracion], 
+    [vw_VistaInstructorDisciplina].[Intensidad] AS [Intensidad]
+    FROM [dbo].[vw_VistaInstructorDisciplina] AS [vw_VistaInstructorDisciplina]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vw_VistaSalon" EntityType="Self.vw_VistaSalon" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vw_VistaSalon].[Id_Salon] AS [Id_Salon], 
+    [vw_VistaSalon].[Nombre] AS [Nombre], 
+    [vw_VistaSalon].[Area] AS [Area], 
+    [vw_VistaSalon].[Capacidad] AS [Capacidad], 
+    [vw_VistaSalon].[Estado] AS [Estado], 
+    [vw_VistaSalon].[Descripcion] AS [Descripcion]
+    FROM [dbo].[vw_VistaSalon] AS [vw_VistaSalon]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FKCat" Association="Self.FKCat">
+      <End Role="Tb_Categoria" EntitySet="Tb_Categoria" />
+      <End Role="Tb_Disciplina" EntitySet="Tb_Disciplina" />
+    </AssociationSet>
+    <AssociationSet Name="FKClaseP" Association="Self.FKClaseP">
+      <End Role="Tb_Clase_Programada" EntitySet="Tb_Clase_Programada" />
+      <End Role="Tb_Detalle_Reserva" EntitySet="Tb_Detalle_Reserva" />
+    </AssociationSet>
+    <AssociationSet Name="FKCliente" Association="Self.FKCliente">
+      <End Role="Tb_Cliente" EntitySet="Tb_Cliente" />
+      <End Role="Tb_Reserva" EntitySet="Tb_Reserva" />
+    </AssociationSet>
+    <AssociationSet Name="FKDisp" Association="Self.FKDisp">
+      <End Role="Tb_Disciplina" EntitySet="Tb_Disciplina" />
+      <End Role="Tb_Instructor_Disciplina" EntitySet="Tb_Instructor_Disciplina" />
+    </AssociationSet>
+    <AssociationSet Name="FKID" Association="Self.FKID">
+      <End Role="Tb_Instructor_Disciplina" EntitySet="Tb_Instructor_Disciplina" />
+      <End Role="Tb_Clase_Programada" EntitySet="Tb_Clase_Programada" />
+    </AssociationSet>
+    <AssociationSet Name="FKInstructor" Association="Self.FKInstructor">
+      <End Role="Tb_Instructor" EntitySet="Tb_Instructor" />
+      <End Role="Tb_Instructor_Disciplina" EntitySet="Tb_Instructor_Disciplina" />
+    </AssociationSet>
+    <AssociationSet Name="FKResv" Association="Self.FKResv">
+      <End Role="Tb_Reserva" EntitySet="Tb_Reserva" />
+      <End Role="Tb_Detalle_Reserva" EntitySet="Tb_Detalle_Reserva" />
+    </AssociationSet>
+    <AssociationSet Name="FKSalon" Association="Self.FKSalon">
+      <End Role="Tb_Salon" EntitySet="Tb_Salon" />
+      <End Role="Tb_Clase_Programada" EntitySet="Tb_Clase_Programada" />
+    </AssociationSet>
+    <AssociationSet Name="FKUbig" Association="Self.FKUbig">
+      <End Role="Tb_Ubigeo" EntitySet="Tb_Ubigeo" />
+      <End Role="Tb_Instructor" EntitySet="Tb_Instructor" />
+    </AssociationSet>
+    <AssociationSet Name="FKUbigeo" Association="Self.FKUbigeo">
+      <End Role="Tb_Ubigeo" EntitySet="Tb_Ubigeo" />
+      <End Role="Tb_Cliente" EntitySet="Tb_Cliente" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

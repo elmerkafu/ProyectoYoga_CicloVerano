@@ -1,0 +1,480 @@
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\TestWindows_WCF_Reserva.exe
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\TestWindows_WCF_Reserva.deps.json
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\TestWindows_WCF_Reserva.runtimeconfig.json
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\TestWindows_WCF_Reserva.dll
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\TestWindows_WCF_Reserva.pdb
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.ClienteMan01.resources
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.Form1.resources
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.csproj.GenerateResource.cache
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.GeneratedMSBuildEditorConfig.editorconfig
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.AssemblyInfoInputs.cache
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.AssemblyInfo.cs
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.csproj.CoreCompileInputs.cache
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.dll
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\refint\TestWindows_WCF_Reserva.dll
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.pdb
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.genruntimeconfig.cache
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\ref\TestWindows_WCF_Reserva.dll
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\Microsoft.Extensions.ObjectPool.dll
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.WsTrust.dll
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Tokens.Saml.dll
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Xml.dll
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\System.Private.ServiceModel.dll
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\System.Security.Cryptography.Pkcs.dll
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\System.Security.Cryptography.Xml.dll
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\System.ServiceModel.Duplex.dll
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\System.ServiceModel.Federation.dll
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\System.ServiceModel.Http.dll
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\System.ServiceModel.NetTcp.dll
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\System.ServiceModel.Primitives.dll
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\System.ServiceModel.dll
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\System.ServiceModel.Security.dll
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\cs\System.Private.ServiceModel.resources.dll
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\de\System.Private.ServiceModel.resources.dll
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\es\System.Private.ServiceModel.resources.dll
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\fr\System.Private.ServiceModel.resources.dll
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\it\System.Private.ServiceModel.resources.dll
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\ja\System.Private.ServiceModel.resources.dll
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\ko\System.Private.ServiceModel.resources.dll
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\pl\System.Private.ServiceModel.resources.dll
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\pt-BR\System.Private.ServiceModel.resources.dll
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\ru\System.Private.ServiceModel.resources.dll
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\tr\System.Private.ServiceModel.resources.dll
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\zh-Hans\System.Private.ServiceModel.resources.dll
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\zh-Hant\System.Private.ServiceModel.resources.dll
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\cs\System.ServiceModel.Federation.resources.dll
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\de\System.ServiceModel.Federation.resources.dll
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\es\System.ServiceModel.Federation.resources.dll
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\fr\System.ServiceModel.Federation.resources.dll
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\it\System.ServiceModel.Federation.resources.dll
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\ja\System.ServiceModel.Federation.resources.dll
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\ko\System.ServiceModel.Federation.resources.dll
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\pl\System.ServiceModel.Federation.resources.dll
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\pt-BR\System.ServiceModel.Federation.resources.dll
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\ru\System.ServiceModel.Federation.resources.dll
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\tr\System.ServiceModel.Federation.resources.dll
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\zh-Hans\System.ServiceModel.Federation.resources.dll
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\zh-Hant\System.ServiceModel.Federation.resources.dll
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Security.Cryptography.Pkcs.dll
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.csproj.AssemblyReference.cache
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.csproj.CopyComplete
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.ClienteMan02.resources
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.ClienteMan03.resources
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.InstructorMan01.resources
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.InstructorMan02.resources
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.InstructorMan03.resources
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.MDIPrincipal.resources
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.Properties.Resources.resources
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.DisciplinaMan01.resources
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.DisciplinaMan02.resources
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.DisciplinaMan03.resources
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\TestWindows_WCF_Reserva.exe
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\TestWindows_WCF_Reserva.deps.json
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\TestWindows_WCF_Reserva.runtimeconfig.json
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\TestWindows_WCF_Reserva.dll
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\TestWindows_WCF_Reserva.pdb
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\Microsoft.Extensions.ObjectPool.dll
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.WsTrust.dll
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Tokens.Saml.dll
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Xml.dll
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\System.Private.ServiceModel.dll
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\System.Security.Cryptography.Pkcs.dll
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\System.Security.Cryptography.Xml.dll
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\System.ServiceModel.Duplex.dll
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\System.ServiceModel.Federation.dll
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\System.ServiceModel.Http.dll
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\System.ServiceModel.NetTcp.dll
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\System.ServiceModel.Primitives.dll
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\System.ServiceModel.dll
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\System.ServiceModel.Security.dll
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\cs\System.Private.ServiceModel.resources.dll
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\de\System.Private.ServiceModel.resources.dll
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\es\System.Private.ServiceModel.resources.dll
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\fr\System.Private.ServiceModel.resources.dll
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\it\System.Private.ServiceModel.resources.dll
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\ja\System.Private.ServiceModel.resources.dll
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\ko\System.Private.ServiceModel.resources.dll
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\pl\System.Private.ServiceModel.resources.dll
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\pt-BR\System.Private.ServiceModel.resources.dll
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\ru\System.Private.ServiceModel.resources.dll
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\tr\System.Private.ServiceModel.resources.dll
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\zh-Hans\System.Private.ServiceModel.resources.dll
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\zh-Hant\System.Private.ServiceModel.resources.dll
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\cs\System.ServiceModel.Federation.resources.dll
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\de\System.ServiceModel.Federation.resources.dll
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\es\System.ServiceModel.Federation.resources.dll
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\fr\System.ServiceModel.Federation.resources.dll
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\it\System.ServiceModel.Federation.resources.dll
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\ja\System.ServiceModel.Federation.resources.dll
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\ko\System.ServiceModel.Federation.resources.dll
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\pl\System.ServiceModel.Federation.resources.dll
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\pt-BR\System.ServiceModel.Federation.resources.dll
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\ru\System.ServiceModel.Federation.resources.dll
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\tr\System.ServiceModel.Federation.resources.dll
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\zh-Hans\System.ServiceModel.Federation.resources.dll
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\zh-Hant\System.ServiceModel.Federation.resources.dll
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.csproj.AssemblyReference.cache
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.ClienteMan01.resources
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.ClienteMan02.resources
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.ClienteMan03.resources
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.DisciplinaMan01.resources
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.DisciplinaMan02.resources
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.DisciplinaMan03.resources
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.Form1.resources
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.InstructorMan01.resources
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.InstructorMan02.resources
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.InstructorMan03.resources
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.MDIPrincipal.resources
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.Properties.Resources.resources
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.csproj.GenerateResource.cache
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.AssemblyInfoInputs.cache
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.AssemblyInfo.cs
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.csproj.CoreCompileInputs.cache
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.csproj.CopyComplete
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.dll
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\refint\TestWindows_WCF_Reserva.dll
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.pdb
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.genruntimeconfig.cache
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\ref\TestWindows_WCF_Reserva.dll
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\TestWindows_WCF_Reserva.exe
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\TestWindows_WCF_Reserva.deps.json
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\TestWindows_WCF_Reserva.runtimeconfig.json
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\TestWindows_WCF_Reserva.dll
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\TestWindows_WCF_Reserva.pdb
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\Microsoft.Extensions.ObjectPool.dll
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.WsTrust.dll
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Tokens.Saml.dll
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Xml.dll
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\System.Private.ServiceModel.dll
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\System.Security.Cryptography.Pkcs.dll
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\System.Security.Cryptography.Xml.dll
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\System.ServiceModel.Duplex.dll
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\System.ServiceModel.Federation.dll
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\System.ServiceModel.Http.dll
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\System.ServiceModel.NetTcp.dll
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\System.ServiceModel.Primitives.dll
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\System.ServiceModel.dll
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\System.ServiceModel.Security.dll
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\cs\System.Private.ServiceModel.resources.dll
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\de\System.Private.ServiceModel.resources.dll
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\es\System.Private.ServiceModel.resources.dll
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\fr\System.Private.ServiceModel.resources.dll
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\it\System.Private.ServiceModel.resources.dll
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\ja\System.Private.ServiceModel.resources.dll
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\ko\System.Private.ServiceModel.resources.dll
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\pl\System.Private.ServiceModel.resources.dll
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\pt-BR\System.Private.ServiceModel.resources.dll
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\ru\System.Private.ServiceModel.resources.dll
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\tr\System.Private.ServiceModel.resources.dll
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\zh-Hans\System.Private.ServiceModel.resources.dll
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\zh-Hant\System.Private.ServiceModel.resources.dll
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\cs\System.ServiceModel.Federation.resources.dll
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\de\System.ServiceModel.Federation.resources.dll
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\es\System.ServiceModel.Federation.resources.dll
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\fr\System.ServiceModel.Federation.resources.dll
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\it\System.ServiceModel.Federation.resources.dll
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\ja\System.ServiceModel.Federation.resources.dll
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\ko\System.ServiceModel.Federation.resources.dll
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\pl\System.ServiceModel.Federation.resources.dll
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\pt-BR\System.ServiceModel.Federation.resources.dll
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\ru\System.ServiceModel.Federation.resources.dll
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\tr\System.ServiceModel.Federation.resources.dll
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\zh-Hans\System.ServiceModel.Federation.resources.dll
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\zh-Hant\System.ServiceModel.Federation.resources.dll
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.csproj.AssemblyReference.cache
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.ClienteMan01.resources
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.ClienteMan02.resources
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.ClienteMan03.resources
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.DisciplinaMan01.resources
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.DisciplinaMan02.resources
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.DisciplinaMan03.resources
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.Form1.resources
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.InstructorMan01.resources
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.InstructorMan02.resources
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.InstructorMan03.resources
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.MDIPrincipal.resources
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.Properties.Resources.resources
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.csproj.GenerateResource.cache
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.AssemblyInfoInputs.cache
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.AssemblyInfo.cs
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.csproj.CoreCompileInputs.cache
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.csproj.CopyComplete
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.dll
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\refint\TestWindows_WCF_Reserva.dll
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.pdb
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.genruntimeconfig.cache
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\ref\TestWindows_WCF_Reserva.dll
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.csproj.AssemblyReference.cache
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.ClienteMan01.resources
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.ClienteMan02.resources
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.ClienteMan03.resources
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.DisciplinaMan01.resources
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.DisciplinaMan02.resources
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.DisciplinaMan03.resources
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.Form1.resources
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.InstructorMan01.resources
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.InstructorMan02.resources
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.InstructorMan03.resources
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.MDIPrincipal.resources
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.Properties.Resources.resources
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.csproj.GenerateResource.cache
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.AssemblyInfoInputs.cache
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.AssemblyInfo.cs
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.csproj.CoreCompileInputs.cache
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.dll
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\refint\TestWindows_WCF_Reserva.dll
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.pdb
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\TestWindows_WCF_Reserva.exe
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\TestWindows_WCF_Reserva.deps.json
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\TestWindows_WCF_Reserva.runtimeconfig.json
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\TestWindows_WCF_Reserva.dll
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\TestWindows_WCF_Reserva.pdb
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\Microsoft.Extensions.ObjectPool.dll
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.WsTrust.dll
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Tokens.Saml.dll
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Xml.dll
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\System.Private.ServiceModel.dll
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\System.Security.Cryptography.Pkcs.dll
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\System.Security.Cryptography.Xml.dll
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\System.ServiceModel.Duplex.dll
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\System.ServiceModel.Federation.dll
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\System.ServiceModel.Http.dll
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\System.ServiceModel.NetTcp.dll
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\System.ServiceModel.Primitives.dll
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\System.ServiceModel.dll
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\System.ServiceModel.Security.dll
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\cs\System.Private.ServiceModel.resources.dll
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\de\System.Private.ServiceModel.resources.dll
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\es\System.Private.ServiceModel.resources.dll
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\fr\System.Private.ServiceModel.resources.dll
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\it\System.Private.ServiceModel.resources.dll
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\ja\System.Private.ServiceModel.resources.dll
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\ko\System.Private.ServiceModel.resources.dll
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\pl\System.Private.ServiceModel.resources.dll
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\pt-BR\System.Private.ServiceModel.resources.dll
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\ru\System.Private.ServiceModel.resources.dll
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\tr\System.Private.ServiceModel.resources.dll
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\zh-Hans\System.Private.ServiceModel.resources.dll
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\zh-Hant\System.Private.ServiceModel.resources.dll
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\cs\System.ServiceModel.Federation.resources.dll
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\de\System.ServiceModel.Federation.resources.dll
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\es\System.ServiceModel.Federation.resources.dll
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\fr\System.ServiceModel.Federation.resources.dll
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\it\System.ServiceModel.Federation.resources.dll
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\ja\System.ServiceModel.Federation.resources.dll
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\ko\System.ServiceModel.Federation.resources.dll
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\pl\System.ServiceModel.Federation.resources.dll
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\pt-BR\System.ServiceModel.Federation.resources.dll
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\ru\System.ServiceModel.Federation.resources.dll
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\tr\System.ServiceModel.Federation.resources.dll
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\zh-Hans\System.ServiceModel.Federation.resources.dll
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\zh-Hant\System.ServiceModel.Federation.resources.dll
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.csproj.CopyComplete
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.genruntimeconfig.cache
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\ref\TestWindows_WCF_Reserva.dll
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\TestWindows_WCF_Reserva.exe
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\TestWindows_WCF_Reserva.deps.json
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\TestWindows_WCF_Reserva.runtimeconfig.json
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\TestWindows_WCF_Reserva.dll
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\TestWindows_WCF_Reserva.pdb
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\Microsoft.Extensions.ObjectPool.dll
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Logging.dll
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.WsTrust.dll
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Tokens.dll
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Tokens.Saml.dll
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Xml.dll
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\System.Private.ServiceModel.dll
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\System.Security.Cryptography.Pkcs.dll
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\System.Security.Cryptography.Xml.dll
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\System.ServiceModel.Duplex.dll
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\System.ServiceModel.Federation.dll
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\System.ServiceModel.Http.dll
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\System.ServiceModel.NetTcp.dll
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\System.ServiceModel.Primitives.dll
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\System.ServiceModel.dll
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\System.ServiceModel.Security.dll
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\cs\System.Private.ServiceModel.resources.dll
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\de\System.Private.ServiceModel.resources.dll
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\es\System.Private.ServiceModel.resources.dll
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\fr\System.Private.ServiceModel.resources.dll
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\it\System.Private.ServiceModel.resources.dll
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\ja\System.Private.ServiceModel.resources.dll
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\ko\System.Private.ServiceModel.resources.dll
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\pl\System.Private.ServiceModel.resources.dll
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\pt-BR\System.Private.ServiceModel.resources.dll
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\ru\System.Private.ServiceModel.resources.dll
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\tr\System.Private.ServiceModel.resources.dll
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\zh-Hans\System.Private.ServiceModel.resources.dll
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\zh-Hant\System.Private.ServiceModel.resources.dll
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\cs\System.ServiceModel.Federation.resources.dll
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\de\System.ServiceModel.Federation.resources.dll
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\es\System.ServiceModel.Federation.resources.dll
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\fr\System.ServiceModel.Federation.resources.dll
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\it\System.ServiceModel.Federation.resources.dll
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\ja\System.ServiceModel.Federation.resources.dll
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\ko\System.ServiceModel.Federation.resources.dll
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\pl\System.ServiceModel.Federation.resources.dll
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\pt-BR\System.ServiceModel.Federation.resources.dll
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\ru\System.ServiceModel.Federation.resources.dll
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\tr\System.ServiceModel.Federation.resources.dll
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\zh-Hans\System.ServiceModel.Federation.resources.dll
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\zh-Hant\System.ServiceModel.Federation.resources.dll
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Security.Cryptography.Pkcs.dll
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.csproj.AssemblyReference.cache
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.ClienteMan01.resources
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.ClienteMan02.resources
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.ClienteMan03.resources
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.DisciplinaMan01.resources
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.DisciplinaMan02.resources
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.DisciplinaMan03.resources
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.Form1.resources
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.InstructorMan01.resources
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.InstructorMan02.resources
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.InstructorMan03.resources
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.MDIPrincipal.resources
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.Properties.Resources.resources
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.csproj.GenerateResource.cache
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.GeneratedMSBuildEditorConfig.editorconfig
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.AssemblyInfoInputs.cache
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.AssemblyInfo.cs
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.csproj.CoreCompileInputs.cache
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.csproj.CopyComplete
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.dll
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\refint\TestWindows_WCF_Reserva.dll
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.pdb
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.genruntimeconfig.cache
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\ref\TestWindows_WCF_Reserva.dll
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.ClaseProgramadaMan01.resources
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.ClaseProgramadaMan02.resources
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\TestWindows_WCF_Reserva.exe
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\TestWindows_WCF_Reserva.deps.json
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\TestWindows_WCF_Reserva.runtimeconfig.json
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\TestWindows_WCF_Reserva.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\TestWindows_WCF_Reserva.pdb
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\Azure.Core.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\Azure.Identity.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\Microsoft.Data.SqlClient.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\Microsoft.Extensions.ObjectPool.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\Microsoft.Identity.Client.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\Microsoft.Identity.Client.NativeInterop.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.WsTrust.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Tokens.Saml.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Xml.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\Microsoft.SqlServer.Server.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\Microsoft.Web.WebView2.Core.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\Microsoft.Web.WebView2.WinForms.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\Microsoft.Web.WebView2.Wpf.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\System.Configuration.ConfigurationManager.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\System.Memory.Data.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\System.Private.ServiceModel.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\System.Runtime.Caching.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\System.Security.Cryptography.Pkcs.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\System.Security.Cryptography.Xml.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\System.ServiceModel.Duplex.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\System.ServiceModel.Federation.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\System.ServiceModel.Http.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\System.ServiceModel.NetTcp.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\System.ServiceModel.Primitives.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\System.ServiceModel.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\System.ServiceModel.Security.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\cs\System.Private.ServiceModel.resources.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\de\System.Private.ServiceModel.resources.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\es\System.Private.ServiceModel.resources.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\fr\System.Private.ServiceModel.resources.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\it\System.Private.ServiceModel.resources.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\ja\System.Private.ServiceModel.resources.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\ko\System.Private.ServiceModel.resources.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\pl\System.Private.ServiceModel.resources.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\pt-BR\System.Private.ServiceModel.resources.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\ru\System.Private.ServiceModel.resources.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\tr\System.Private.ServiceModel.resources.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\zh-Hans\System.Private.ServiceModel.resources.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\zh-Hant\System.Private.ServiceModel.resources.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\cs\System.ServiceModel.Federation.resources.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\de\System.ServiceModel.Federation.resources.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\es\System.ServiceModel.Federation.resources.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\fr\System.ServiceModel.Federation.resources.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\it\System.ServiceModel.Federation.resources.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\ja\System.ServiceModel.Federation.resources.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\ko\System.ServiceModel.Federation.resources.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\pl\System.ServiceModel.Federation.resources.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\pt-BR\System.ServiceModel.Federation.resources.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\ru\System.ServiceModel.Federation.resources.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\tr\System.ServiceModel.Federation.resources.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\zh-Hans\System.ServiceModel.Federation.resources.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\zh-Hant\System.ServiceModel.Federation.resources.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\runtimes\win-arm64\native\msalruntime_arm64.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\runtimes\win-x64\native\msalruntime.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\runtimes\win-x86\native\msalruntime_x86.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\runtimes\win-arm64\native\WebView2Loader.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\runtimes\win-x64\native\WebView2Loader.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\runtimes\win-x86\native\WebView2Loader.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.csproj.AssemblyReference.cache
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.ClaseProgramadaMan01.resources
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.ClaseProgramadaMan02.resources
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.ClienteMan01.resources
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.ClienteMan02.resources
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.ClienteMan03.resources
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.DisciplinaMan01.resources
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.DisciplinaMan02.resources
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.DisciplinaMan03.resources
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.Form1.resources
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.InstructorMan01.resources
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.InstructorMan02.resources
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.InstructorMan03.resources
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.MDIPrincipal.resources
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.Properties.Resources.resources
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.csproj.GenerateResource.cache
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.AssemblyInfoInputs.cache
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.AssemblyInfo.cs
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.csproj.CoreCompileInputs.cache
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.csproj.CopyComplete
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\refint\TestWindows_WCF_Reserva.dll
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.pdb
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.genruntimeconfig.cache
+C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\WCF_ReservaYoga\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\ref\TestWindows_WCF_Reserva.dll

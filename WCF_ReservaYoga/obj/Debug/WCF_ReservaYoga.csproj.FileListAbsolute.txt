@@ -1,0 +1,60 @@
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\WCF_ReservaYoga\obj\Debug\WCF_ReservaYoga.csproj.AssemblyReference.cache
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\WCF_ReservaYoga\obj\Debug\WCF_ReservaYoga.csproj.CoreCompileInputs.cache
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\WCF_ReservaYoga\bin\Debug\WCF_ReservaYoga.dll.config
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\WCF_ReservaYoga\bin\Debug\WCF_ReservaYoga.dll
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\WCF_ReservaYoga\bin\Debug\WCF_ReservaYoga.pdb
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\WCF_ReservaYoga\bin\Debug\EntityFramework.dll
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\WCF_ReservaYoga\bin\Debug\EntityFramework.SqlServer.dll
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\WCF_ReservaYoga\bin\Debug\EntityFramework.xml
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\WCF_ReservaYoga\bin\Debug\EntityFramework.SqlServer.xml
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\WCF_ReservaYoga\obj\Debug\WCF_ReservaYoga.csproj.CopyComplete
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\WCF_ReservaYoga\obj\Debug\WCF_ReservaYoga.dll
+C:\Proyectos Aplicaciones 2\Sesion08\WCF_ReservaYoga\WCF_ReservaYoga\obj\Debug\WCF_ReservaYoga.pdb
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\WCF_ReservaYoga\bin\Debug\WCF_ReservaYoga.dll.config
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\WCF_ReservaYoga\bin\Debug\WCF_ReservaYoga.dll
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\WCF_ReservaYoga\bin\Debug\WCF_ReservaYoga.pdb
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\WCF_ReservaYoga\bin\Debug\EntityFramework.dll
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\WCF_ReservaYoga\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\WCF_ReservaYoga\bin\Debug\EntityFramework.xml
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\WCF_ReservaYoga\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\WCF_ReservaYoga\obj\Debug\WCF_ReservaYoga.csproj.AssemblyReference.cache
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\WCF_ReservaYoga\obj\Debug\WCF_ReservaYoga.csproj.CoreCompileInputs.cache
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\WCF_ReservaYoga\obj\Debug\WCF_ReservaYoga.csproj.CopyComplete
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\WCF_ReservaYoga\obj\Debug\WCF_ReservaYoga.dll
+C:\Users\jesia\OneDrive\Escritorio\WCF_ReservaYoga(EP4)\WCF_ReservaYoga\WCF_ReservaYoga\obj\Debug\WCF_ReservaYoga.pdb
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\WCF_ReservaYoga\bin\Debug\WCF_ReservaYoga.dll.config
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\WCF_ReservaYoga\bin\Debug\WCF_ReservaYoga.dll
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\WCF_ReservaYoga\bin\Debug\WCF_ReservaYoga.pdb
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\WCF_ReservaYoga\bin\Debug\EntityFramework.dll
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\WCF_ReservaYoga\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\WCF_ReservaYoga\bin\Debug\EntityFramework.xml
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\WCF_ReservaYoga\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\WCF_ReservaYoga\obj\Debug\WCF_ReservaYoga.csproj.AssemblyReference.cache
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\WCF_ReservaYoga\obj\Debug\WCF_ReservaYoga.csproj.CoreCompileInputs.cache
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\WCF_ReservaYoga\obj\Debug\WCF_ReservaYoga.csproj.CopyComplete
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\WCF_ReservaYoga\obj\Debug\WCF_ReservaYoga.dll
+C:\Users\giane\OneDrive\Desktop\WCF_ReservaYoga\WCF_ReservaYoga\obj\Debug\WCF_ReservaYoga.pdb
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\WCF_ReservaYoga\bin\Debug\WCF_ReservaYoga.dll.config
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\WCF_ReservaYoga\bin\Debug\WCF_ReservaYoga.dll
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\WCF_ReservaYoga\bin\Debug\WCF_ReservaYoga.pdb
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\WCF_ReservaYoga\bin\Debug\EntityFramework.dll
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\WCF_ReservaYoga\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\WCF_ReservaYoga\bin\Debug\EntityFramework.xml
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\WCF_ReservaYoga\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\WCF_ReservaYoga\obj\Debug\WCF_ReservaYoga.csproj.AssemblyReference.cache
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\WCF_ReservaYoga\obj\Debug\WCF_ReservaYoga.csproj.CoreCompileInputs.cache
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\WCF_ReservaYoga\obj\Debug\WCF_ReservaYoga.csproj.CopyComplete
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\WCF_ReservaYoga\obj\Debug\WCF_ReservaYoga.dll
+C:\Users\jesia\OneDrive\Escritorio\FINAL APP 2\WCF_ReservaYoga\WCF_ReservaYoga\obj\Debug\WCF_ReservaYoga.pdb
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\WCF_ReservaYoga\bin\Debug\WCF_ReservaYoga.dll.config
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\WCF_ReservaYoga\bin\Debug\WCF_ReservaYoga.dll
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\WCF_ReservaYoga\bin\Debug\WCF_ReservaYoga.pdb
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\WCF_ReservaYoga\bin\Debug\EntityFramework.dll
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\WCF_ReservaYoga\bin\Debug\EntityFramework.SqlServer.dll
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\WCF_ReservaYoga\bin\Debug\EntityFramework.xml
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\WCF_ReservaYoga\bin\Debug\EntityFramework.SqlServer.xml
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\WCF_ReservaYoga\obj\Debug\WCF_ReservaYoga.csproj.AssemblyReference.cache
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\WCF_ReservaYoga\obj\Debug\WCF_ReservaYoga.csproj.CoreCompileInputs.cache
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\WCF_ReservaYoga\obj\Debug\WCF_ReservaYoga.csproj.CopyComplete
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\WCF_ReservaYoga\obj\Debug\WCF_ReservaYoga.dll
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\WCF_ReservaYoga\obj\Debug\WCF_ReservaYoga.pdb

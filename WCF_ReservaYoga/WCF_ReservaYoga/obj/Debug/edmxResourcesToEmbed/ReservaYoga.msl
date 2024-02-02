@@ -1,0 +1,400 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ReservaYogaModelStoreContainer" CdmEntityContainer="ReservaYogaEntities">
+    <EntitySetMapping Name="Tb_Administrador">
+      <EntityTypeMapping TypeName="ReservaYogaModel.Tb_Administrador">
+        <MappingFragment StoreEntitySet="Tb_Administrador">
+          <ScalarProperty Name="Id_Admin" ColumnName="Id_Admin" />
+          <ScalarProperty Name="Nom_Admin" ColumnName="Nom_Admin" />
+          <ScalarProperty Name="Ape_Admin" ColumnName="Ape_Admin" />
+          <ScalarProperty Name="Dni_Admin" ColumnName="Dni_Admin" />
+          <ScalarProperty Name="Correo_Admin" ColumnName="Correo_Admin" />
+          <ScalarProperty Name="Fec_Reg" ColumnName="Fec_Reg" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tb_Categoria">
+      <EntityTypeMapping TypeName="ReservaYogaModel.Tb_Categoria">
+        <MappingFragment StoreEntitySet="Tb_Categoria">
+          <ScalarProperty Name="Id_Cat" ColumnName="Id_Cat" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tb_Clase_Programada">
+      <EntityTypeMapping TypeName="ReservaYogaModel.Tb_Clase_Programada">
+        <MappingFragment StoreEntitySet="Tb_Clase_Programada">
+          <ScalarProperty Name="Id_Clase_Prog" ColumnName="Id_Clase_Prog" />
+          <ScalarProperty Name="Id_Salon" ColumnName="Id_Salon" />
+          <ScalarProperty Name="Id_Inst_Disp" ColumnName="Id_Inst_Disp" />
+          <ScalarProperty Name="Fec_Clase" ColumnName="Fec_Clase" />
+          <ScalarProperty Name="Hora_Emp" ColumnName="Hora_Emp" />
+          <ScalarProperty Name="Hora_Term" ColumnName="Hora_Term" />
+          <ScalarProperty Name="Est_clase" ColumnName="Est_clase" />
+          <ScalarProperty Name="Fec_reg" ColumnName="Fec_reg" />
+          <ScalarProperty Name="Usu_reg" ColumnName="Usu_reg" />
+          <ScalarProperty Name="Usu_Ult_Mod" ColumnName="Usu_Ult_Mod" />
+          <ScalarProperty Name="Fec_Ult_Mod" ColumnName="Fec_Ult_Mod" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tb_Cliente">
+      <EntityTypeMapping TypeName="ReservaYogaModel.Tb_Cliente">
+        <MappingFragment StoreEntitySet="Tb_Cliente">
+          <ScalarProperty Name="Id_Cliente" ColumnName="Id_Cliente" />
+          <ScalarProperty Name="Nombres" ColumnName="Nombres" />
+          <ScalarProperty Name="ApePaterno" ColumnName="ApePaterno" />
+          <ScalarProperty Name="ApeMaterno" ColumnName="ApeMaterno" />
+          <ScalarProperty Name="Correo" ColumnName="Correo" />
+          <ScalarProperty Name="Tel_cli" ColumnName="Tel_cli" />
+          <ScalarProperty Name="Dir_cli" ColumnName="Dir_cli" />
+          <ScalarProperty Name="Dni_cli" ColumnName="Dni_cli" />
+          <ScalarProperty Name="Sexo" ColumnName="Sexo" />
+          <ScalarProperty Name="Fec_nac" ColumnName="Fec_nac" />
+          <ScalarProperty Name="Est_cli" ColumnName="Est_cli" />
+          <ScalarProperty Name="Id_Ubigeo" ColumnName="Id_Ubigeo" />
+          <ScalarProperty Name="Foto" ColumnName="Foto" />
+          <ScalarProperty Name="Fec_reg" ColumnName="Fec_reg" />
+          <ScalarProperty Name="Usu_reg" ColumnName="Usu_reg" />
+          <ScalarProperty Name="Usu_Ult_Mod" ColumnName="Usu_Ult_Mod" />
+          <ScalarProperty Name="Fec_Ult_Mod" ColumnName="Fec_Ult_Mod" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tb_Disciplina">
+      <EntityTypeMapping TypeName="ReservaYogaModel.Tb_Disciplina">
+        <MappingFragment StoreEntitySet="Tb_Disciplina">
+          <ScalarProperty Name="Cod_disp" ColumnName="Cod_disp" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Duracion" ColumnName="Duracion" />
+          <ScalarProperty Name="Intensidad" ColumnName="Intensidad" />
+          <ScalarProperty Name="Precio" ColumnName="Precio" />
+          <ScalarProperty Name="Id_Cat" ColumnName="Id_Cat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tb_Instructor">
+      <EntityTypeMapping TypeName="ReservaYogaModel.Tb_Instructor">
+        <MappingFragment StoreEntitySet="Tb_Instructor">
+          <ScalarProperty Name="Id_Instructor" ColumnName="Id_Instructor" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="ApePaterno" ColumnName="ApePaterno" />
+          <ScalarProperty Name="ApeMaterno" ColumnName="ApeMaterno" />
+          <ScalarProperty Name="Correo" ColumnName="Correo" />
+          <ScalarProperty Name="Tel_inst" ColumnName="Tel_inst" />
+          <ScalarProperty Name="Dni_inst" ColumnName="Dni_inst" />
+          <ScalarProperty Name="Dir_inst" ColumnName="Dir_inst" />
+          <ScalarProperty Name="Fec_nac" ColumnName="Fec_nac" />
+          <ScalarProperty Name="Id_Ubigeo" ColumnName="Id_Ubigeo" />
+          <ScalarProperty Name="Foto" ColumnName="Foto" />
+          <ScalarProperty Name="Est_ins" ColumnName="Est_ins" />
+          <ScalarProperty Name="Fec_reg" ColumnName="Fec_reg" />
+          <ScalarProperty Name="Usu_reg" ColumnName="Usu_reg" />
+          <ScalarProperty Name="Usu_Ult_Mod" ColumnName="Usu_Ult_Mod" />
+          <ScalarProperty Name="Fec_Ult_Mod" ColumnName="Fec_Ult_Mod" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tb_Instructor_Disciplina">
+      <EntityTypeMapping TypeName="ReservaYogaModel.Tb_Instructor_Disciplina">
+        <MappingFragment StoreEntitySet="Tb_Instructor_Disciplina">
+          <ScalarProperty Name="Id_Inst_Disp" ColumnName="Id_Inst_Disp" />
+          <ScalarProperty Name="Id_Instructor" ColumnName="Id_Instructor" />
+          <ScalarProperty Name="Cod_disp" ColumnName="Cod_disp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tb_Reserva">
+      <EntityTypeMapping TypeName="ReservaYogaModel.Tb_Reserva">
+        <MappingFragment StoreEntitySet="Tb_Reserva">
+          <ScalarProperty Name="Id_Cliente" ColumnName="Id_Cliente" />
+          <ScalarProperty Name="Est_resv" ColumnName="Est_resv" />
+          <ScalarProperty Name="Fec_resv" ColumnName="Fec_resv" />
+          <ScalarProperty Name="Observacion" ColumnName="Observacion" />
+          <ScalarProperty Name="Fec_reg" ColumnName="Fec_reg" />
+          <ScalarProperty Name="Usu_reg" ColumnName="Usu_reg" />
+          <ScalarProperty Name="Usu_Ult_Mod" ColumnName="Usu_Ult_Mod" />
+          <ScalarProperty Name="Fec_Ult_Mod" ColumnName="Fec_Ult_Mod" />
+          <ScalarProperty Name="Cod_resv" ColumnName="Cod_resv" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tb_Salon">
+      <EntityTypeMapping TypeName="ReservaYogaModel.Tb_Salon">
+        <MappingFragment StoreEntitySet="Tb_Salon">
+          <ScalarProperty Name="Id_Salon" ColumnName="Id_Salon" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Area" ColumnName="Area" />
+          <ScalarProperty Name="Capacidad" ColumnName="Capacidad" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tb_Ubigeo">
+      <EntityTypeMapping TypeName="ReservaYogaModel.Tb_Ubigeo">
+        <MappingFragment StoreEntitySet="Tb_Ubigeo">
+          <ScalarProperty Name="Id_Ubigeo" ColumnName="Id_Ubigeo" />
+          <ScalarProperty Name="IdDepa" ColumnName="IdDepa" />
+          <ScalarProperty Name="IdProv" ColumnName="IdProv" />
+          <ScalarProperty Name="IdDist" ColumnName="IdDist" />
+          <ScalarProperty Name="Departamento" ColumnName="Departamento" />
+          <ScalarProperty Name="Provincia" ColumnName="Provincia" />
+          <ScalarProperty Name="Distrito" ColumnName="Distrito" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tb_Usuario">
+      <EntityTypeMapping TypeName="ReservaYogaModel.Tb_Usuario">
+        <MappingFragment StoreEntitySet="Tb_Usuario">
+          <ScalarProperty Name="Login_Usuario" ColumnName="Login_Usuario" />
+          <ScalarProperty Name="Pass_Usuario" ColumnName="Pass_Usuario" />
+          <ScalarProperty Name="Niv_Usuario" ColumnName="Niv_Usuario" />
+          <ScalarProperty Name="Est_Usuario" ColumnName="Est_Usuario" />
+          <ScalarProperty Name="Fec_Registro" ColumnName="Fec_Registro" />
+          <ScalarProperty Name="Usu_Registro" ColumnName="Usu_Registro" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="Tb_Detalle_Reserva" TypeName="ReservaYogaModel.Tb_Detalle_Reserva" StoreEntitySet="Tb_Detalle_Reserva">
+      <EndProperty Name="Tb_Clase_Programada">
+        <ScalarProperty Name="Id_Clase_Prog" ColumnName="Id_Clase_Prog" />
+      </EndProperty>
+      <EndProperty Name="Tb_Reserva">
+        <ScalarProperty Name="Cod_resv" ColumnName="Cod_resv" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <FunctionImportMapping FunctionImportName="usp_ActualizarCliente" FunctionName="ReservaYogaModel.Store.usp_ActualizarCliente" />
+    <FunctionImportMapping FunctionImportName="usp_EliminarCliente" FunctionName="ReservaYogaModel.Store.usp_EliminarCliente" />
+    <FunctionImportMapping FunctionImportName="usp_InsertarCliente" FunctionName="ReservaYogaModel.Store.usp_InsertarCliente" />
+    <FunctionImportMapping FunctionImportName="usp_ListarCliente" FunctionName="ReservaYogaModel.Store.usp_ListarCliente">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ReservaYogaModel.usp_ListarCliente_Result">
+          <ScalarProperty Name="Id_Cliente" ColumnName="Id_Cliente" />
+          <ScalarProperty Name="ApePaterno" ColumnName="ApePaterno" />
+          <ScalarProperty Name="ApeMaterno" ColumnName="ApeMaterno" />
+          <ScalarProperty Name="Nombres" ColumnName="Nombres" />
+          <ScalarProperty Name="Correo" ColumnName="Correo" />
+          <ScalarProperty Name="Tel_cli" ColumnName="Tel_cli" />
+          <ScalarProperty Name="Dir_cli" ColumnName="Dir_cli" />
+          <ScalarProperty Name="Dni_cli" ColumnName="Dni_cli" />
+          <ScalarProperty Name="Genero" ColumnName="Genero" />
+          <ScalarProperty Name="Sexo" ColumnName="Sexo" />
+          <ScalarProperty Name="Fec_nac" ColumnName="Fec_nac" />
+          <ScalarProperty Name="Edad" ColumnName="Edad" />
+          <ScalarProperty Name="Est_cli" ColumnName="Est_cli" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Id_Ubigeo" ColumnName="Id_Ubigeo" />
+          <ScalarProperty Name="Departamento" ColumnName="Departamento" />
+          <ScalarProperty Name="Provincia" ColumnName="Provincia" />
+          <ScalarProperty Name="Distrito" ColumnName="Distrito" />
+          <ScalarProperty Name="Foto" ColumnName="Foto" />
+          <ScalarProperty Name="Fec_reg" ColumnName="Fec_reg" />
+          <ScalarProperty Name="Usu_Reg" ColumnName="Usu_Reg" />
+          <ScalarProperty Name="Usu_Ult_Mod" ColumnName="Usu_Ult_Mod" />
+          <ScalarProperty Name="Fec_Ult_Mod" ColumnName="Fec_Ult_Mod" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_ActualizarDisciplina" FunctionName="ReservaYogaModel.Store.usp_ActualizarDisciplina" />
+    <FunctionImportMapping FunctionImportName="usp_EliminarDisciplina" FunctionName="ReservaYogaModel.Store.usp_EliminarDisciplina" />
+    <FunctionImportMapping FunctionImportName="usp_InsertarDisciplina" FunctionName="ReservaYogaModel.Store.usp_InsertarDisciplina" />
+    <FunctionImportMapping FunctionImportName="usp_ActualizarInstructor" FunctionName="ReservaYogaModel.Store.usp_ActualizarInstructor" />
+    <FunctionImportMapping FunctionImportName="usp_EliminarInstructor" FunctionName="ReservaYogaModel.Store.usp_EliminarInstructor" />
+    <FunctionImportMapping FunctionImportName="usp_InsertarInstructor" FunctionName="ReservaYogaModel.Store.usp_InsertarInstructor" />
+    <FunctionImportMapping FunctionImportName="usp_Ubigeo_Departamentos" FunctionName="ReservaYogaModel.Store.usp_Ubigeo_Departamentos">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ReservaYogaModel.usp_Ubigeo_Departamentos_Result">
+          <ScalarProperty Name="IDDEPA" ColumnName="IDDEPA" />
+          <ScalarProperty Name="DEPARTAMENTO" ColumnName="DEPARTAMENTO" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_Ubigeo_DistritosProvinciaDepartamento" FunctionName="ReservaYogaModel.Store.usp_Ubigeo_DistritosProvinciaDepartamento">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ReservaYogaModel.usp_Ubigeo_DistritosProvinciaDepartamento_Result">
+          <ScalarProperty Name="IDDIST" ColumnName="IDDIST" />
+          <ScalarProperty Name="DISTRITO" ColumnName="DISTRITO" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_Ubigeo_ProvinciasDepartamento" FunctionName="ReservaYogaModel.Store.usp_Ubigeo_ProvinciasDepartamento">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ReservaYogaModel.usp_Ubigeo_ProvinciasDepartamento_Result">
+          <ScalarProperty Name="IDPROV" ColumnName="IDPROV" />
+          <ScalarProperty Name="PROVINCIA" ColumnName="PROVINCIA" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_InsertarClaseProgramada" FunctionName="ReservaYogaModel.Store.usp_InsertarClaseProgramada" />
+    <FunctionImportMapping FunctionImportName="usp_Combo_Instructor" FunctionName="ReservaYogaModel.Store.usp_Combo_Instructor">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ReservaYogaModel.usp_Combo_Instructor_Result">
+          <ScalarProperty Name="Id_Instructor" ColumnName="Id_Instructor" />
+          <ScalarProperty Name="Nombre_del_Instructor" ColumnName="Nombre del Instructor" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_Combo_InstructorDisciplina" FunctionName="ReservaYogaModel.Store.usp_Combo_InstructorDisciplina">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ReservaYogaModel.usp_Combo_InstructorDisciplina_Result">
+          <ScalarProperty Name="Cod_disp" ColumnName="Cod_disp" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="ReservaYogaModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="definition" ColumnName="definition" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_VistaAdministrador">
+      <EntityTypeMapping TypeName="ReservaYogaModel.vw_VistaAdministrador">
+        <MappingFragment StoreEntitySet="vw_VistaAdministrador">
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Fec_Reg" ColumnName="Fec_Reg" />
+          <ScalarProperty Name="Correo_Admin" ColumnName="Correo_Admin" />
+          <ScalarProperty Name="Dni_Admin" ColumnName="Dni_Admin" />
+          <ScalarProperty Name="Ape_Admin" ColumnName="Ape_Admin" />
+          <ScalarProperty Name="Nom_Admin" ColumnName="Nom_Admin" />
+          <ScalarProperty Name="Id_Admin" ColumnName="Id_Admin" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_VistaCategoria">
+      <EntityTypeMapping TypeName="ReservaYogaModel.vw_VistaCategoria">
+        <MappingFragment StoreEntitySet="vw_VistaCategoria">
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Id_Cat" ColumnName="Id_Cat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_VistaClaseProgramada">
+      <EntityTypeMapping TypeName="ReservaYogaModel.vw_VistaClaseProgramada">
+        <MappingFragment StoreEntitySet="vw_VistaClaseProgramada">
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Est_clase" ColumnName="Est_clase" />
+          <ScalarProperty Name="Fec_Ult_Mod" ColumnName="Fec_Ult_Mod" />
+          <ScalarProperty Name="Usu_Ult_Mod" ColumnName="Usu_Ult_Mod" />
+          <ScalarProperty Name="Usu_Reg" ColumnName="Usu_Reg" />
+          <ScalarProperty Name="Hora_Term" ColumnName="Hora_Term" />
+          <ScalarProperty Name="Hora_Emp" ColumnName="Hora_Emp" />
+          <ScalarProperty Name="Fec_Clase" ColumnName="Fec_Clase" />
+          <ScalarProperty Name="Intensidad" ColumnName="Intensidad" />
+          <ScalarProperty Name="Disciplina" ColumnName="Disciplina" />
+          <ScalarProperty Name="ApeMaterno" ColumnName="ApeMaterno" />
+          <ScalarProperty Name="ApePaterno" ColumnName="ApePaterno" />
+          <ScalarProperty Name="Nombre_Instructor" ColumnName="Nombre_Instructor" />
+          <ScalarProperty Name="Id_Instructor" ColumnName="Id_Instructor" />
+          <ScalarProperty Name="Id_Inst_Disp" ColumnName="Id_Inst_Disp" />
+          <ScalarProperty Name="Capacidad" ColumnName="Capacidad" />
+          <ScalarProperty Name="Salon" ColumnName="Salon" />
+          <ScalarProperty Name="Id_Salon" ColumnName="Id_Salon" />
+          <ScalarProperty Name="Id_Clase_Prog" ColumnName="Id_Clase_Prog" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_VistaCliente">
+      <EntityTypeMapping TypeName="ReservaYogaModel.vw_VistaCliente">
+        <MappingFragment StoreEntitySet="vw_VistaCliente">
+          <ScalarProperty Name="Fec_Ult_Mod" ColumnName="Fec_Ult_Mod" />
+          <ScalarProperty Name="Usu_Ult_Mod" ColumnName="Usu_Ult_Mod" />
+          <ScalarProperty Name="Usu_Reg" ColumnName="Usu_Reg" />
+          <ScalarProperty Name="Fec_reg" ColumnName="Fec_reg" />
+          <ScalarProperty Name="Foto" ColumnName="Foto" />
+          <ScalarProperty Name="Distrito" ColumnName="Distrito" />
+          <ScalarProperty Name="Provincia" ColumnName="Provincia" />
+          <ScalarProperty Name="Departamento" ColumnName="Departamento" />
+          <ScalarProperty Name="Id_Ubigeo" ColumnName="Id_Ubigeo" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Est_cli" ColumnName="Est_cli" />
+          <ScalarProperty Name="Edad" ColumnName="Edad" />
+          <ScalarProperty Name="Fec_nac" ColumnName="Fec_nac" />
+          <ScalarProperty Name="Sexo" ColumnName="Sexo" />
+          <ScalarProperty Name="Genero" ColumnName="Genero" />
+          <ScalarProperty Name="Dni_cli" ColumnName="Dni_cli" />
+          <ScalarProperty Name="Dir_cli" ColumnName="Dir_cli" />
+          <ScalarProperty Name="Tel_cli" ColumnName="Tel_cli" />
+          <ScalarProperty Name="Correo" ColumnName="Correo" />
+          <ScalarProperty Name="ApeMaterno" ColumnName="ApeMaterno" />
+          <ScalarProperty Name="ApePaterno" ColumnName="ApePaterno" />
+          <ScalarProperty Name="Nombres" ColumnName="Nombres" />
+          <ScalarProperty Name="Id_Cliente" ColumnName="Id_Cliente" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_VistaDisciplina">
+      <EntityTypeMapping TypeName="ReservaYogaModel.vw_VistaDisciplina">
+        <MappingFragment StoreEntitySet="vw_VistaDisciplina">
+          <ScalarProperty Name="Categoria" ColumnName="Categoria" />
+          <ScalarProperty Name="Precio" ColumnName="Precio" />
+          <ScalarProperty Name="Intensidad" ColumnName="Intensidad" />
+          <ScalarProperty Name="Duracion" ColumnName="Duracion" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Cod_disp" ColumnName="Cod_disp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_VistaInstructor">
+      <EntityTypeMapping TypeName="ReservaYogaModel.vw_VistaInstructor">
+        <MappingFragment StoreEntitySet="vw_VistaInstructor">
+          <ScalarProperty Name="Fec_Ult_Mod" ColumnName="Fec_Ult_Mod" />
+          <ScalarProperty Name="Usu_Ult_Mod" ColumnName="Usu_Ult_Mod" />
+          <ScalarProperty Name="Usu_Reg" ColumnName="Usu_Reg" />
+          <ScalarProperty Name="Fec_reg" ColumnName="Fec_reg" />
+          <ScalarProperty Name="Est_ins" ColumnName="Est_ins" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Foto" ColumnName="Foto" />
+          <ScalarProperty Name="Provincia" ColumnName="Provincia" />
+          <ScalarProperty Name="Distrito" ColumnName="Distrito" />
+          <ScalarProperty Name="Departamento" ColumnName="Departamento" />
+          <ScalarProperty Name="Id_Ubigeo" ColumnName="Id_Ubigeo" />
+          <ScalarProperty Name="Edad" ColumnName="Edad" />
+          <ScalarProperty Name="Fec_nac" ColumnName="Fec_nac" />
+          <ScalarProperty Name="Dir_inst" ColumnName="Dir_inst" />
+          <ScalarProperty Name="Dni_inst" ColumnName="Dni_inst" />
+          <ScalarProperty Name="Tel_inst" ColumnName="Tel_inst" />
+          <ScalarProperty Name="Correo" ColumnName="Correo" />
+          <ScalarProperty Name="ApeMaterno" ColumnName="ApeMaterno" />
+          <ScalarProperty Name="ApePaterno" ColumnName="ApePaterno" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Id_Instructor" ColumnName="Id_Instructor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_VistaInstructorDisciplina">
+      <EntityTypeMapping TypeName="ReservaYogaModel.vw_VistaInstructorDisciplina">
+        <MappingFragment StoreEntitySet="vw_VistaInstructorDisciplina">
+          <ScalarProperty Name="Intensidad" ColumnName="Intensidad" />
+          <ScalarProperty Name="Duracion" ColumnName="Duracion" />
+          <ScalarProperty Name="Disciplina" ColumnName="Disciplina" />
+          <ScalarProperty Name="Cod_disp" ColumnName="Cod_disp" />
+          <ScalarProperty Name="Nombre_del_Instructor" ColumnName="Nombre del Instructor" />
+          <ScalarProperty Name="Id_Instructor" ColumnName="Id_Instructor" />
+          <ScalarProperty Name="Id_Inst_Disp" ColumnName="Id_Inst_Disp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_VistaSalon">
+      <EntityTypeMapping TypeName="ReservaYogaModel.vw_VistaSalon">
+        <MappingFragment StoreEntitySet="vw_VistaSalon">
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Capacidad" ColumnName="Capacidad" />
+          <ScalarProperty Name="Area" ColumnName="Area" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Id_Salon" ColumnName="Id_Salon" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
