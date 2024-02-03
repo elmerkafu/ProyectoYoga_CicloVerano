@@ -45,7 +45,7 @@ namespace TestWindows_WCF_Reserva
 
                 // AQUI REVISAR DEVOLVER DATOS 
                 String Id_Inst_Disp = objClaseProgramadaDC.Id_Inst_Disp;
-                CargarInsDsp(Id_Inst_Disp.Substring(0, 1), Id_Inst_Disp.Substring(1, 2));
+                CargarInsDsp(Id_Inst_Disp.Substring(0, 3), Id_Inst_Disp.Substring(3, 3));
 
                 cboSalon.SelectedValue = objClaseProgramadaDC.Id_Salon;
                 dtpFecha.Value = Convert.ToDateTime(objClaseProgramadaDC.Fec_Clase);
@@ -86,7 +86,7 @@ namespace TestWindows_WCF_Reserva
             {
                 if (cboSalon.Text.Length == 0)
                 {
-                   throw new Exception("Debe escoger un aula.");
+                    throw new Exception("Debe escoger un aula.");
                 }
                 if (dtpFecha.Text.Length == 0)
                 {

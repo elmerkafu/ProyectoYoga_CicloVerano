@@ -58,3 +58,15 @@ D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\WCF_Reser
 D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\WCF_ReservaYoga\obj\Debug\WCF_ReservaYoga.csproj.CopyComplete
 D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\WCF_ReservaYoga\obj\Debug\WCF_ReservaYoga.dll
 D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga\WCF_ReservaYoga\obj\Debug\WCF_ReservaYoga.pdb
+C:\Proyecto_Yoga\ProyectoYoga_CicloVerano\WCF_ReservaYoga\bin\Debug\WCF_ReservaYoga.dll.config
+C:\Proyecto_Yoga\ProyectoYoga_CicloVerano\WCF_ReservaYoga\bin\Debug\WCF_ReservaYoga.dll
+C:\Proyecto_Yoga\ProyectoYoga_CicloVerano\WCF_ReservaYoga\bin\Debug\WCF_ReservaYoga.pdb
+C:\Proyecto_Yoga\ProyectoYoga_CicloVerano\WCF_ReservaYoga\bin\Debug\EntityFramework.dll
+C:\Proyecto_Yoga\ProyectoYoga_CicloVerano\WCF_ReservaYoga\bin\Debug\EntityFramework.SqlServer.dll
+C:\Proyecto_Yoga\ProyectoYoga_CicloVerano\WCF_ReservaYoga\bin\Debug\EntityFramework.xml
+C:\Proyecto_Yoga\ProyectoYoga_CicloVerano\WCF_ReservaYoga\bin\Debug\EntityFramework.SqlServer.xml
+C:\Proyecto_Yoga\ProyectoYoga_CicloVerano\WCF_ReservaYoga\obj\Debug\WCF_ReservaYoga.csproj.AssemblyReference.cache
+C:\Proyecto_Yoga\ProyectoYoga_CicloVerano\WCF_ReservaYoga\obj\Debug\WCF_ReservaYoga.csproj.CoreCompileInputs.cache
+C:\Proyecto_Yoga\ProyectoYoga_CicloVerano\WCF_ReservaYoga\obj\Debug\WCF_ReservaYoga.csproj.CopyComplete
+C:\Proyecto_Yoga\ProyectoYoga_CicloVerano\WCF_ReservaYoga\obj\Debug\WCF_ReservaYoga.dll
+C:\Proyecto_Yoga\ProyectoYoga_CicloVerano\WCF_ReservaYoga\obj\Debug\WCF_ReservaYoga.pdb
