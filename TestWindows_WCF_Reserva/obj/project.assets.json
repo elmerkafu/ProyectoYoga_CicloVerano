@@ -3019,23 +3019,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Elizabeth\\.nuget\\packages\\": {},
-    "C:\\Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Lita\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Proyecto_Yoga\\ProyectoYoga_CicloVerano\\TestWindows_WCF_Reserva\\TestWindows_WCF_Reserva.csproj",
+      "projectUniqueName": "C:\\Users\\Lita\\Documents\\ElmerPaucarpura\\Proyecto_Final\\ProyectoYoga_CicloVerano\\TestWindows_WCF_Reserva\\TestWindows_WCF_Reserva.csproj",
       "projectName": "TestWindows_WCF_Reserva",
-      "projectPath": "C:\\Proyecto_Yoga\\ProyectoYoga_CicloVerano\\TestWindows_WCF_Reserva\\TestWindows_WCF_Reserva.csproj",
-      "packagesPath": "C:\\Users\\Elizabeth\\.nuget\\packages\\",
-      "outputPath": "C:\\Proyecto_Yoga\\ProyectoYoga_CicloVerano\\TestWindows_WCF_Reserva\\obj\\",
+      "projectPath": "C:\\Users\\Lita\\Documents\\ElmerPaucarpura\\Proyecto_Final\\ProyectoYoga_CicloVerano\\TestWindows_WCF_Reserva\\TestWindows_WCF_Reserva.csproj",
+      "packagesPath": "C:\\Users\\Lita\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Lita\\Documents\\ElmerPaucarpura\\Proyecto_Final\\ProyectoYoga_CicloVerano\\TestWindows_WCF_Reserva\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Elizabeth\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Lita\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3102,7 +3102,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\6.0.418\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             grpDatos = new GroupBox();
+            btnBuscarDatosReniec = new Button();
             label11 = new Label();
             label10 = new Label();
             label8 = new Label();
@@ -63,6 +64,7 @@
             // 
             // grpDatos
             // 
+            grpDatos.Controls.Add(btnBuscarDatosReniec);
             grpDatos.Controls.Add(label11);
             grpDatos.Controls.Add(label10);
             grpDatos.Controls.Add(label8);
@@ -95,6 +97,16 @@
             grpDatos.TabIndex = 0;
             grpDatos.TabStop = false;
             grpDatos.Text = "Datos del Cliente";
+            // 
+            // btnBuscarDatosReniec
+            // 
+            btnBuscarDatosReniec.Location = new Point(105, 74);
+            btnBuscarDatosReniec.Margin = new Padding(4, 3, 4, 3);
+            btnBuscarDatosReniec.Name = "btnBuscarDatosReniec";
+            btnBuscarDatosReniec.Size = new Size(154, 31);
+            btnBuscarDatosReniec.TabIndex = 28;
+            btnBuscarDatosReniec.Text = "Buscar Datos RENIEC";
+            btnBuscarDatosReniec.Click += btnBuscarDatosReniec_Click;
             // 
             // label11
             // 
@@ -249,7 +261,7 @@
             // 
             // mskDNI
             // 
-            mskDNI.Location = new Point(685, 169);
+            mskDNI.Location = new Point(159, 37);
             mskDNI.Mask = "00000000";
             mskDNI.Name = "mskDNI";
             mskDNI.Size = new Size(100, 23);
@@ -258,7 +270,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(631, 172);
+            label6.Location = new Point(105, 40);
             label6.Name = "label6";
             label6.Size = new Size(30, 15);
             label6.TabIndex = 11;
@@ -299,7 +311,8 @@
             // 
             // txtApeMaterno
             // 
-            txtApeMaterno.Location = new Point(128, 124);
+            txtApeMaterno.Enabled = false;
+            txtApeMaterno.Location = new Point(527, 117);
             txtApeMaterno.Name = "txtApeMaterno";
             txtApeMaterno.Size = new Size(227, 23);
             txtApeMaterno.TabIndex = 3;
@@ -307,7 +320,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(6, 127);
+            label3.Location = new Point(405, 120);
             label3.Name = "label3";
             label3.Size = new Size(102, 15);
             label3.TabIndex = 4;
@@ -315,7 +328,8 @@
             // 
             // txtApePaterno
             // 
-            txtApePaterno.Location = new Point(128, 81);
+            txtApePaterno.Enabled = false;
+            txtApePaterno.Location = new Point(527, 74);
             txtApePaterno.Name = "txtApePaterno";
             txtApePaterno.Size = new Size(227, 23);
             txtApePaterno.TabIndex = 2;
@@ -323,7 +337,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(6, 84);
+            label2.Location = new Point(405, 77);
             label2.Name = "label2";
             label2.Size = new Size(98, 15);
             label2.TabIndex = 2;
@@ -331,7 +345,8 @@
             // 
             // txtNombres
             // 
-            txtNombres.Location = new Point(128, 39);
+            txtNombres.Enabled = false;
+            txtNombres.Location = new Point(527, 32);
             txtNombres.Name = "txtNombres";
             txtNombres.Size = new Size(227, 23);
             txtNombres.TabIndex = 1;
@@ -339,7 +354,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(6, 42);
+            label1.Location = new Point(405, 35);
             label1.Name = "label1";
             label1.Size = new Size(59, 15);
             label1.TabIndex = 0;
@@ -396,5 +411,6 @@
         private ComboBox cboDepartamento;
         private Label label11;
         private Label label10;
+        internal Button btnBuscarDatosReniec;
     }
 }
