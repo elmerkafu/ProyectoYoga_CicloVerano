@@ -14,6 +14,7 @@ using System.Diagnostics;
 using System.Net;
 using System.Net.Http;
 using System.Net.Http.Json;
+using Microsoft.VisualBasic;
 
 
 namespace TestWindows_WCF_Reserva
@@ -345,6 +346,35 @@ namespace TestWindows_WCF_Reserva
             btnBuscarDatosReniec.Enabled = true;
             mskDNI.Focus();
             mskDNI.SelectAll();
+        }
+
+        private void btnValidar_Click(object sender, EventArgs e)
+        {
+            EnviarEmail email = new EnviarEmail();
+            string txtEmisor = "kafupaucarpura5@gmail.com";
+            string txtPass = "";
+            int numero = email.Enviar(txtCorreo.Text, txtEmisor, txtPass);
+
+            DialogResult result = DialogResult.OK;
+
+            if (numero != 0)
+            {
+                try
+                {
+                    int resultado = Convert.ToInt32(Interaction.InputBox("Ingresa el codigo enviado al cliente", "Verificacion"));
+
+
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Codigo ingresado no valido");
+
+                }
+            }
+            else
+            {
+                result = MessageBox.Show("Reenviar correo", "Advertencia", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            }
         }
     }
 }

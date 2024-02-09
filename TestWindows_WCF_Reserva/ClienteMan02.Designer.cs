@@ -58,12 +58,14 @@
             label2 = new Label();
             txtNombres = new TextBox();
             label1 = new Label();
+            btnValidar = new Button();
             grpDatos.SuspendLayout();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
             // grpDatos
             // 
+            grpDatos.Controls.Add(btnValidar);
             grpDatos.Controls.Add(btnBuscarDatosReniec);
             grpDatos.Controls.Add(label11);
             grpDatos.Controls.Add(label10);
@@ -278,7 +280,7 @@
             // 
             // mskTelefono
             // 
-            mskTelefono.Location = new Point(476, 169);
+            mskTelefono.Location = new Point(654, 169);
             mskTelefono.Mask = "000000000";
             mskTelefono.Name = "mskTelefono";
             mskTelefono.Size = new Size(100, 23);
@@ -287,7 +289,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(405, 172);
+            label5.Location = new Point(583, 172);
             label5.Name = "label5";
             label5.Size = new Size(55, 15);
             label5.TabIndex = 8;
@@ -360,6 +362,16 @@
             label1.TabIndex = 0;
             label1.Text = "Nombres:";
             // 
+            // btnValidar
+            // 
+            btnValidar.Location = new Point(405, 169);
+            btnValidar.Margin = new Padding(4, 3, 4, 3);
+            btnValidar.Name = "btnValidar";
+            btnValidar.Size = new Size(84, 28);
+            btnValidar.TabIndex = 36;
+            btnValidar.Text = "Validar";
+            btnValidar.Click += btnValidar_Click;
+            // 
             // ClienteMan02
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -412,5 +424,6 @@
         private Label label11;
         private Label label10;
         internal Button btnBuscarDatosReniec;
+        internal Button btnValidar;
     }
 }

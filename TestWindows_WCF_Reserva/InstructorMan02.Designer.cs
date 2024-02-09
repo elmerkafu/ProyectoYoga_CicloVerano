@@ -56,11 +56,13 @@
             label2 = new Label();
             txtNombre = new TextBox();
             label1 = new Label();
+            btnValidar = new Button();
             grpDatos.SuspendLayout();
             SuspendLayout();
             // 
             // grpDatos
             // 
+            grpDatos.Controls.Add(btnValidar);
             grpDatos.Controls.Add(btnBuscarDatosReniec);
             grpDatos.Controls.Add(label11);
             grpDatos.Controls.Add(label10);
@@ -193,7 +195,7 @@
             // dtpFecNac
             // 
             dtpFecNac.Format = DateTimePickerFormat.Short;
-            dtpFecNac.Location = new Point(133, 198);
+            dtpFecNac.Location = new Point(133, 243);
             dtpFecNac.Name = "dtpFecNac";
             dtpFecNac.Size = new Size(103, 23);
             dtpFecNac.TabIndex = 9;
@@ -201,7 +203,7 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(9, 198);
+            label9.Location = new Point(16, 248);
             label9.Name = "label9";
             label9.Size = new Size(96, 15);
             label9.TabIndex = 17;
@@ -217,7 +219,7 @@
             // 
             // txtDireccion
             // 
-            txtDireccion.Location = new Point(133, 166);
+            txtDireccion.Location = new Point(133, 211);
             txtDireccion.Name = "txtDireccion";
             txtDireccion.Size = new Size(448, 23);
             txtDireccion.TabIndex = 7;
@@ -225,7 +227,7 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(9, 169);
+            label7.Location = new Point(16, 219);
             label7.Name = "label7";
             label7.Size = new Size(60, 15);
             label7.TabIndex = 13;
@@ -250,7 +252,7 @@
             // 
             // mskTelefono
             // 
-            mskTelefono.Location = new Point(133, 229);
+            mskTelefono.Location = new Point(133, 274);
             mskTelefono.Mask = "000000000";
             mskTelefono.Name = "mskTelefono";
             mskTelefono.Size = new Size(100, 23);
@@ -259,7 +261,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(9, 232);
+            label5.Location = new Point(16, 282);
             label5.Name = "label5";
             label5.Size = new Size(55, 15);
             label5.TabIndex = 8;
@@ -267,7 +269,7 @@
             // 
             // txtCorreo
             // 
-            txtCorreo.Location = new Point(133, 136);
+            txtCorreo.Location = new Point(133, 159);
             txtCorreo.Name = "txtCorreo";
             txtCorreo.Size = new Size(227, 23);
             txtCorreo.TabIndex = 4;
@@ -275,7 +277,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(9, 136);
+            label4.Location = new Point(16, 164);
             label4.Name = "label4";
             label4.Size = new Size(46, 15);
             label4.TabIndex = 6;
@@ -332,6 +334,16 @@
             label1.TabIndex = 0;
             label1.Text = "Nombres:";
             // 
+            // btnValidar
+            // 
+            btnValidar.Location = new Point(387, 157);
+            btnValidar.Margin = new Padding(4, 3, 4, 3);
+            btnValidar.Name = "btnValidar";
+            btnValidar.Size = new Size(84, 28);
+            btnValidar.TabIndex = 35;
+            btnValidar.Text = "Validar";
+            btnValidar.Click += btnValidar_Click_1;
+            // 
             // InstructorMan02
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -381,5 +393,6 @@
         private ComboBox cboProvincia;
         private ComboBox cboDepartamento;
         internal Button btnBuscarDatosReniec;
+        internal Button btnValidar;
     }
 }
