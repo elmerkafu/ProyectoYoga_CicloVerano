@@ -26,6 +26,12 @@ namespace WCF_ReservaYoga
         [OperationContract]
         List<ClienteDC> ListarCliente();
 
+        [OperationContract]
+        Boolean UpdateClienteEstado(ClienteDC objClienteDC);
+
+        [OperationContract]
+        List<ClienteDC> ListarClienteEstado();
+
     }
     [DataContract]
     [Serializable]
@@ -96,5 +102,8 @@ namespace WCF_ReservaYoga
 
         [DataMember]
         public DateTime Fec_Ult_Mod { get; set; }
+
+        [DataMember]
+        public String Comentario { get; set; }
     }
 }

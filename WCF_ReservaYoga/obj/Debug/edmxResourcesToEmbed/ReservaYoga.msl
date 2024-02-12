@@ -43,6 +43,7 @@
     <EntitySetMapping Name="Tb_Cliente">
       <EntityTypeMapping TypeName="ReservaYogaModel.Tb_Cliente">
         <MappingFragment StoreEntitySet="Tb_Cliente">
+          <ScalarProperty Name="Comentario" ColumnName="Comentario" />
           <ScalarProperty Name="Id_Cliente" ColumnName="Id_Cliente" />
           <ScalarProperty Name="Nombres" ColumnName="Nombres" />
           <ScalarProperty Name="ApePaterno" ColumnName="ApePaterno" />
@@ -249,5 +250,7 @@
     <FunctionImportMapping FunctionImportName="usp_ActualizarClaseProgramada_TEST" FunctionName="ReservaYogaModel.Store.usp_ActualizarClaseProgramada_TEST" />
     <FunctionImportMapping FunctionImportName="usp_InsertarSalon" FunctionName="ReservaYogaModel.Store.usp_InsertarSalon" />
     <FunctionImportMapping FunctionImportName="usp_ActualizarSalon" FunctionName="ReservaYogaModel.Store.usp_ActualizarSalon" />
+    <FunctionImportMapping FunctionImportName="usp_ActualizarClienteEstado" FunctionName="ReservaYogaModel.Store.usp_ActualizarClienteEstado" />
+    <FunctionImportMapping FunctionImportName="usp_InsertarCliente_TEST" FunctionName="ReservaYogaModel.Store.usp_InsertarCliente_TEST" />
   </EntityContainerMapping>
 </Mapping>

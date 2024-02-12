@@ -63,6 +63,7 @@
     <Property Name="Fec_Ult_Mod" Type="DateTime" Precision="3" />
     <NavigationProperty Name="Tb_Reserva" Relationship="Self.FKCliente" FromRole="Tb_Cliente" ToRole="Tb_Reserva" />
     <NavigationProperty Name="Tb_Ubigeo" Relationship="Self.FKUbigeo" FromRole="Tb_Cliente" ToRole="Tb_Ubigeo" />
+    <Property Name="Comentario" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
   </EntityType>
   <EntityType Name="Tb_Disciplina">
     <Key>
@@ -448,6 +449,24 @@
       <Parameter Name="vCapacidad" Mode="In" Type="Int32" />
       <Parameter Name="vEstado" Mode="In" Type="Int32" />
       <Parameter Name="vDescripcion" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_ActualizarClienteEstado">
+      <Parameter Name="vcod" Mode="In" Type="Int32" />
+      <Parameter Name="vcoment" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_InsertarCliente_TEST">
+      <Parameter Name="vNombres" Mode="In" Type="String" />
+      <Parameter Name="vApePaterno" Mode="In" Type="String" />
+      <Parameter Name="vApeMaterno" Mode="In" Type="String" />
+      <Parameter Name="vCorreo" Mode="In" Type="String" />
+      <Parameter Name="vTel_cli" Mode="In" Type="String" />
+      <Parameter Name="vDir_cli" Mode="In" Type="String" />
+      <Parameter Name="vDni_cli" Mode="In" Type="String" />
+      <Parameter Name="vSexo" Mode="In" Type="String" />
+      <Parameter Name="vFec_nac" Mode="In" Type="DateTime" />
+      <Parameter Name="vEst_cli" Mode="In" Type="Int32" />
+      <Parameter Name="vId_Ubigeo" Mode="In" Type="String" />
+      <Parameter Name="vUsu_Registro" Mode="In" Type="String" />
     </FunctionImport>
   </EntityContainer>
   <ComplexType Name="usp_ListarCliente_Result">

@@ -22,6 +22,8 @@ namespace ProxyCliente
         
         private string ApePaternoField;
         
+        private string ComentarioField;
+        
         private string CorreoField;
         
         private string DepartamentoField;
@@ -85,6 +87,19 @@ namespace ProxyCliente
             set
             {
                 this.ApePaternoField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Comentario
+        {
+            get
+            {
+                return this.ComentarioField;
+            }
+            set
+            {
+                this.ComentarioField = value;
             }
         }
         
@@ -383,6 +398,18 @@ namespace ProxyCliente
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServicioCliente/ListarCliente", ReplyAction="http://tempuri.org/IServicioCliente/ListarClienteResponse")]
         System.Threading.Tasks.Task<System.Collections.Generic.List<ProxyCliente.ClienteDC>> ListarClienteAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServicioCliente/UpdateClienteEstado", ReplyAction="http://tempuri.org/IServicioCliente/UpdateClienteEstadoResponse")]
+        bool UpdateClienteEstado(ProxyCliente.ClienteDC objClienteDC);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServicioCliente/UpdateClienteEstado", ReplyAction="http://tempuri.org/IServicioCliente/UpdateClienteEstadoResponse")]
+        System.Threading.Tasks.Task<bool> UpdateClienteEstadoAsync(ProxyCliente.ClienteDC objClienteDC);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServicioCliente/ListarClienteEstado", ReplyAction="http://tempuri.org/IServicioCliente/ListarClienteEstadoResponse")]
+        System.Collections.Generic.List<ProxyCliente.ClienteDC> ListarClienteEstado();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServicioCliente/ListarClienteEstado", ReplyAction="http://tempuri.org/IServicioCliente/ListarClienteEstadoResponse")]
+        System.Threading.Tasks.Task<System.Collections.Generic.List<ProxyCliente.ClienteDC>> ListarClienteEstadoAsync();
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
@@ -483,6 +510,26 @@ namespace ProxyCliente
         public System.Threading.Tasks.Task<System.Collections.Generic.List<ProxyCliente.ClienteDC>> ListarClienteAsync()
         {
             return base.Channel.ListarClienteAsync();
+        }
+        
+        public bool UpdateClienteEstado(ProxyCliente.ClienteDC objClienteDC)
+        {
+            return base.Channel.UpdateClienteEstado(objClienteDC);
+        }
+        
+        public System.Threading.Tasks.Task<bool> UpdateClienteEstadoAsync(ProxyCliente.ClienteDC objClienteDC)
+        {
+            return base.Channel.UpdateClienteEstadoAsync(objClienteDC);
+        }
+        
+        public System.Collections.Generic.List<ProxyCliente.ClienteDC> ListarClienteEstado()
+        {
+            return base.Channel.ListarClienteEstado();
+        }
+        
+        public System.Threading.Tasks.Task<System.Collections.Generic.List<ProxyCliente.ClienteDC>> ListarClienteEstadoAsync()
+        {
+            return base.Channel.ListarClienteEstadoAsync();
         }
         
         public virtual System.Threading.Tasks.Task OpenAsync()

@@ -127,12 +127,80 @@ namespace WCF_ReservaYoga
             }
         }
 
+        public List<ClienteDC> ListarClienteEstado()
+        {
+            try
+            {
+                ReservaYogaEntities MisReservas = new ReservaYogaEntities();
+
+                List<ClienteDC> objListaClienteDC = new List<ClienteDC>();
+
+                var query = (from miCliente in MisReservas.Tb_Cliente
+                             join objUbi in MisReservas.Tb_Ubigeo on miCliente.Id_Ubigeo equals objUbi.Id_Ubigeo
+                             where miCliente.Est_cli == 1
+                             orderby miCliente.Id_Cliente /* CORREGIDO */
+                             select miCliente).ToList();
+
+                foreach (var objCliente in query)
+                {
+                    ClienteDC objClienteDC = new ClienteDC();
+
+                    // Cambio 6 Estado
+
+                    objClienteDC.Est_cli = Convert.ToInt16(objCliente.Est_cli);
+                    objClienteDC.EstadoTexto = "Activo";
+                    objClienteDC.Id_Cliente = Convert.ToInt16(objCliente.Id_Cliente);
+                    objClienteDC.Nombres = objCliente.Nombres;
+                    objClienteDC.ApePaterno = objCliente.ApePaterno;
+                    objClienteDC.ApeMaterno = objCliente.ApeMaterno;
+                    objClienteDC.Correo = objCliente.Correo;
+                    objClienteDC.Tel_cli = objCliente.Tel_cli;
+                    objClienteDC.Dir_cli = objCliente.Dir_cli;
+                    objClienteDC.Dni_cli = objCliente.Dni_cli;
+                    objClienteDC.Sexo = objCliente.Sexo;
+                    //Cambio 5
+                    if (objClienteDC.Sexo == "M")
+                    {
+                        objClienteDC.SexoTexto = "Masculino";
+                    }
+                    else if (objClienteDC.Sexo == "F")
+                    {
+                        objClienteDC.SexoTexto = "Femenino";
+                    }
+                    else
+                    {
+                        objClienteDC.SexoTexto = "No asignado";
+                    }
+
+                    objClienteDC.Fec_nac = Convert.ToDateTime(objCliente.Fec_nac);
+
+                    objClienteDC.Id_Ubigeo = objCliente.Id_Ubigeo;
+                    objClienteDC.Departamento = objCliente.Tb_Ubigeo.Departamento;
+                    objClienteDC.Provincia = objCliente.Tb_Ubigeo.Provincia;
+                    objClienteDC.Distrito = objCliente.Tb_Ubigeo.Distrito;
+                    objClienteDC.Fec_reg = Convert.ToDateTime(objCliente.Fec_reg);
+                    objClienteDC.Usu_reg = objCliente.Usu_reg;
+                    objClienteDC.Usu_Ult_Mod = objCliente.Usu_Ult_Mod;
+                    objClienteDC.Fec_Ult_Mod = Convert.ToDateTime(objCliente.Fec_Ult_Mod);
+
+                    objListaClienteDC.Add(objClienteDC);
+
+                }
+                return objListaClienteDC;
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception(ex.Message);
+            }
+        }
+
         public Boolean InsertarCliente(ClienteDC objClienteDC)
         {
             try
             {
                 ReservaYogaEntities MisReservas = new ReservaYogaEntities();
-                MisReservas.usp_InsertarCliente(
+                MisReservas.usp_InsertarCliente_TEST(
                     objClienteDC.Nombres, 
                     objClienteDC.ApePaterno, 
                     objClienteDC.ApeMaterno,
@@ -205,8 +273,25 @@ namespace WCF_ReservaYoga
             }
         }
 
+        public Boolean UpdateClienteEstado(ClienteDC objClienteDC)
+        {
+            try
+            {
+                ReservaYogaEntities MisReservas = new ReservaYogaEntities();
+                MisReservas.usp_ActualizarClienteEstado(
+                    objClienteDC.Id_Cliente,
+                    objClienteDC.Comentario
+                    );
 
+                MisReservas.SaveChanges();
+                return true;
+            }
+            catch (Exception ex)
+            {
 
+                throw new Exception(ex.Message);
+            }
+        }
 
     }
 }

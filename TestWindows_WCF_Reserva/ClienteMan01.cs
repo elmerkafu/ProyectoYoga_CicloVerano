@@ -22,7 +22,7 @@ namespace TestWindows_WCF_Reserva
 
         public void CargarDatos()
         {
-            dtgCliente.DataSource = objServiceCliente.ListarCliente();
+            dtgCliente.DataSource = objServiceCliente.ListarClienteEstado();
             lblRegistros.Text = dtgCliente.Rows.Count.ToString();
         }
 
@@ -97,11 +97,13 @@ namespace TestWindows_WCF_Reserva
                     if (result == DialogResult.Yes)
                     {
 
-                        Int16 idCliente = Convert.ToInt16(dtgCliente.SelectedRows[0].Cells["Id_Cliente"].Value.ToString());
-                        objServiceCliente.EliminarCliente(idCliente);
+                        Comentario comentario1 = new Comentario();
+                        Int16 Codigo = Convert.ToInt16(dtgCliente.CurrentRow.Cells[0].Value.ToString());
+                        comentario1.Codigo = Codigo;
+                        comentario1.ShowDialog();
+
                         CargarDatos();
                     }
-
                 }
                 else
                 {

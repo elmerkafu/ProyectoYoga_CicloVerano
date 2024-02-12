@@ -538,5 +538,71 @@ namespace WCF_ReservaYoga
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("usp_ActualizarSalon", vCodParameter, vNombreParameter, vAreaParameter, vCapacidadParameter, vEstadoParameter, vDescripcionParameter);
         }
+    
+        public virtual int usp_ActualizarClienteEstado(Nullable<int> vcod, string vcoment)
+        {
+            var vcodParameter = vcod.HasValue ?
+                new ObjectParameter("vcod", vcod) :
+                new ObjectParameter("vcod", typeof(int));
+    
+            var vcomentParameter = vcoment != null ?
+                new ObjectParameter("vcoment", vcoment) :
+                new ObjectParameter("vcoment", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("usp_ActualizarClienteEstado", vcodParameter, vcomentParameter);
+        }
+    
+        public virtual int usp_InsertarCliente_TEST(string vNombres, string vApePaterno, string vApeMaterno, string vCorreo, string vTel_cli, string vDir_cli, string vDni_cli, string vSexo, Nullable<System.DateTime> vFec_nac, Nullable<int> vEst_cli, string vId_Ubigeo, string vUsu_Registro)
+        {
+            var vNombresParameter = vNombres != null ?
+                new ObjectParameter("vNombres", vNombres) :
+                new ObjectParameter("vNombres", typeof(string));
+    
+            var vApePaternoParameter = vApePaterno != null ?
+                new ObjectParameter("vApePaterno", vApePaterno) :
+                new ObjectParameter("vApePaterno", typeof(string));
+    
+            var vApeMaternoParameter = vApeMaterno != null ?
+                new ObjectParameter("vApeMaterno", vApeMaterno) :
+                new ObjectParameter("vApeMaterno", typeof(string));
+    
+            var vCorreoParameter = vCorreo != null ?
+                new ObjectParameter("vCorreo", vCorreo) :
+                new ObjectParameter("vCorreo", typeof(string));
+    
+            var vTel_cliParameter = vTel_cli != null ?
+                new ObjectParameter("vTel_cli", vTel_cli) :
+                new ObjectParameter("vTel_cli", typeof(string));
+    
+            var vDir_cliParameter = vDir_cli != null ?
+                new ObjectParameter("vDir_cli", vDir_cli) :
+                new ObjectParameter("vDir_cli", typeof(string));
+    
+            var vDni_cliParameter = vDni_cli != null ?
+                new ObjectParameter("vDni_cli", vDni_cli) :
+                new ObjectParameter("vDni_cli", typeof(string));
+    
+            var vSexoParameter = vSexo != null ?
+                new ObjectParameter("vSexo", vSexo) :
+                new ObjectParameter("vSexo", typeof(string));
+    
+            var vFec_nacParameter = vFec_nac.HasValue ?
+                new ObjectParameter("vFec_nac", vFec_nac) :
+                new ObjectParameter("vFec_nac", typeof(System.DateTime));
+    
+            var vEst_cliParameter = vEst_cli.HasValue ?
+                new ObjectParameter("vEst_cli", vEst_cli) :
+                new ObjectParameter("vEst_cli", typeof(int));
+    
+            var vId_UbigeoParameter = vId_Ubigeo != null ?
+                new ObjectParameter("vId_Ubigeo", vId_Ubigeo) :
+                new ObjectParameter("vId_Ubigeo", typeof(string));
+    
+            var vUsu_RegistroParameter = vUsu_Registro != null ?
+                new ObjectParameter("vUsu_Registro", vUsu_Registro) :
+                new ObjectParameter("vUsu_Registro", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("usp_InsertarCliente_TEST", vNombresParameter, vApePaternoParameter, vApeMaternoParameter, vCorreoParameter, vTel_cliParameter, vDir_cliParameter, vDni_cliParameter, vSexoParameter, vFec_nacParameter, vEst_cliParameter, vId_UbigeoParameter, vUsu_RegistroParameter);
+        }
     }
 }

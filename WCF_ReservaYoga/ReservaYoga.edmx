@@ -62,6 +62,7 @@
           <Property Name="Usu_reg" Type="varchar" MaxLength="20" />
           <Property Name="Usu_Ult_Mod" Type="varchar" MaxLength="20" />
           <Property Name="Fec_Ult_Mod" Type="datetime" />
+          <Property Name="Comentario" Type="varchar" MaxLength="300" />
         </EntityType>
         <EntityType Name="Tb_Detalle_Reserva">
           <Key>
@@ -314,6 +315,10 @@
           <Parameter Name="vId_Ubigeo" Type="nchar" Mode="In" />
           <Parameter Name="vUsu_Ult_Mod" Type="varchar" Mode="In" />
         </Function>
+        <Function Name="usp_ActualizarClienteEstado" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="vcod" Type="int" Mode="In" />
+          <Parameter Name="vcoment" Type="varchar" Mode="In" />
+        </Function>
         <Function Name="usp_ActualizarDisciplina" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="vCod" Type="nchar" Mode="In" />
           <Parameter Name="vNombre" Type="varchar" Mode="In" />
@@ -376,6 +381,20 @@
           <Parameter Name="vDni_cli" Type="nchar" Mode="In" />
           <Parameter Name="vSexo" Type="nchar" Mode="In" />
           <Parameter Name="vFec_nac" Type="date" Mode="In" />
+          <Parameter Name="vEst_cli" Type="int" Mode="In" />
+          <Parameter Name="vId_Ubigeo" Type="nchar" Mode="In" />
+          <Parameter Name="vUsu_Registro" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="usp_InsertarCliente_TEST" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="vNombres" Type="varchar" Mode="In" />
+          <Parameter Name="vApePaterno" Type="varchar" Mode="In" />
+          <Parameter Name="vApeMaterno" Type="varchar" Mode="In" />
+          <Parameter Name="vCorreo" Type="varchar" Mode="In" />
+          <Parameter Name="vTel_cli" Type="nvarchar" Mode="In" />
+          <Parameter Name="vDir_cli" Type="nvarchar" Mode="In" />
+          <Parameter Name="vDni_cli" Type="nchar" Mode="In" />
+          <Parameter Name="vSexo" Type="nchar" Mode="In" />
+          <Parameter Name="vFec_nac" Type="datetime" Mode="In" />
           <Parameter Name="vEst_cli" Type="int" Mode="In" />
           <Parameter Name="vId_Ubigeo" Type="nchar" Mode="In" />
           <Parameter Name="vUsu_Registro" Type="varchar" Mode="In" />
@@ -537,6 +556,7 @@
           <Property Name="Fec_Ult_Mod" Type="DateTime" Precision="3" />
           <NavigationProperty Name="Tb_Reserva" Relationship="Self.FKCliente" FromRole="Tb_Cliente" ToRole="Tb_Reserva" />
           <NavigationProperty Name="Tb_Ubigeo" Relationship="Self.FKUbigeo" FromRole="Tb_Cliente" ToRole="Tb_Ubigeo" />
+          <Property Name="Comentario" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="Tb_Disciplina">
           <Key>
@@ -923,6 +943,24 @@
             <Parameter Name="vEstado" Mode="In" Type="Int32" />
             <Parameter Name="vDescripcion" Mode="In" Type="String" />
           </FunctionImport>
+          <FunctionImport Name="usp_ActualizarClienteEstado">
+            <Parameter Name="vcod" Mode="In" Type="Int32" />
+            <Parameter Name="vcoment" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="usp_InsertarCliente_TEST">
+            <Parameter Name="vNombres" Mode="In" Type="String" />
+            <Parameter Name="vApePaterno" Mode="In" Type="String" />
+            <Parameter Name="vApeMaterno" Mode="In" Type="String" />
+            <Parameter Name="vCorreo" Mode="In" Type="String" />
+            <Parameter Name="vTel_cli" Mode="In" Type="String" />
+            <Parameter Name="vDir_cli" Mode="In" Type="String" />
+            <Parameter Name="vDni_cli" Mode="In" Type="String" />
+            <Parameter Name="vSexo" Mode="In" Type="String" />
+            <Parameter Name="vFec_nac" Mode="In" Type="DateTime" />
+            <Parameter Name="vEst_cli" Mode="In" Type="Int32" />
+            <Parameter Name="vId_Ubigeo" Mode="In" Type="String" />
+            <Parameter Name="vUsu_Registro" Mode="In" Type="String" />
+          </FunctionImport>
         </EntityContainer>
         <ComplexType Name="usp_ListarCliente_Result">
           <Property Type="Int32" Name="Id_Cliente" Nullable="false" />
@@ -1017,6 +1055,7 @@
           <EntitySetMapping Name="Tb_Cliente">
             <EntityTypeMapping TypeName="ReservaYogaModel.Tb_Cliente">
               <MappingFragment StoreEntitySet="Tb_Cliente">
+                <ScalarProperty Name="Comentario" ColumnName="Comentario" />
                 <ScalarProperty Name="Id_Cliente" ColumnName="Id_Cliente" />
                 <ScalarProperty Name="Nombres" ColumnName="Nombres" />
                 <ScalarProperty Name="ApePaterno" ColumnName="ApePaterno" />
@@ -1223,6 +1262,8 @@
           <FunctionImportMapping FunctionImportName="usp_ActualizarClaseProgramada_TEST" FunctionName="ReservaYogaModel.Store.usp_ActualizarClaseProgramada_TEST" />
           <FunctionImportMapping FunctionImportName="usp_InsertarSalon" FunctionName="ReservaYogaModel.Store.usp_InsertarSalon" />
           <FunctionImportMapping FunctionImportName="usp_ActualizarSalon" FunctionName="ReservaYogaModel.Store.usp_ActualizarSalon" />
+          <FunctionImportMapping FunctionImportName="usp_ActualizarClienteEstado" FunctionName="ReservaYogaModel.Store.usp_ActualizarClienteEstado" />
+          <FunctionImportMapping FunctionImportName="usp_InsertarCliente_TEST" FunctionName="ReservaYogaModel.Store.usp_InsertarCliente_TEST" />
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

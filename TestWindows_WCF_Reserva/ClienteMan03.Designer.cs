@@ -188,6 +188,7 @@
             // 
             // txtId
             // 
+            txtId.Enabled = false;
             txtId.Location = new Point(128, 41);
             txtId.Name = "txtId";
             txtId.Size = new Size(103, 23);
@@ -317,6 +318,7 @@
             // 
             // txtApeMaterno
             // 
+            txtApeMaterno.Enabled = false;
             txtApeMaterno.Location = new Point(128, 167);
             txtApeMaterno.Name = "txtApeMaterno";
             txtApeMaterno.Size = new Size(227, 23);
@@ -333,6 +335,7 @@
             // 
             // txtApePaterno
             // 
+            txtApePaterno.Enabled = false;
             txtApePaterno.Location = new Point(128, 124);
             txtApePaterno.Name = "txtApePaterno";
             txtApePaterno.Size = new Size(227, 23);
@@ -349,6 +352,7 @@
             // 
             // txtNombres
             // 
+            txtNombres.Enabled = false;
             txtNombres.Location = new Point(128, 82);
             txtNombres.Name = "txtNombres";
             txtNombres.Size = new Size(227, 23);

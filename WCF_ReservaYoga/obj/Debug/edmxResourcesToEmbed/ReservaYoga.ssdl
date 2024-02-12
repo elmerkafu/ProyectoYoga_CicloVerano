@@ -57,6 +57,7 @@
     <Property Name="Usu_reg" Type="varchar" MaxLength="20" />
     <Property Name="Usu_Ult_Mod" Type="varchar" MaxLength="20" />
     <Property Name="Fec_Ult_Mod" Type="datetime" />
+    <Property Name="Comentario" Type="varchar" MaxLength="300" />
   </EntityType>
   <EntityType Name="Tb_Detalle_Reserva">
     <Key>
@@ -309,6 +310,10 @@
     <Parameter Name="vId_Ubigeo" Type="nchar" Mode="In" />
     <Parameter Name="vUsu_Ult_Mod" Type="varchar" Mode="In" />
   </Function>
+  <Function Name="usp_ActualizarClienteEstado" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="vcod" Type="int" Mode="In" />
+    <Parameter Name="vcoment" Type="varchar" Mode="In" />
+  </Function>
   <Function Name="usp_ActualizarDisciplina" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="vCod" Type="nchar" Mode="In" />
     <Parameter Name="vNombre" Type="varchar" Mode="In" />
@@ -371,6 +376,20 @@
     <Parameter Name="vDni_cli" Type="nchar" Mode="In" />
     <Parameter Name="vSexo" Type="nchar" Mode="In" />
     <Parameter Name="vFec_nac" Type="date" Mode="In" />
+    <Parameter Name="vEst_cli" Type="int" Mode="In" />
+    <Parameter Name="vId_Ubigeo" Type="nchar" Mode="In" />
+    <Parameter Name="vUsu_Registro" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="usp_InsertarCliente_TEST" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="vNombres" Type="varchar" Mode="In" />
+    <Parameter Name="vApePaterno" Type="varchar" Mode="In" />
+    <Parameter Name="vApeMaterno" Type="varchar" Mode="In" />
+    <Parameter Name="vCorreo" Type="varchar" Mode="In" />
+    <Parameter Name="vTel_cli" Type="nvarchar" Mode="In" />
+    <Parameter Name="vDir_cli" Type="nvarchar" Mode="In" />
+    <Parameter Name="vDni_cli" Type="nchar" Mode="In" />
+    <Parameter Name="vSexo" Type="nchar" Mode="In" />
+    <Parameter Name="vFec_nac" Type="datetime" Mode="In" />
     <Parameter Name="vEst_cli" Type="int" Mode="In" />
     <Parameter Name="vId_Ubigeo" Type="nchar" Mode="In" />
     <Parameter Name="vUsu_Registro" Type="varchar" Mode="In" />

@@ -99,3 +99,32 @@ C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\ProyectoYoga_CicloVerano\
 C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\ProyectoYoga_CicloVerano\WCF_ReservaYoga\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\ProyectoYoga_CicloVerano\WCF_ReservaYoga\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\Lita\Documents\ElmerPaucarpura\Proyecto_Final\ProyectoYoga_CicloVerano\WCF_ReservaYoga\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga_Clon\WCF_ReservaYoga\bin\Debug\WCF_ReservaYoga.dll.config
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga_Clon\WCF_ReservaYoga\bin\Debug\WCF_ReservaYoga.dll
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga_Clon\WCF_ReservaYoga\bin\Debug\WCF_ReservaYoga.pdb
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga_Clon\WCF_ReservaYoga\bin\Debug\EntityFramework.dll
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga_Clon\WCF_ReservaYoga\bin\Debug\EntityFramework.SqlServer.dll
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga_Clon\WCF_ReservaYoga\bin\Debug\Newtonsoft.Json.Bson.dll
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga_Clon\WCF_ReservaYoga\bin\Debug\Newtonsoft.Json.dll
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga_Clon\WCF_ReservaYoga\bin\Debug\System.Buffers.dll
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga_Clon\WCF_ReservaYoga\bin\Debug\System.Memory.dll
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga_Clon\WCF_ReservaYoga\bin\Debug\System.Net.Http.Formatting.dll
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga_Clon\WCF_ReservaYoga\bin\Debug\System.Numerics.Vectors.dll
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga_Clon\WCF_ReservaYoga\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga_Clon\WCF_ReservaYoga\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga_Clon\WCF_ReservaYoga\bin\Debug\EntityFramework.xml
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga_Clon\WCF_ReservaYoga\bin\Debug\EntityFramework.SqlServer.xml
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga_Clon\WCF_ReservaYoga\bin\Debug\Newtonsoft.Json.xml
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga_Clon\WCF_ReservaYoga\bin\Debug\Newtonsoft.Json.Bson.pdb
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga_Clon\WCF_ReservaYoga\bin\Debug\Newtonsoft.Json.Bson.xml
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga_Clon\WCF_ReservaYoga\bin\Debug\System.Buffers.xml
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga_Clon\WCF_ReservaYoga\bin\Debug\System.Memory.xml
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga_Clon\WCF_ReservaYoga\bin\Debug\System.Net.Http.Formatting.xml
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga_Clon\WCF_ReservaYoga\bin\Debug\System.Numerics.Vectors.xml
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga_Clon\WCF_ReservaYoga\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga_Clon\WCF_ReservaYoga\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga_Clon\WCF_ReservaYoga\obj\Debug\WCF_ReservaYoga.csproj.AssemblyReference.cache
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga_Clon\WCF_ReservaYoga\obj\Debug\WCF_ReservaYoga.csproj.CoreCompileInputs.cache
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga_Clon\WCF_ReservaYoga\obj\Debug\WCF_ReservaYoga.csproj.CopyComplete
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga_Clon\WCF_ReservaYoga\obj\Debug\WCF_ReservaYoga.dll
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga_Clon\WCF_ReservaYoga\obj\Debug\WCF_ReservaYoga.pdb

@@ -11,7 +11,8 @@ namespace TestWindows_WCF_Reserva
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new InstructorMan02());
+            Application.Run(new ClienteMan01());
         }
     }
 }
+
