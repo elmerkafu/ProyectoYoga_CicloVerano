@@ -21,8 +21,7 @@ namespace TestWindows_WCF_Reserva
 
         public void CargarDatos()
         {
-
-            dtgInstructor.DataSource = objServiceInstructor.ListarInstructor();
+            dtgInstructor.DataSource = objServiceInstructor.ListarInstructorEstado();
             lblRegistros.Text = dtgInstructor.Rows.Count.ToString();
         }
 
@@ -97,9 +96,11 @@ namespace TestWindows_WCF_Reserva
 
                     if (result == DialogResult.Yes)
                     {
+                        Comentario02 Comentario02 = new Comentario02();
+                        String strId = dtgInstructor.CurrentRow.Cells[0].Value.ToString();
+                        Comentario02.strId = strId;
+                        Comentario02.ShowDialog();
 
-                        string idInstructor = dtgInstructor.SelectedRows[0].Cells["Id_Instructor"].Value.ToString();
-                        objServiceInstructor.EliminarInstructor(idInstructor);
                         CargarDatos();
                     }
 

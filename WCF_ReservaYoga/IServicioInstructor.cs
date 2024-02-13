@@ -28,6 +28,12 @@ namespace WCF_ReservaYoga
 
         [OperationContract]
         List<InstructorDC> ListarNombreInstructor();
+
+        [OperationContract]
+        Boolean UpdateInstructorEstado(InstructorDC objInstructorDC);
+
+        [OperationContract]
+        List<InstructorDC> ListarInstructorEstado();
     }
     [DataContract]
     [Serializable]
@@ -42,6 +48,8 @@ namespace WCF_ReservaYoga
         public String ApePaterno { get; set; }
         [DataMember]
         public String ApeMaterno { get; set; }
+        [DataMember]
+        public string NombreCompleto { get; set; }  
         [DataMember]
         public String Correo { get; set; }
         [DataMember]
@@ -79,5 +87,8 @@ namespace WCF_ReservaYoga
 
         [DataMember]
         public String NombreInstructor { get; set; }
+
+        [DataMember]
+        public String Comentario { get; set; }
     }
 }

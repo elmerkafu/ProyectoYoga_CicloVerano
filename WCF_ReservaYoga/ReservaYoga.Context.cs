@@ -604,5 +604,18 @@ namespace WCF_ReservaYoga
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("usp_InsertarCliente_TEST", vNombresParameter, vApePaternoParameter, vApeMaternoParameter, vCorreoParameter, vTel_cliParameter, vDir_cliParameter, vDni_cliParameter, vSexoParameter, vFec_nacParameter, vEst_cliParameter, vId_UbigeoParameter, vUsu_RegistroParameter);
         }
+    
+        public virtual int usp_ActualizarInstructorEstado(string vcod, string vcoment)
+        {
+            var vcodParameter = vcod != null ?
+                new ObjectParameter("vcod", vcod) :
+                new ObjectParameter("vcod", typeof(string));
+    
+            var vcomentParameter = vcoment != null ?
+                new ObjectParameter("vcoment", vcoment) :
+                new ObjectParameter("vcoment", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("usp_ActualizarInstructorEstado", vcodParameter, vcomentParameter);
+        }
     }
 }

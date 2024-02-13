@@ -36,6 +36,7 @@ namespace WCF_ReservaYoga
         public string Usu_reg { get; set; }
         public string Usu_Ult_Mod { get; set; }
         public Nullable<System.DateTime> Fec_Ult_Mod { get; set; }
+        public string Comentario { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Tb_Instructor_Disciplina> Tb_Instructor_Disciplina { get; set; }

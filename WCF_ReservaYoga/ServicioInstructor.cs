@@ -77,6 +77,26 @@ namespace WCF_ReservaYoga
 
         }
 
+        public Boolean UpdateInstructorEstado(InstructorDC objInstructorDC)
+        {
+            try
+            {
+                ReservaYogaEntities MisReservas = new ReservaYogaEntities();
+                MisReservas.usp_ActualizarInstructorEstado(
+                    objInstructorDC.Id_Instructor,
+                    objInstructorDC.Comentario
+                    );
+
+                MisReservas.SaveChanges();
+                return true;
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception(ex.Message);
+            }
+        }
+
         public Boolean EliminarInstructor(String strCodigo)
         {
             try
@@ -165,7 +185,6 @@ namespace WCF_ReservaYoga
                     objInstructorDC.Dir_inst = objInstructor.Dir_inst;
                     objInstructorDC.Fec_nac = Convert.ToDateTime(objInstructor.Fec_nac);
                     objInstructorDC.Id_Ubigeo = objInstructor.Id_Ubigeo;
-
                     objInstructorDC.Departamento = objInstructor.Tb_Ubigeo.Departamento;
                     objInstructorDC.Provincia = objInstructor.Tb_Ubigeo.Provincia;
                     objInstructorDC.Distrito = objInstructor.Tb_Ubigeo.Distrito;
@@ -199,6 +218,55 @@ namespace WCF_ReservaYoga
                 throw new Exception(ex.Message);
             }
 
+        }
+
+        public List<InstructorDC> ListarInstructorEstado()
+        {
+            try
+            {
+                ReservaYogaEntities MisReservas = new ReservaYogaEntities();
+
+                List<InstructorDC> objListaInstructorDC = new List<InstructorDC>();
+
+                var query = (from miInstructor in MisReservas.Tb_Instructor
+                             join objUbi in MisReservas.Tb_Ubigeo on miInstructor.Id_Ubigeo equals objUbi.Id_Ubigeo
+                             where miInstructor.Est_ins == 1                            
+                             select miInstructor).ToList();
+
+                foreach (var objInstructor in query)
+                {
+                    InstructorDC objInstructorDC = new InstructorDC();
+
+                    // Cambio 6 Estado
+
+                    objInstructorDC.Est_ins = Convert.ToInt16(objInstructor.Est_ins);                   
+                    objInstructorDC.EstadoInst = "Activo";
+                    objInstructorDC.Id_Instructor = objInstructor.Id_Instructor;
+                    objInstructorDC.NombreCompleto = objInstructor.ApePaterno + ' ' + objInstructor.ApeMaterno + " " + objInstructor.Nombre;
+                    objInstructorDC.Correo = objInstructor.Correo;
+                    objInstructorDC.Tel_inst = objInstructor.Tel_inst;
+                    objInstructorDC.Dni_inst = objInstructor.Dni_inst;
+                    objInstructorDC.Dir_inst = objInstructor.Dir_inst;
+                    objInstructorDC.Fec_nac = Convert.ToDateTime(objInstructor.Fec_nac);
+                    objInstructorDC.Id_Ubigeo = objInstructor.Id_Ubigeo;
+                    objInstructorDC.Departamento = objInstructor.Tb_Ubigeo.Departamento;
+                    objInstructorDC.Provincia = objInstructor.Tb_Ubigeo.Provincia;
+                    objInstructorDC.Distrito = objInstructor.Tb_Ubigeo.Distrito;
+                    objInstructorDC.Fec_reg = Convert.ToDateTime(objInstructor.Fec_reg);
+                    objInstructorDC.Usu_reg = objInstructor.Usu_reg;
+                    objInstructorDC.Usu_Ult_Mod = objInstructor.Usu_Ult_Mod;
+                    objInstructorDC.Fec_Ult_Mod = Convert.ToDateTime(objInstructor.Fec_Ult_Mod);
+
+                    objListaInstructorDC.Add(objInstructorDC);
+
+                }
+                return objListaInstructorDC;
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception(ex.Message);
+            }
         }
 
         public List<InstructorDC> ListarNombreInstructor()

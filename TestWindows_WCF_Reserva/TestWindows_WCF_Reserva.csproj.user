@@ -22,6 +22,9 @@
     <Compile Update="Comentario.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Comentario02.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="DisciplinaMan01.cs">
       <SubType>Form</SubType>
     </Compile>

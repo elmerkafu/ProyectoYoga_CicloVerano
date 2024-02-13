@@ -103,6 +103,7 @@
           <Property Name="Usu_reg" Type="varchar" MaxLength="20" />
           <Property Name="Usu_Ult_Mod" Type="varchar" MaxLength="20" />
           <Property Name="Fec_Ult_Mod" Type="datetime" />
+          <Property Name="Comentario" Type="varchar" MaxLength="300" />
         </EntityType>
         <EntityType Name="Tb_Instructor_Disciplina">
           <Key>
@@ -340,6 +341,10 @@
           <Parameter Name="vUbigeo" Type="nchar" Mode="In" />
           <Parameter Name="vUsu_Ult_Mod" Type="varchar" Mode="In" />
           <Parameter Name="vEst_ins" Type="int" Mode="In" />
+        </Function>
+        <Function Name="usp_ActualizarInstructorEstado" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="vcod" Type="nchar" Mode="In" />
+          <Parameter Name="vcoment" Type="varchar" Mode="In" />
         </Function>
         <Function Name="usp_ActualizarSalon" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="vCod" Type="int" Mode="In" />
@@ -593,6 +598,7 @@
           <Property Name="Fec_Ult_Mod" Type="DateTime" Precision="3" />
           <NavigationProperty Name="Tb_Instructor_Disciplina" Relationship="Self.FKInstructor" FromRole="Tb_Instructor" ToRole="Tb_Instructor_Disciplina" />
           <NavigationProperty Name="Tb_Ubigeo" Relationship="Self.FKUbig" FromRole="Tb_Instructor" ToRole="Tb_Ubigeo" />
+          <Property Name="Comentario" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="Tb_Instructor_Disciplina">
           <Key>
@@ -961,6 +967,10 @@
             <Parameter Name="vId_Ubigeo" Mode="In" Type="String" />
             <Parameter Name="vUsu_Registro" Mode="In" Type="String" />
           </FunctionImport>
+          <FunctionImport Name="usp_ActualizarInstructorEstado">
+            <Parameter Name="vcod" Mode="In" Type="String" />
+            <Parameter Name="vcoment" Mode="In" Type="String" />
+          </FunctionImport>
         </EntityContainer>
         <ComplexType Name="usp_ListarCliente_Result">
           <Property Type="Int32" Name="Id_Cliente" Nullable="false" />
@@ -1091,6 +1101,7 @@
           <EntitySetMapping Name="Tb_Instructor">
             <EntityTypeMapping TypeName="ReservaYogaModel.Tb_Instructor">
               <MappingFragment StoreEntitySet="Tb_Instructor">
+                <ScalarProperty Name="Comentario" ColumnName="Comentario" />
                 <ScalarProperty Name="Id_Instructor" ColumnName="Id_Instructor" />
                 <ScalarProperty Name="Nombre" ColumnName="Nombre" />
                 <ScalarProperty Name="ApePaterno" ColumnName="ApePaterno" />
@@ -1264,6 +1275,7 @@
           <FunctionImportMapping FunctionImportName="usp_ActualizarSalon" FunctionName="ReservaYogaModel.Store.usp_ActualizarSalon" />
           <FunctionImportMapping FunctionImportName="usp_ActualizarClienteEstado" FunctionName="ReservaYogaModel.Store.usp_ActualizarClienteEstado" />
           <FunctionImportMapping FunctionImportName="usp_InsertarCliente_TEST" FunctionName="ReservaYogaModel.Store.usp_InsertarCliente_TEST" />
+          <FunctionImportMapping FunctionImportName="usp_ActualizarInstructorEstado" FunctionName="ReservaYogaModel.Store.usp_ActualizarInstructorEstado" />
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

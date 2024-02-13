@@ -29,24 +29,22 @@
         private void InitializeComponent()
         {
             dtgInstructor = new DataGridView();
+            Id_Instructor = new DataGridViewTextBoxColumn();
+            NombreCompleto = new DataGridViewTextBoxColumn();
+            Correo = new DataGridViewTextBoxColumn();
+            Tel_inst = new DataGridViewTextBoxColumn();
+            Dni_inst = new DataGridViewTextBoxColumn();
+            Dir_inst = new DataGridViewTextBoxColumn();
+            Departamento = new DataGridViewTextBoxColumn();
+            Provincia = new DataGridViewTextBoxColumn();
+            Distrito = new DataGridViewTextBoxColumn();
+            EstadoInst = new DataGridViewTextBoxColumn();
             btnSalir = new Button();
             btnActualizar = new Button();
             btnInsertar = new Button();
             lblRegistros = new Label();
             label1 = new Label();
             btnEliminar = new Button();
-            Id_Instructor = new DataGridViewTextBoxColumn();
-            Nombre = new DataGridViewTextBoxColumn();
-            ApePaterno = new DataGridViewTextBoxColumn();
-            ApeMaterno = new DataGridViewTextBoxColumn();
-            Correo = new DataGridViewTextBoxColumn();
-            Tel_inst = new DataGridViewTextBoxColumn();
-            Dni_inst = new DataGridViewTextBoxColumn();
-            Departamento = new DataGridViewTextBoxColumn();
-            Provincia = new DataGridViewTextBoxColumn();
-            Distrito = new DataGridViewTextBoxColumn();
-            Dir_inst = new DataGridViewTextBoxColumn();
-            EstadoInst = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)dtgInstructor).BeginInit();
             SuspendLayout();
             // 
@@ -54,13 +52,15 @@
             // 
             dtgInstructor.AllowUserToAddRows = false;
             dtgInstructor.AllowUserToDeleteRows = false;
+            dtgInstructor.AllowUserToResizeRows = false;
             dtgInstructor.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             dtgInstructor.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dtgInstructor.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dtgInstructor.Columns.AddRange(new DataGridViewColumn[] { Id_Instructor, Nombre, ApePaterno, ApeMaterno, Correo, Tel_inst, Dni_inst, Departamento, Provincia, Distrito, Dir_inst, EstadoInst });
+            dtgInstructor.Columns.AddRange(new DataGridViewColumn[] { Id_Instructor, NombreCompleto, Correo, Tel_inst, Dni_inst, Dir_inst, Departamento, Provincia, Distrito, EstadoInst });
             dtgInstructor.Location = new Point(12, 12);
             dtgInstructor.Margin = new Padding(2, 1, 2, 1);
             dtgInstructor.Name = "dtgInstructor";
+            dtgInstructor.ReadOnly = true;
             dtgInstructor.RowHeadersVisible = false;
             dtgInstructor.RowHeadersWidth = 82;
             dtgInstructor.RowTemplate.Height = 41;
@@ -68,6 +68,92 @@
             dtgInstructor.Size = new Size(1065, 459);
             dtgInstructor.TabIndex = 0;
             dtgInstructor.DoubleClick += dtgInstructor_DoubleClick;
+            // 
+            // Id_Instructor
+            // 
+            Id_Instructor.DataPropertyName = "Id_Instructor";
+            Id_Instructor.FillWeight = 42.30118F;
+            Id_Instructor.HeaderText = "Codigo";
+            Id_Instructor.MinimumWidth = 10;
+            Id_Instructor.Name = "Id_Instructor";
+            Id_Instructor.ReadOnly = true;
+            // 
+            // NombreCompleto
+            // 
+            NombreCompleto.DataPropertyName = "NombreCompleto";
+            NombreCompleto.HeaderText = "Nombre de Instructor";
+            NombreCompleto.MinimumWidth = 4;
+            NombreCompleto.Name = "NombreCompleto";
+            NombreCompleto.ReadOnly = true;
+            // 
+            // Correo
+            // 
+            Correo.DataPropertyName = "Correo";
+            Correo.FillWeight = 42.30118F;
+            Correo.HeaderText = "Correo";
+            Correo.MinimumWidth = 10;
+            Correo.Name = "Correo";
+            Correo.ReadOnly = true;
+            // 
+            // Tel_inst
+            // 
+            Tel_inst.DataPropertyName = "Tel_inst";
+            Tel_inst.FillWeight = 42.30118F;
+            Tel_inst.HeaderText = "Telefono";
+            Tel_inst.MinimumWidth = 10;
+            Tel_inst.Name = "Tel_inst";
+            Tel_inst.ReadOnly = true;
+            // 
+            // Dni_inst
+            // 
+            Dni_inst.DataPropertyName = "Dni_inst";
+            Dni_inst.FillWeight = 42.30118F;
+            Dni_inst.HeaderText = "DNI";
+            Dni_inst.MinimumWidth = 10;
+            Dni_inst.Name = "Dni_inst";
+            Dni_inst.ReadOnly = true;
+            // 
+            // Dir_inst
+            // 
+            Dir_inst.DataPropertyName = "Dir_inst";
+            Dir_inst.FillWeight = 42.30118F;
+            Dir_inst.HeaderText = "Direccion";
+            Dir_inst.MinimumWidth = 10;
+            Dir_inst.Name = "Dir_inst";
+            Dir_inst.ReadOnly = true;
+            // 
+            // Departamento
+            // 
+            Departamento.DataPropertyName = "Departamento";
+            Departamento.FillWeight = 42.30118F;
+            Departamento.HeaderText = "Departamento";
+            Departamento.Name = "Departamento";
+            Departamento.ReadOnly = true;
+            // 
+            // Provincia
+            // 
+            Provincia.DataPropertyName = "Provincia";
+            Provincia.FillWeight = 42.30118F;
+            Provincia.HeaderText = "Provincia";
+            Provincia.Name = "Provincia";
+            Provincia.ReadOnly = true;
+            // 
+            // Distrito
+            // 
+            Distrito.DataPropertyName = "Distrito";
+            Distrito.FillWeight = 42.30118F;
+            Distrito.HeaderText = "Distrito";
+            Distrito.Name = "Distrito";
+            Distrito.ReadOnly = true;
+            // 
+            // EstadoInst
+            // 
+            EstadoInst.DataPropertyName = "EstadoInst";
+            EstadoInst.FillWeight = 42.30118F;
+            EstadoInst.HeaderText = "Estado";
+            EstadoInst.MinimumWidth = 10;
+            EstadoInst.Name = "EstadoInst";
+            EstadoInst.ReadOnly = true;
             // 
             // btnSalir
             // 
@@ -136,87 +222,6 @@
             btnEliminar.UseVisualStyleBackColor = true;
             btnEliminar.Click += btnEliminar_Click;
             // 
-            // Id_Instructor
-            // 
-            Id_Instructor.DataPropertyName = "Id_Instructor";
-            Id_Instructor.HeaderText = "Codigo";
-            Id_Instructor.MinimumWidth = 10;
-            Id_Instructor.Name = "Id_Instructor";
-            // 
-            // Nombre
-            // 
-            Nombre.DataPropertyName = "Nombre";
-            Nombre.HeaderText = "Nombre";
-            Nombre.MinimumWidth = 10;
-            Nombre.Name = "Nombre";
-            // 
-            // ApePaterno
-            // 
-            ApePaterno.DataPropertyName = "ApePaterno";
-            ApePaterno.HeaderText = "Apellido Paterno";
-            ApePaterno.MinimumWidth = 10;
-            ApePaterno.Name = "ApePaterno";
-            // 
-            // ApeMaterno
-            // 
-            ApeMaterno.DataPropertyName = "ApeMaterno";
-            ApeMaterno.HeaderText = "Apellido Materno";
-            ApeMaterno.MinimumWidth = 10;
-            ApeMaterno.Name = "ApeMaterno";
-            // 
-            // Correo
-            // 
-            Correo.DataPropertyName = "Correo";
-            Correo.HeaderText = "Correo";
-            Correo.MinimumWidth = 10;
-            Correo.Name = "Correo";
-            // 
-            // Tel_inst
-            // 
-            Tel_inst.DataPropertyName = "Tel_inst";
-            Tel_inst.HeaderText = "Telefono";
-            Tel_inst.MinimumWidth = 10;
-            Tel_inst.Name = "Tel_inst";
-            // 
-            // Dni_inst
-            // 
-            Dni_inst.DataPropertyName = "Dni_inst";
-            Dni_inst.HeaderText = "DNI";
-            Dni_inst.MinimumWidth = 10;
-            Dni_inst.Name = "Dni_inst";
-            // 
-            // Departamento
-            // 
-            Departamento.DataPropertyName = "Departamento";
-            Departamento.HeaderText = "Departamento";
-            Departamento.Name = "Departamento";
-            // 
-            // Provincia
-            // 
-            Provincia.DataPropertyName = "Provincia";
-            Provincia.HeaderText = "Provincia";
-            Provincia.Name = "Provincia";
-            // 
-            // Distrito
-            // 
-            Distrito.DataPropertyName = "Distrito";
-            Distrito.HeaderText = "Distrito";
-            Distrito.Name = "Distrito";
-            // 
-            // Dir_inst
-            // 
-            Dir_inst.DataPropertyName = "Dir_inst";
-            Dir_inst.HeaderText = "Direccion";
-            Dir_inst.MinimumWidth = 10;
-            Dir_inst.Name = "Dir_inst";
-            // 
-            // EstadoInst
-            // 
-            EstadoInst.DataPropertyName = "EstadoInst";
-            EstadoInst.HeaderText = "Estado";
-            EstadoInst.MinimumWidth = 10;
-            EstadoInst.Name = "EstadoInst";
-            // 
             // InstructorMan01
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -252,16 +257,14 @@
         private Label label1;
         private Button btnEliminar;
         private DataGridViewTextBoxColumn Id_Instructor;
-        private DataGridViewTextBoxColumn Nombre;
-        private DataGridViewTextBoxColumn ApePaterno;
-        private DataGridViewTextBoxColumn ApeMaterno;
+        private DataGridViewTextBoxColumn NombreCompleto;
         private DataGridViewTextBoxColumn Correo;
         private DataGridViewTextBoxColumn Tel_inst;
         private DataGridViewTextBoxColumn Dni_inst;
+        private DataGridViewTextBoxColumn Dir_inst;
         private DataGridViewTextBoxColumn Departamento;
         private DataGridViewTextBoxColumn Provincia;
         private DataGridViewTextBoxColumn Distrito;
-        private DataGridViewTextBoxColumn Dir_inst;
         private DataGridViewTextBoxColumn EstadoInst;
     }
 }

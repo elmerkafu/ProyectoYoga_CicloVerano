@@ -688,3 +688,4 @@ D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga_Clon\Test
 D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga_Clon\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.pdb
 D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga_Clon\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.genruntimeconfig.cache
 D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga_Clon\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\ref\TestWindows_WCF_Reserva.dll
+D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga_Clon\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.Comentario02.resources

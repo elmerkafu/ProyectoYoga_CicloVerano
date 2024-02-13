@@ -22,6 +22,8 @@ namespace ProxyInstructor
         
         private string ApePaternoField;
         
+        private string ComentarioField;
+        
         private string CorreoField;
         
         private string DepartamentoField;
@@ -49,6 +51,8 @@ namespace ProxyInstructor
         private string Id_UbigeoField;
         
         private string NombreField;
+        
+        private string NombreCompletoField;
         
         private string NombreInstructorField;
         
@@ -83,6 +87,19 @@ namespace ProxyInstructor
             set
             {
                 this.ApePaternoField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Comentario
+        {
+            get
+            {
+                return this.ComentarioField;
+            }
+            set
+            {
+                this.ComentarioField = value;
             }
         }
         
@@ -269,6 +286,19 @@ namespace ProxyInstructor
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
+        public string NombreCompleto
+        {
+            get
+            {
+                return this.NombreCompletoField;
+            }
+            set
+            {
+                this.NombreCompletoField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
         public string NombreInstructor
         {
             get
@@ -374,6 +404,18 @@ namespace ProxyInstructor
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServicioInstructor/ListarNombreInstructor", ReplyAction="http://tempuri.org/IServicioInstructor/ListarNombreInstructorResponse")]
         System.Threading.Tasks.Task<System.Collections.Generic.List<ProxyInstructor.InstructorDC>> ListarNombreInstructorAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServicioInstructor/UpdateInstructorEstado", ReplyAction="http://tempuri.org/IServicioInstructor/UpdateInstructorEstadoResponse")]
+        bool UpdateInstructorEstado(ProxyInstructor.InstructorDC objInstructorDC);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServicioInstructor/UpdateInstructorEstado", ReplyAction="http://tempuri.org/IServicioInstructor/UpdateInstructorEstadoResponse")]
+        System.Threading.Tasks.Task<bool> UpdateInstructorEstadoAsync(ProxyInstructor.InstructorDC objInstructorDC);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServicioInstructor/ListarInstructorEstado", ReplyAction="http://tempuri.org/IServicioInstructor/ListarInstructorEstadoResponse")]
+        System.Collections.Generic.List<ProxyInstructor.InstructorDC> ListarInstructorEstado();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServicioInstructor/ListarInstructorEstado", ReplyAction="http://tempuri.org/IServicioInstructor/ListarInstructorEstadoResponse")]
+        System.Threading.Tasks.Task<System.Collections.Generic.List<ProxyInstructor.InstructorDC>> ListarInstructorEstadoAsync();
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
@@ -484,6 +526,26 @@ namespace ProxyInstructor
         public System.Threading.Tasks.Task<System.Collections.Generic.List<ProxyInstructor.InstructorDC>> ListarNombreInstructorAsync()
         {
             return base.Channel.ListarNombreInstructorAsync();
+        }
+        
+        public bool UpdateInstructorEstado(ProxyInstructor.InstructorDC objInstructorDC)
+        {
+            return base.Channel.UpdateInstructorEstado(objInstructorDC);
+        }
+        
+        public System.Threading.Tasks.Task<bool> UpdateInstructorEstadoAsync(ProxyInstructor.InstructorDC objInstructorDC)
+        {
+            return base.Channel.UpdateInstructorEstadoAsync(objInstructorDC);
+        }
+        
+        public System.Collections.Generic.List<ProxyInstructor.InstructorDC> ListarInstructorEstado()
+        {
+            return base.Channel.ListarInstructorEstado();
+        }
+        
+        public System.Threading.Tasks.Task<System.Collections.Generic.List<ProxyInstructor.InstructorDC>> ListarInstructorEstadoAsync()
+        {
+            return base.Channel.ListarInstructorEstadoAsync();
         }
         
         public virtual System.Threading.Tasks.Task OpenAsync()

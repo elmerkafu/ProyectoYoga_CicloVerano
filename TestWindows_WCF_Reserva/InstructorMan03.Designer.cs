@@ -245,6 +245,7 @@
             mskDNI.Location = new Point(145, 286);
             mskDNI.Mask = "00000000";
             mskDNI.Name = "mskDNI";
+            mskDNI.ReadOnly = true;
             mskDNI.Size = new Size(100, 23);
             mskDNI.TabIndex = 6;
             // 
@@ -294,6 +295,7 @@
             // 
             txtApeMaterno.Location = new Point(145, 132);
             txtApeMaterno.Name = "txtApeMaterno";
+            txtApeMaterno.ReadOnly = true;
             txtApeMaterno.Size = new Size(227, 23);
             txtApeMaterno.TabIndex = 3;
             // 
@@ -310,6 +312,7 @@
             // 
             txtApePaterno.Location = new Point(145, 96);
             txtApePaterno.Name = "txtApePaterno";
+            txtApePaterno.ReadOnly = true;
             txtApePaterno.Size = new Size(227, 23);
             txtApePaterno.TabIndex = 2;
             // 
@@ -326,6 +329,7 @@
             // 
             txtNombre.Location = new Point(145, 62);
             txtNombre.Name = "txtNombre";
+            txtNombre.ReadOnly = true;
             txtNombre.Size = new Size(227, 23);
             txtNombre.TabIndex = 1;
             // 

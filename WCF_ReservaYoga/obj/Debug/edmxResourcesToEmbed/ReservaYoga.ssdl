@@ -98,6 +98,7 @@
     <Property Name="Usu_reg" Type="varchar" MaxLength="20" />
     <Property Name="Usu_Ult_Mod" Type="varchar" MaxLength="20" />
     <Property Name="Fec_Ult_Mod" Type="datetime" />
+    <Property Name="Comentario" Type="varchar" MaxLength="300" />
   </EntityType>
   <EntityType Name="Tb_Instructor_Disciplina">
     <Key>
@@ -335,6 +336,10 @@
     <Parameter Name="vUbigeo" Type="nchar" Mode="In" />
     <Parameter Name="vUsu_Ult_Mod" Type="varchar" Mode="In" />
     <Parameter Name="vEst_ins" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_ActualizarInstructorEstado" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="vcod" Type="nchar" Mode="In" />
+    <Parameter Name="vcoment" Type="varchar" Mode="In" />
   </Function>
   <Function Name="usp_ActualizarSalon" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="vCod" Type="int" Mode="In" />

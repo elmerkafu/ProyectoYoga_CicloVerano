@@ -1,6 +1,6 @@
 ﻿namespace TestWindows_WCF_Reserva
 {
-    partial class Comentario
+    partial class Comentario02
     {
         /// <summary>
         /// Required designer variable.
@@ -28,34 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            txtComentario = new TextBox();
             btnGuardar = new Button();
             btnCancelar = new Button();
+            label1 = new Label();
+            txtComentario = new TextBox();
             SuspendLayout();
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(35, 25);
-            label1.Name = "label1";
-            label1.Size = new Size(129, 15);
-            label1.TabIndex = 0;
-            label1.Text = "Ingrese un comentario:";
-            // 
-            // txtComentario
-            // 
-            txtComentario.Location = new Point(35, 61);
-            txtComentario.Name = "txtComentario";
-            txtComentario.Size = new Size(382, 23);
-            txtComentario.TabIndex = 1;
             // 
             // btnGuardar
             // 
             btnGuardar.Location = new Point(112, 103);
             btnGuardar.Name = "btnGuardar";
             btnGuardar.Size = new Size(90, 24);
-            btnGuardar.TabIndex = 2;
+            btnGuardar.TabIndex = 0;
             btnGuardar.Text = "Guardar";
             btnGuardar.UseVisualStyleBackColor = true;
             btnGuardar.Click += btnGuardar_Click;
@@ -65,35 +49,51 @@
             btnCancelar.Location = new Point(247, 103);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(90, 24);
-            btnCancelar.TabIndex = 3;
+            btnCancelar.TabIndex = 1;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = true;
             btnCancelar.Click += btnCancelar_Click;
             // 
-            // Comentario
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(35, 25);
+            label1.Name = "label1";
+            label1.Size = new Size(129, 15);
+            label1.TabIndex = 2;
+            label1.Text = "Ingrese un comentario:";
+            // 
+            // txtComentario
+            // 
+            txtComentario.Location = new Point(35, 61);
+            txtComentario.Name = "txtComentario";
+            txtComentario.Size = new Size(382, 23);
+            txtComentario.TabIndex = 3;
+            // 
+            // Comentario02
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(450, 161);
-            Controls.Add(btnCancelar);
-            Controls.Add(btnGuardar);
             Controls.Add(txtComentario);
             Controls.Add(label1);
+            Controls.Add(btnCancelar);
+            Controls.Add(btnGuardar);
             MaximizeBox = false;
             MinimizeBox = false;
-            Name = "Comentario";
+            Name = "Comentario02";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Comentario";
-            Load += Comentario_Load;
+            Text = "Comentario02";
+            Load += Comentario02_Load;
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private Label label1;
-        private TextBox txtComentario;
         private Button btnGuardar;
         private Button btnCancelar;
+        private Label label1;
+        private TextBox txtComentario;
     }
 }

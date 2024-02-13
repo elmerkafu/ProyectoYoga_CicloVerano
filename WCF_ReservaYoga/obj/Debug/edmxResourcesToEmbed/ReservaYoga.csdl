@@ -100,6 +100,7 @@
     <Property Name="Fec_Ult_Mod" Type="DateTime" Precision="3" />
     <NavigationProperty Name="Tb_Instructor_Disciplina" Relationship="Self.FKInstructor" FromRole="Tb_Instructor" ToRole="Tb_Instructor_Disciplina" />
     <NavigationProperty Name="Tb_Ubigeo" Relationship="Self.FKUbig" FromRole="Tb_Instructor" ToRole="Tb_Ubigeo" />
+    <Property Name="Comentario" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
   </EntityType>
   <EntityType Name="Tb_Instructor_Disciplina">
     <Key>
@@ -467,6 +468,10 @@
       <Parameter Name="vEst_cli" Mode="In" Type="Int32" />
       <Parameter Name="vId_Ubigeo" Mode="In" Type="String" />
       <Parameter Name="vUsu_Registro" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_ActualizarInstructorEstado">
+      <Parameter Name="vcod" Mode="In" Type="String" />
+      <Parameter Name="vcoment" Mode="In" Type="String" />
     </FunctionImport>
   </EntityContainer>
   <ComplexType Name="usp_ListarCliente_Result">
