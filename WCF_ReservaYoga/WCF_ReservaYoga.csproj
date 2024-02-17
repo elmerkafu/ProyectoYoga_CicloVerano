@@ -89,6 +89,7 @@
     <Compile Include="IServicioReserva.cs" />
     <Compile Include="IServicioSalon.cs" />
     <Compile Include="IServicioUbigeo.cs" />
+    <Compile Include="IServicioUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReservaYoga.Context.cs">
       <AutoGen>True</AutoGen>
@@ -114,6 +115,7 @@
     <Compile Include="ServicioReserva.cs" />
     <Compile Include="ServicioSalon.cs" />
     <Compile Include="ServicioUbigeo.cs" />
+    <Compile Include="ServicioUsuario.cs" />
     <Compile Include="Tb_Administrador.cs">
       <DependentUpon>ReservaYoga.tt</DependentUpon>
     </Compile>

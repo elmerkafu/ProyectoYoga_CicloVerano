@@ -128,3 +128,20 @@ D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga_Clon\WCF_
 D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga_Clon\WCF_ReservaYoga\obj\Debug\WCF_ReservaYoga.csproj.CopyComplete
 D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga_Clon\WCF_ReservaYoga\obj\Debug\WCF_ReservaYoga.dll
 D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga_Clon\WCF_ReservaYoga\obj\Debug\WCF_ReservaYoga.pdb
+C:\Proyecto_Yoga\ProyectoYoga_CicloVerano\WCF_ReservaYoga\bin\Debug\Newtonsoft.Json.Bson.dll
+C:\Proyecto_Yoga\ProyectoYoga_CicloVerano\WCF_ReservaYoga\bin\Debug\Newtonsoft.Json.dll
+C:\Proyecto_Yoga\ProyectoYoga_CicloVerano\WCF_ReservaYoga\bin\Debug\System.Buffers.dll
+C:\Proyecto_Yoga\ProyectoYoga_CicloVerano\WCF_ReservaYoga\bin\Debug\System.Memory.dll
+C:\Proyecto_Yoga\ProyectoYoga_CicloVerano\WCF_ReservaYoga\bin\Debug\System.Net.Http.Formatting.dll
+C:\Proyecto_Yoga\ProyectoYoga_CicloVerano\WCF_ReservaYoga\bin\Debug\System.Numerics.Vectors.dll
+C:\Proyecto_Yoga\ProyectoYoga_CicloVerano\WCF_ReservaYoga\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Proyecto_Yoga\ProyectoYoga_CicloVerano\WCF_ReservaYoga\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Proyecto_Yoga\ProyectoYoga_CicloVerano\WCF_ReservaYoga\bin\Debug\Newtonsoft.Json.xml
+C:\Proyecto_Yoga\ProyectoYoga_CicloVerano\WCF_ReservaYoga\bin\Debug\Newtonsoft.Json.Bson.pdb
+C:\Proyecto_Yoga\ProyectoYoga_CicloVerano\WCF_ReservaYoga\bin\Debug\Newtonsoft.Json.Bson.xml
+C:\Proyecto_Yoga\ProyectoYoga_CicloVerano\WCF_ReservaYoga\bin\Debug\System.Buffers.xml
+C:\Proyecto_Yoga\ProyectoYoga_CicloVerano\WCF_ReservaYoga\bin\Debug\System.Memory.xml
+C:\Proyecto_Yoga\ProyectoYoga_CicloVerano\WCF_ReservaYoga\bin\Debug\System.Net.Http.Formatting.xml
+C:\Proyecto_Yoga\ProyectoYoga_CicloVerano\WCF_ReservaYoga\bin\Debug\System.Numerics.Vectors.xml
+C:\Proyecto_Yoga\ProyectoYoga_CicloVerano\WCF_ReservaYoga\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Proyecto_Yoga\ProyectoYoga_CicloVerano\WCF_ReservaYoga\bin\Debug\System.Threading.Tasks.Extensions.xml

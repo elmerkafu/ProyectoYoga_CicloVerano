@@ -51,5 +51,12 @@ namespace TestWindows_WCF_Reserva
             sal01.MdiParent = this;
             sal01.Show();
         }
+
+        private void usuarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UsuarioMan01 usu01 = new UsuarioMan01();
+            usu01.MdiParent = this;
+            usu01.Show();
+        }
     }
 }

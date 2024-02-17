@@ -120,5 +120,27 @@ namespace TestWindows_WCF_Reserva
         {
             btnActualizar.PerformClick();
         }
+
+        private void txtFiltro_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                string filtro = txtFiltro.Text.Trim();
+                if (!string.IsNullOrEmpty(filtro))
+                {
+                    var clientesFiltrados = objServiceCliente.ListarClienteEstado().Where(c => c.ApePaterno.StartsWith(filtro.ToUpper())).ToList();
+                    dtgCliente.DataSource = clientesFiltrados;
+                    lblRegistros.Text = clientesFiltrados.Count.ToString();
+                }
+                else
+                {
+                    CargarDatos();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+        }
     }
 }

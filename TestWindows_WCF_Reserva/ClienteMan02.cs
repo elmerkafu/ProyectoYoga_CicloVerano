@@ -103,6 +103,14 @@ namespace TestWindows_WCF_Reserva
 
                 }
 
+                DateTime fechaNacimiento = dtpFecNac.Value.Date;
+                DateTime fechaLimite = DateTime.Today.AddYears(-15);
+
+                if (fechaNacimiento > fechaLimite)
+                {
+                    throw new Exception("La edad mínima para registrarse es 15 años");
+                }
+
                 objClienteDC.Nombres = txtNombres.Text.Trim();
                 objClienteDC.ApePaterno = txtApePaterno.Text.Trim();
                 objClienteDC.ApeMaterno = txtApeMaterno.Text.Trim();
