@@ -32,12 +32,12 @@
             label2 = new Label();
             label3 = new Label();
             groupBox1 = new GroupBox();
-            label4 = new Label();
-            button2 = new Button();
-            button1 = new Button();
-            comboBox1 = new ComboBox();
-            textBox2 = new TextBox();
-            checkBox1 = new CheckBox();
+            lblUsuario = new Label();
+            btnCancelar = new Button();
+            btnGuardar = new Button();
+            cboNivel = new ComboBox();
+            txtPassword = new TextBox();
+            chkEstado = new CheckBox();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
@@ -70,12 +70,12 @@
             // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(label4);
-            groupBox1.Controls.Add(button2);
-            groupBox1.Controls.Add(button1);
-            groupBox1.Controls.Add(comboBox1);
-            groupBox1.Controls.Add(textBox2);
-            groupBox1.Controls.Add(checkBox1);
+            groupBox1.Controls.Add(lblUsuario);
+            groupBox1.Controls.Add(btnCancelar);
+            groupBox1.Controls.Add(btnGuardar);
+            groupBox1.Controls.Add(cboNivel);
+            groupBox1.Controls.Add(txtPassword);
+            groupBox1.Controls.Add(chkEstado);
             groupBox1.Controls.Add(label1);
             groupBox1.Controls.Add(label3);
             groupBox1.Controls.Add(label2);
@@ -86,56 +86,58 @@
             groupBox1.TabStop = false;
             groupBox1.Text = "Datos a actualizar";
             // 
-            // label4
+            // lblUsuario
             // 
-            label4.BorderStyle = BorderStyle.FixedSingle;
-            label4.Location = new Point(124, 59);
-            label4.Name = "label4";
-            label4.Size = new Size(179, 24);
-            label4.TabIndex = 7;
+            lblUsuario.BorderStyle = BorderStyle.FixedSingle;
+            lblUsuario.Location = new Point(124, 59);
+            lblUsuario.Name = "lblUsuario";
+            lblUsuario.Size = new Size(179, 24);
+            lblUsuario.TabIndex = 7;
             // 
-            // button2
+            // btnCancelar
             // 
-            button2.Location = new Point(209, 277);
-            button2.Name = "button2";
-            button2.Size = new Size(94, 29);
-            button2.TabIndex = 6;
-            button2.Text = "Cancelar";
-            button2.UseVisualStyleBackColor = true;
+            btnCancelar.Location = new Point(209, 277);
+            btnCancelar.Name = "btnCancelar";
+            btnCancelar.Size = new Size(94, 29);
+            btnCancelar.TabIndex = 6;
+            btnCancelar.Text = "Cancelar";
+            btnCancelar.UseVisualStyleBackColor = true;
+            btnCancelar.Click += btnCancelar_Click;
             // 
-            // button1
+            // btnGuardar
             // 
-            button1.Location = new Point(90, 277);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 29);
-            button1.TabIndex = 6;
-            button1.Text = "Guardar";
-            button1.UseVisualStyleBackColor = true;
+            btnGuardar.Location = new Point(90, 277);
+            btnGuardar.Name = "btnGuardar";
+            btnGuardar.Size = new Size(94, 29);
+            btnGuardar.TabIndex = 6;
+            btnGuardar.Text = "Guardar";
+            btnGuardar.UseVisualStyleBackColor = true;
+            btnGuardar.Click += btnGuardar_Click;
             // 
-            // comboBox1
+            // cboNivel
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(124, 151);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(97, 28);
-            comboBox1.TabIndex = 5;
+            cboNivel.FormattingEnabled = true;
+            cboNivel.Location = new Point(124, 151);
+            cboNivel.Name = "cboNivel";
+            cboNivel.Size = new Size(97, 28);
+            cboNivel.TabIndex = 5;
             // 
-            // textBox2
+            // txtPassword
             // 
-            textBox2.Location = new Point(124, 105);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(179, 27);
-            textBox2.TabIndex = 4;
+            txtPassword.Location = new Point(124, 105);
+            txtPassword.Name = "txtPassword";
+            txtPassword.Size = new Size(179, 27);
+            txtPassword.TabIndex = 4;
             // 
-            // checkBox1
+            // chkEstado
             // 
-            checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(30, 205);
-            checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(80, 24);
-            checkBox1.TabIndex = 3;
-            checkBox1.Text = "Activo?";
-            checkBox1.UseVisualStyleBackColor = true;
+            chkEstado.AutoSize = true;
+            chkEstado.Location = new Point(30, 205);
+            chkEstado.Name = "chkEstado";
+            chkEstado.Size = new Size(80, 24);
+            chkEstado.TabIndex = 3;
+            chkEstado.Text = "Activo?";
+            chkEstado.UseVisualStyleBackColor = true;
             // 
             // UsuarioMan03
             // 
@@ -148,6 +150,7 @@
             Name = "UsuarioMan03";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Actualizar Usuario";
+            Load += UsuarioMan03_Load;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             ResumeLayout(false);
@@ -159,11 +162,11 @@
         private Label label2;
         private Label label3;
         private GroupBox groupBox1;
-        private Label label4;
-        private Button button2;
-        private Button button1;
-        private ComboBox comboBox1;
-        private TextBox textBox2;
-        private CheckBox checkBox1;
+        private Label lblUsuario;
+        private Button btnCancelar;
+        private Button btnGuardar;
+        private ComboBox cboNivel;
+        private TextBox txtPassword;
+        private CheckBox chkEstado;
     }
 }

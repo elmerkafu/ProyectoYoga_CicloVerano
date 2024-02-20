@@ -35,10 +35,12 @@
             Est_Usuario = new DataGridViewTextBoxColumn();
             Fec_Registro = new DataGridViewTextBoxColumn();
             Usu_Registro = new DataGridViewTextBoxColumn();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            button4 = new Button();
+            btnRegistrar = new Button();
+            btnActualizar = new Button();
+            btnEliminar = new Button();
+            btnSalir = new Button();
+            lbl1 = new Label();
+            lblRegistros = new Label();
             ((System.ComponentModel.ISupportInitialize)dtgUsuarios).BeginInit();
             SuspendLayout();
             // 
@@ -58,6 +60,7 @@
             dtgUsuarios.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dtgUsuarios.Size = new Size(896, 267);
             dtgUsuarios.TabIndex = 0;
+            dtgUsuarios.DoubleClick += dtgUsuarios_DoubleClick;
             // 
             // Login_Usuario
             // 
@@ -107,59 +110,83 @@
             Usu_Registro.Name = "Usu_Registro";
             Usu_Registro.ReadOnly = true;
             // 
-            // button1
+            // btnRegistrar
             // 
-            button1.Location = new Point(278, 388);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 29);
-            button1.TabIndex = 1;
-            button1.Text = "Registrar";
-            button1.UseVisualStyleBackColor = true;
+            btnRegistrar.Location = new Point(407, 388);
+            btnRegistrar.Name = "btnRegistrar";
+            btnRegistrar.Size = new Size(94, 29);
+            btnRegistrar.TabIndex = 1;
+            btnRegistrar.Text = "Registrar";
+            btnRegistrar.UseVisualStyleBackColor = true;
+            btnRegistrar.Click += btnRegistrar_Click;
             // 
-            // button2
+            // btnActualizar
             // 
-            button2.Location = new Point(405, 388);
-            button2.Name = "button2";
-            button2.Size = new Size(94, 29);
-            button2.TabIndex = 1;
-            button2.Text = "Actualizar";
-            button2.UseVisualStyleBackColor = true;
+            btnActualizar.Location = new Point(530, 388);
+            btnActualizar.Name = "btnActualizar";
+            btnActualizar.Size = new Size(94, 29);
+            btnActualizar.TabIndex = 1;
+            btnActualizar.Text = "Actualizar";
+            btnActualizar.UseVisualStyleBackColor = true;
+            btnActualizar.Click += btnActualizar_Click;
             // 
-            // button3
+            // btnEliminar
             // 
-            button3.Location = new Point(538, 388);
-            button3.Name = "button3";
-            button3.Size = new Size(94, 29);
-            button3.TabIndex = 1;
-            button3.Text = "Eliminar";
-            button3.UseVisualStyleBackColor = true;
+            btnEliminar.Location = new Point(655, 388);
+            btnEliminar.Name = "btnEliminar";
+            btnEliminar.Size = new Size(94, 29);
+            btnEliminar.TabIndex = 1;
+            btnEliminar.Text = "Eliminar";
+            btnEliminar.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnSalir
             // 
-            button4.Location = new Point(831, 388);
-            button4.Name = "button4";
-            button4.Size = new Size(94, 29);
-            button4.TabIndex = 1;
-            button4.Text = "Salir";
-            button4.UseVisualStyleBackColor = true;
+            btnSalir.Location = new Point(831, 388);
+            btnSalir.Name = "btnSalir";
+            btnSalir.Size = new Size(94, 29);
+            btnSalir.TabIndex = 1;
+            btnSalir.Text = "Salir";
+            btnSalir.UseVisualStyleBackColor = true;
+            btnSalir.Click += btnSalir_Click;
+            // 
+            // lbl1
+            // 
+            lbl1.AutoSize = true;
+            lbl1.Location = new Point(38, 396);
+            lbl1.Name = "lbl1";
+            lbl1.Size = new Size(73, 20);
+            lbl1.TabIndex = 2;
+            lbl1.Text = "Registros:";
+            // 
+            // lblRegistros
+            // 
+            lblRegistros.BorderStyle = BorderStyle.FixedSingle;
+            lblRegistros.Location = new Point(126, 381);
+            lblRegistros.Name = "lblRegistros";
+            lblRegistros.Size = new Size(78, 36);
+            lblRegistros.TabIndex = 3;
             // 
             // UsuarioMan01
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(956, 462);
-            Controls.Add(button4);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(lblRegistros);
+            Controls.Add(lbl1);
+            Controls.Add(btnSalir);
+            Controls.Add(btnEliminar);
+            Controls.Add(btnActualizar);
+            Controls.Add(btnRegistrar);
             Controls.Add(dtgUsuarios);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "UsuarioMan01";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Listar Usuarios";
+            Load += UsuarioMan01_Load;
             ((System.ComponentModel.ISupportInitialize)dtgUsuarios).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -171,9 +198,11 @@
         private DataGridViewTextBoxColumn Est_Usuario;
         private DataGridViewTextBoxColumn Fec_Registro;
         private DataGridViewTextBoxColumn Usu_Registro;
-        private Button button1;
-        private Button button2;
-        private Button button3;
-        private Button button4;
+        private Button btnRegistrar;
+        private Button btnActualizar;
+        private Button btnEliminar;
+        private Button btnSalir;
+        private Label lbl1;
+        private Label lblRegistros;
     }
 }
