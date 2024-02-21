@@ -50,6 +50,30 @@ namespace WCF_ReservaYoga
             }
         }
 
+        public ClienteDC ConsultaClienteDNI(String strDni)
+        {
+            ReservaYogaEntities MisReservas = new ReservaYogaEntities();
+            try
+            {
+                Tb_Cliente objCliente = (from objCli in MisReservas.Tb_Cliente
+                                         where objCli.Dni_cli == strDni
+                                         select objCli).FirstOrDefault();
+
+                ClienteDC objClienteDC = new ClienteDC();
+                objClienteDC.Id_Cliente = Convert.ToInt16(objCliente.Id_Cliente);
+                objClienteDC.Dni_cli = objCliente.Dni_cli;
+                objClienteDC.Nombres = objCliente.Nombres;
+                objClienteDC.ApePaterno = objCliente.ApePaterno;
+                objClienteDC.ApeMaterno = objCliente.ApeMaterno;
+
+                return objClienteDC;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
         public List<ClienteDC> ListarCliente()
         {
             try

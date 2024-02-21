@@ -121,6 +121,7 @@
     <Property Name="Usu_Ult_Mod" Type="varchar" MaxLength="20" />
     <Property Name="Fec_Ult_Mod" Type="datetime" />
     <Property Name="Cod_resv" Type="char" MaxLength="4" Nullable="false" />
+    <Property Name="Id_Clase_Prog" Type="int" />
   </EntityType>
   <EntityType Name="Tb_Salon">
     <Key>
@@ -176,6 +177,18 @@
         <PropertyRef Name="Id_Clase_Prog" />
       </Principal>
       <Dependent Role="Tb_Detalle_Reserva">
+        <PropertyRef Name="Id_Clase_Prog" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKClaseProg">
+    <End Role="Tb_Clase_Programada" Type="Self.Tb_Clase_Programada" Multiplicity="0..1" />
+    <End Role="Tb_Reserva" Type="Self.Tb_Reserva" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tb_Clase_Programada">
+        <PropertyRef Name="Id_Clase_Prog" />
+      </Principal>
+      <Dependent Role="Tb_Reserva">
         <PropertyRef Name="Id_Clase_Prog" />
       </Dependent>
     </ReferentialConstraint>
@@ -427,6 +440,11 @@
     <Parameter Name="vDescripcion" Type="varchar" Mode="In" />
   </Function>
   <Function Name="usp_ListarCliente" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="usp_RegistrarReserva_TEST" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="vId_Cli" Type="int" Mode="In" />
+    <Parameter Name="vUsu_reg" Type="varchar" Mode="In" />
+    <Parameter Name="vIdclase" Type="int" Mode="In" />
+  </Function>
   <Function Name="usp_Ubigeo_Departamentos" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
   <Function Name="usp_Ubigeo_DistritosProvinciaDepartamento" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="IdDepartamento" Type="char" Mode="In" />
@@ -455,6 +473,10 @@
     <AssociationSet Name="FKClaseP" Association="Self.FKClaseP">
       <End Role="Tb_Clase_Programada" EntitySet="Tb_Clase_Programada" />
       <End Role="Tb_Detalle_Reserva" EntitySet="Tb_Detalle_Reserva" />
+    </AssociationSet>
+    <AssociationSet Name="FKClaseProg" Association="Self.FKClaseProg">
+      <End Role="Tb_Clase_Programada" EntitySet="Tb_Clase_Programada" />
+      <End Role="Tb_Reserva" EntitySet="Tb_Reserva" />
     </AssociationSet>
     <AssociationSet Name="FKCliente" Association="Self.FKCliente">
       <End Role="Tb_Cliente" EntitySet="Tb_Cliente" />

@@ -183,6 +183,80 @@ namespace WCF_ReservaYoga
             }
         }
 
+        public ClaseProgramadaDC ConsultarClase_PorFecha(DateTime strId)
+        {
+            ReservaYogaEntities MisReservas = new ReservaYogaEntities();
+            try
+            {
+                Tb_Clase_Programada objClaseProgramada = (from objClase in MisReservas.Tb_Clase_Programada
+                                                          join objInstDsp in MisReservas.Tb_Instructor_Disciplina on objClase.Id_Inst_Disp equals objInstDsp.Id_Inst_Disp
+                                                          join objSalon in MisReservas.Tb_Salon on objClase.Id_Salon equals objSalon.Id_Salon
+                                                          where objClase.Fec_Clase == strId
+                                                          select objClase).FirstOrDefault();
+
+                ClaseProgramadaDC objClaseProgramadaDC = new ClaseProgramadaDC();
+
+                objClaseProgramadaDC.Id_Clase_Prog = Convert.ToInt16(objClaseProgramada.Id_Clase_Prog);
+                objClaseProgramadaDC.Id_Salon = Convert.ToInt16(objClaseProgramada.Id_Salon);
+                objClaseProgramadaDC.Nombre = objClaseProgramada.Tb_Salon.Nombre;
+                objClaseProgramadaDC.NombreInstructor = objClaseProgramada.Tb_Instructor_Disciplina.Tb_Instructor.Nombre + ' ' + objClaseProgramada.Tb_Instructor_Disciplina.Tb_Instructor.ApePaterno + ' ' + objClaseProgramada.Tb_Instructor_Disciplina.Tb_Instructor.ApeMaterno;
+                objClaseProgramadaDC.Fec_Clase = Convert.ToDateTime(objClaseProgramada.Fec_Clase);
+                objClaseProgramadaDC.Hora_Emp = Convert.ToDateTime(objClaseProgramada.Hora_Emp);
+                objClaseProgramadaDC.Hora_Term = Convert.ToDateTime(objClaseProgramada.Hora_Term);
+                objClaseProgramadaDC.Est_clase = Convert.ToInt16(objClaseProgramada.Est_clase);
+                objClaseProgramadaDC.Fec_reg = Convert.ToDateTime(objClaseProgramada.Fec_reg);
+                objClaseProgramadaDC.Usu_reg = objClaseProgramada.Usu_reg;
+                objClaseProgramadaDC.Usu_Ult_Mod = objClaseProgramada.Usu_Ult_Mod;
+                objClaseProgramadaDC.Fec_Ult_Mod = Convert.ToDateTime(objClaseProgramada.Fec_Ult_Mod);
+
+                return objClaseProgramadaDC;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public List<ClaseProgramadaDC> ListarClasesPorFecha(DateTime strId)
+        {
+            try
+            {
+                ReservaYogaEntities MisReservas = new ReservaYogaEntities();
+
+                List<ClaseProgramadaDC> objListarClasesProgramadasDC = new List<ClaseProgramadaDC>();
+
+                var query = (from miClase in MisReservas.Tb_Clase_Programada
+
+                             join miDetalle in MisReservas.Tb_Instructor_Disciplina on miClase.Id_Inst_Disp equals miDetalle.Id_Inst_Disp
+                             join miSalon in MisReservas.Tb_Salon on miClase.Id_Salon equals miSalon.Id_Salon
+                             where miClase.Fec_Clase == strId
+                             select miClase).ToList();
+
+                foreach (var objClase in query)
+                {
+                    ClaseProgramadaDC objClaseDC = new ClaseProgramadaDC();
+                    objClaseDC.Id_Clase_Prog = Convert.ToInt16(objClase.Id_Clase_Prog);
+                    objClaseDC.Nombre = objClase.Tb_Salon.Nombre;
+                    objClaseDC.NombreInstructor = objClase.Tb_Instructor_Disciplina.Tb_Instructor.Nombre + ' ' + objClase.Tb_Instructor_Disciplina.Tb_Instructor.ApePaterno + ' ' + objClase.Tb_Instructor_Disciplina.Tb_Instructor.ApeMaterno;
+                    objClaseDC.Fec_Clase = Convert.ToDateTime(objClase.Fec_Clase);
+                    objClaseDC.Hora_Emp = Convert.ToDateTime(objClase.Hora_Emp);
+                    objClaseDC.Hora_Term = Convert.ToDateTime(objClase.Hora_Term);
+                    objClaseDC.Est_clase = Convert.ToInt16(objClase.Est_clase);
+                    objClaseDC.Capacidad = Convert.ToInt16(objClase.Tb_Salon.Capacidad);
+
+                    objListarClasesProgramadasDC.Add(objClaseDC);
+                }
+
+                //MisReservas.SaveChanges();                
+                return objListarClasesProgramadasDC;
+            }
+
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
     }        
     
 }

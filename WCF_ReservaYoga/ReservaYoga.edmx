@@ -126,6 +126,7 @@
           <Property Name="Usu_Ult_Mod" Type="varchar" MaxLength="20" />
           <Property Name="Fec_Ult_Mod" Type="datetime" />
           <Property Name="Cod_resv" Type="char" MaxLength="4" Nullable="false" />
+          <Property Name="Id_Clase_Prog" Type="int" />
         </EntityType>
         <EntityType Name="Tb_Salon">
           <Key>
@@ -181,6 +182,18 @@
               <PropertyRef Name="Id_Clase_Prog" />
             </Principal>
             <Dependent Role="Tb_Detalle_Reserva">
+              <PropertyRef Name="Id_Clase_Prog" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FKClaseProg">
+          <End Role="Tb_Clase_Programada" Type="Self.Tb_Clase_Programada" Multiplicity="0..1" />
+          <End Role="Tb_Reserva" Type="Self.Tb_Reserva" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Tb_Clase_Programada">
+              <PropertyRef Name="Id_Clase_Prog" />
+            </Principal>
+            <Dependent Role="Tb_Reserva">
               <PropertyRef Name="Id_Clase_Prog" />
             </Dependent>
           </ReferentialConstraint>
@@ -432,6 +445,11 @@
           <Parameter Name="vDescripcion" Type="varchar" Mode="In" />
         </Function>
         <Function Name="usp_ListarCliente" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="usp_RegistrarReserva_TEST" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="vId_Cli" Type="int" Mode="In" />
+          <Parameter Name="vUsu_reg" Type="varchar" Mode="In" />
+          <Parameter Name="vIdclase" Type="int" Mode="In" />
+        </Function>
         <Function Name="usp_Ubigeo_Departamentos" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <Function Name="usp_Ubigeo_DistritosProvinciaDepartamento" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="IdDepartamento" Type="char" Mode="In" />
@@ -460,6 +478,10 @@
           <AssociationSet Name="FKClaseP" Association="Self.FKClaseP">
             <End Role="Tb_Clase_Programada" EntitySet="Tb_Clase_Programada" />
             <End Role="Tb_Detalle_Reserva" EntitySet="Tb_Detalle_Reserva" />
+          </AssociationSet>
+          <AssociationSet Name="FKClaseProg" Association="Self.FKClaseProg">
+            <End Role="Tb_Clase_Programada" EntitySet="Tb_Clase_Programada" />
+            <End Role="Tb_Reserva" EntitySet="Tb_Reserva" />
           </AssociationSet>
           <AssociationSet Name="FKCliente" Association="Self.FKCliente">
             <End Role="Tb_Cliente" EntitySet="Tb_Cliente" />
@@ -537,6 +559,7 @@
           <NavigationProperty Name="Tb_Instructor_Disciplina" Relationship="Self.FKID" FromRole="Tb_Clase_Programada" ToRole="Tb_Instructor_Disciplina" />
           <NavigationProperty Name="Tb_Salon" Relationship="Self.FKSalon" FromRole="Tb_Clase_Programada" ToRole="Tb_Salon" />
           <NavigationProperty Name="Tb_Reserva" Relationship="Self.Tb_Detalle_Reserva" FromRole="Tb_Clase_Programada" ToRole="Tb_Reserva" />
+          <NavigationProperty Name="Tb_Reserva1" Relationship="ReservaYogaModel.FKClaseProg" FromRole="Tb_Clase_Programada" ToRole="Tb_Reserva" />
         </EntityType>
         <EntityType Name="Tb_Cliente">
           <Key>
@@ -626,6 +649,8 @@
           <Property Name="Cod_resv" Type="String" MaxLength="4" FixedLength="true" Unicode="false" Nullable="false" />
           <NavigationProperty Name="Tb_Cliente" Relationship="Self.FKCliente" FromRole="Tb_Reserva" ToRole="Tb_Cliente" />
           <NavigationProperty Name="Tb_Clase_Programada" Relationship="Self.Tb_Detalle_Reserva" FromRole="Tb_Reserva" ToRole="Tb_Clase_Programada" />
+          <Property Name="Id_Clase_Prog" Type="Int32" />
+          <NavigationProperty Name="Tb_Clase_Programada1" Relationship="ReservaYogaModel.FKClaseProg" FromRole="Tb_Reserva" ToRole="Tb_Clase_Programada" />
         </EntityType>
         <EntityType Name="Tb_Salon">
           <Key>
@@ -971,6 +996,15 @@
             <Parameter Name="vcod" Mode="In" Type="String" />
             <Parameter Name="vcoment" Mode="In" Type="String" />
           </FunctionImport>
+          <AssociationSet Name="FKClaseProg" Association="ReservaYogaModel.FKClaseProg">
+            <End Role="Tb_Clase_Programada" EntitySet="Tb_Clase_Programada" />
+            <End Role="Tb_Reserva" EntitySet="Tb_Reserva" />
+          </AssociationSet>
+          <FunctionImport Name="usp_RegistrarReserva_TEST">
+            <Parameter Name="vId_Cli" Mode="In" Type="Int32" />
+            <Parameter Name="vUsu_reg" Mode="In" Type="String" />
+            <Parameter Name="vIdclase" Mode="In" Type="Int32" />
+          </FunctionImport>
         </EntityContainer>
         <ComplexType Name="usp_ListarCliente_Result">
           <Property Type="Int32" Name="Id_Cliente" Nullable="false" />
@@ -1017,6 +1051,18 @@
           <Property Type="String" Name="Cod_disp" Nullable="true" MaxLength="3" />
           <Property Type="String" Name="Nombre" Nullable="true" MaxLength="50" />
         </ComplexType>
+        <Association Name="FKClaseProg">
+          <End Type="ReservaYogaModel.Tb_Clase_Programada" Role="Tb_Clase_Programada" Multiplicity="0..1" />
+          <End Type="ReservaYogaModel.Tb_Reserva" Role="Tb_Reserva" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Tb_Clase_Programada">
+              <PropertyRef Name="Id_Clase_Prog" />
+            </Principal>
+            <Dependent Role="Tb_Reserva">
+              <PropertyRef Name="Id_Clase_Prog" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -1133,6 +1179,7 @@
           <EntitySetMapping Name="Tb_Reserva">
             <EntityTypeMapping TypeName="ReservaYogaModel.Tb_Reserva">
               <MappingFragment StoreEntitySet="Tb_Reserva">
+                <ScalarProperty Name="Id_Clase_Prog" ColumnName="Id_Clase_Prog" />
                 <ScalarProperty Name="Id_Cliente" ColumnName="Id_Cliente" />
                 <ScalarProperty Name="Est_resv" ColumnName="Est_resv" />
                 <ScalarProperty Name="Fec_resv" ColumnName="Fec_resv" />
@@ -1276,6 +1323,7 @@
           <FunctionImportMapping FunctionImportName="usp_ActualizarClienteEstado" FunctionName="ReservaYogaModel.Store.usp_ActualizarClienteEstado" />
           <FunctionImportMapping FunctionImportName="usp_InsertarCliente_TEST" FunctionName="ReservaYogaModel.Store.usp_InsertarCliente_TEST" />
           <FunctionImportMapping FunctionImportName="usp_ActualizarInstructorEstado" FunctionName="ReservaYogaModel.Store.usp_ActualizarInstructorEstado" />
+          <FunctionImportMapping FunctionImportName="usp_RegistrarReserva_TEST" FunctionName="ReservaYogaModel.Store.usp_RegistrarReserva_TEST" />
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

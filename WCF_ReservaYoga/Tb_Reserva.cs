@@ -29,9 +29,11 @@ namespace WCF_ReservaYoga
         public string Usu_Ult_Mod { get; set; }
         public Nullable<System.DateTime> Fec_Ult_Mod { get; set; }
         public string Cod_resv { get; set; }
+        public Nullable<int> Id_Clase_Prog { get; set; }
     
         public virtual Tb_Cliente Tb_Cliente { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Tb_Clase_Programada> Tb_Clase_Programada { get; set; }
+        public virtual Tb_Clase_Programada Tb_Clase_Programada1 { get; set; }
     }
 }

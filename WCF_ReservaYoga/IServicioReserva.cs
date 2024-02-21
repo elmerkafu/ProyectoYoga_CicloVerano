@@ -21,7 +21,11 @@ namespace WCF_ReservaYoga
         DateTime? ObtenerFechaReservaPorCodigo(string codigoReserva);
 
         [OperationContract]
-        List<ReservaDC> ListarReservaClienteFechas(Int16 strCodigo, DateTime fecIni, DateTime fecFin);
+        List<ReservaDC> ListarReservaClienteFechas(Int16 strCodigo, DateTime fecIni, DateTime fecFin);        
+
+        [OperationContract]
+        Boolean InsertarReserva(ReservaDC objReservaDC);
+
 
     }
     [DataContract]
@@ -33,6 +37,9 @@ namespace WCF_ReservaYoga
 
         [DataMember]
         public Int16 Id_Cliente { get; set; }
+
+        [DataMember]
+        public Int16 Id_Clase_Prog { get; set; }
 
         [DataMember]
         public String Nombre { get; set; }

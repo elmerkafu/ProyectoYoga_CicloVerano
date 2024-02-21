@@ -410,6 +410,12 @@ namespace ProxyCliente
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServicioCliente/ListarClienteEstado", ReplyAction="http://tempuri.org/IServicioCliente/ListarClienteEstadoResponse")]
         System.Threading.Tasks.Task<System.Collections.Generic.List<ProxyCliente.ClienteDC>> ListarClienteEstadoAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServicioCliente/ConsultaClienteDNI", ReplyAction="http://tempuri.org/IServicioCliente/ConsultaClienteDNIResponse")]
+        ProxyCliente.ClienteDC ConsultaClienteDNI(string strDni);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServicioCliente/ConsultaClienteDNI", ReplyAction="http://tempuri.org/IServicioCliente/ConsultaClienteDNIResponse")]
+        System.Threading.Tasks.Task<ProxyCliente.ClienteDC> ConsultaClienteDNIAsync(string strDni);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
@@ -530,6 +536,16 @@ namespace ProxyCliente
         public System.Threading.Tasks.Task<System.Collections.Generic.List<ProxyCliente.ClienteDC>> ListarClienteEstadoAsync()
         {
             return base.Channel.ListarClienteEstadoAsync();
+        }
+        
+        public ProxyCliente.ClienteDC ConsultaClienteDNI(string strDni)
+        {
+            return base.Channel.ConsultaClienteDNI(strDni);
+        }
+        
+        public System.Threading.Tasks.Task<ProxyCliente.ClienteDC> ConsultaClienteDNIAsync(string strDni)
+        {
+            return base.Channel.ConsultaClienteDNIAsync(strDni);
         }
         
         public virtual System.Threading.Tasks.Task OpenAsync()

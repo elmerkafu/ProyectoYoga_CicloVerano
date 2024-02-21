@@ -18,6 +18,7 @@ namespace WCF_ReservaYoga
         public Tb_Clase_Programada()
         {
             this.Tb_Reserva = new HashSet<Tb_Reserva>();
+            this.Tb_Reserva1 = new HashSet<Tb_Reserva>();
         }
     
         public int Id_Clase_Prog { get; set; }
@@ -36,5 +37,7 @@ namespace WCF_ReservaYoga
         public virtual Tb_Salon Tb_Salon { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Tb_Reserva> Tb_Reserva { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Tb_Reserva> Tb_Reserva1 { get; set; }
     }
 }

@@ -383,6 +383,18 @@ namespace ProxyClaseProgramada
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServicioClaseProgramada/ConsultarClaseProgramada", ReplyAction="http://tempuri.org/IServicioClaseProgramada/ConsultarClaseProgramadaResponse")]
         System.Threading.Tasks.Task<ProxyClaseProgramada.ClaseProgramadaDC> ConsultarClaseProgramadaAsync(short strId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServicioClaseProgramada/ConsultarClase_PorFecha", ReplyAction="http://tempuri.org/IServicioClaseProgramada/ConsultarClase_PorFechaResponse")]
+        ProxyClaseProgramada.ClaseProgramadaDC ConsultarClase_PorFecha(System.DateTime strId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServicioClaseProgramada/ConsultarClase_PorFecha", ReplyAction="http://tempuri.org/IServicioClaseProgramada/ConsultarClase_PorFechaResponse")]
+        System.Threading.Tasks.Task<ProxyClaseProgramada.ClaseProgramadaDC> ConsultarClase_PorFechaAsync(System.DateTime strId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServicioClaseProgramada/ListarClasesPorFecha", ReplyAction="http://tempuri.org/IServicioClaseProgramada/ListarClasesPorFechaResponse")]
+        System.Collections.Generic.List<ProxyClaseProgramada.ClaseProgramadaDC> ListarClasesPorFecha(System.DateTime strId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServicioClaseProgramada/ListarClasesPorFecha", ReplyAction="http://tempuri.org/IServicioClaseProgramada/ListarClasesPorFechaResponse")]
+        System.Threading.Tasks.Task<System.Collections.Generic.List<ProxyClaseProgramada.ClaseProgramadaDC>> ListarClasesPorFechaAsync(System.DateTime strId);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
@@ -483,6 +495,26 @@ namespace ProxyClaseProgramada
         public System.Threading.Tasks.Task<ProxyClaseProgramada.ClaseProgramadaDC> ConsultarClaseProgramadaAsync(short strId)
         {
             return base.Channel.ConsultarClaseProgramadaAsync(strId);
+        }
+        
+        public ProxyClaseProgramada.ClaseProgramadaDC ConsultarClase_PorFecha(System.DateTime strId)
+        {
+            return base.Channel.ConsultarClase_PorFecha(strId);
+        }
+        
+        public System.Threading.Tasks.Task<ProxyClaseProgramada.ClaseProgramadaDC> ConsultarClase_PorFechaAsync(System.DateTime strId)
+        {
+            return base.Channel.ConsultarClase_PorFechaAsync(strId);
+        }
+        
+        public System.Collections.Generic.List<ProxyClaseProgramada.ClaseProgramadaDC> ListarClasesPorFecha(System.DateTime strId)
+        {
+            return base.Channel.ListarClasesPorFecha(strId);
+        }
+        
+        public System.Threading.Tasks.Task<System.Collections.Generic.List<ProxyClaseProgramada.ClaseProgramadaDC>> ListarClasesPorFechaAsync(System.DateTime strId)
+        {
+            return base.Channel.ListarClasesPorFechaAsync(strId);
         }
         
         public virtual System.Threading.Tasks.Task OpenAsync()

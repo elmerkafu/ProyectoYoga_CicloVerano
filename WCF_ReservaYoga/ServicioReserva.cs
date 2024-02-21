@@ -130,5 +130,24 @@ namespace WCF_ReservaYoga
             }
         }
 
+        public Boolean InsertarReserva(ReservaDC objReservaDC)
+        {
+            try
+            {
+                ReservaYogaEntities MisReservas = new ReservaYogaEntities();
+                MisReservas.usp_RegistrarReserva_TEST(
+                    objReservaDC.Id_Cliente,
+                    objReservaDC.Usu_reg,
+                    objReservaDC.Id_Clase_Prog
+                    );
+
+                MisReservas.SaveChanges();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
     }
 }

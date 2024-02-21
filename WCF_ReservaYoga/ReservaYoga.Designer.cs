@@ -1,4 +1,4 @@
-﻿// La generación de código T4 está habilitada para el modelo 'D:\ISIL\ISIL - Desarrollo de aplicaciones II\Proyectos\WCF_ReservaYoga_Clon\WCF_ReservaYoga\ReservaYoga.edmx'. 
+﻿// La generación de código T4 está habilitada para el modelo 'C:\Users\Computer\Desktop\WCF_Yoga_Clon\ProyectoYoga_CicloVerano\WCF_ReservaYoga\ReservaYoga.edmx'. 
 // Para habilitar la generación de código heredada, cambie el valor de la propiedad del diseñador 'Estrategia de generación de código'
 // por 'ObjectContext heredado'. Esta propiedad está disponible en la ventana Propiedades cuando se abre
 // el modelo en el diseñador.

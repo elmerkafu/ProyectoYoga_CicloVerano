@@ -25,6 +25,7 @@
         <AssociationConnector Association="ReservaYogaModel.FKInstructor" ManuallyRouted="false" />
         <AssociationConnector Association="ReservaYogaModel.FKUbig" ManuallyRouted="false" />
         <AssociationConnector Association="ReservaYogaModel.Tb_Detalle_Reserva" ManuallyRouted="false" />
+        <AssociationConnector Association="ReservaYogaModel.FKClaseProg" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

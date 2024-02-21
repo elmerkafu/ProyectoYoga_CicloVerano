@@ -26,6 +26,12 @@ namespace WCF_ReservaYoga
         [OperationContract]
         ClaseProgramadaDC ConsultarClaseProgramada(Int16 strId);
 
+        [OperationContract]
+        ClaseProgramadaDC ConsultarClase_PorFecha(DateTime strId);
+
+        [OperationContract]
+        List<ClaseProgramadaDC> ListarClasesPorFecha(DateTime strId);
+
     }
     [DataContract]
     [Serializable]

@@ -32,6 +32,9 @@ namespace WCF_ReservaYoga
         [OperationContract]
         List<ClienteDC> ListarClienteEstado();
 
+        [OperationContract]
+        ClienteDC ConsultaClienteDNI(String strDni);
+
     }
     [DataContract]
     [Serializable]
