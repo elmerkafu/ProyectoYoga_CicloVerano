@@ -58,5 +58,17 @@ namespace TestWindows_WCF_Reserva
             usu01.MdiParent = this;
             usu01.Show();
         }
+
+        private void mantenimientosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void reservaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ReservaMan01 res01 = new ReservaMan01();
+            res01.MdiParent = this;
+            res01.Show();
+        }
     }
 }

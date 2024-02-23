@@ -268,6 +268,7 @@
             // 
             // mskDNI
             // 
+            mskDNI.Enabled = false;
             mskDNI.Location = new Point(685, 212);
             mskDNI.Mask = "00000000";
             mskDNI.Name = "mskDNI";

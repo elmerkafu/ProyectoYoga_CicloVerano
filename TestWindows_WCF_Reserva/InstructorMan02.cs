@@ -348,9 +348,10 @@ namespace TestWindows_WCF_Reserva
         private void btnValidar_Click_1(object sender, EventArgs e)
         {
             EnviarEmail email = new EnviarEmail();
-            string txtEmisor = "kafupaucarpura5@gmail.com";
-            string txtPass = "";
+            string txtEmisor = "gestionyogacomunicados@gmail.com";
+            string txtPass = "simxtipmaglmdeok";
             int numero = email.Enviar(txtCorreo.Text, txtEmisor, txtPass);
+            int resultado = 0;
 
             DialogResult result = DialogResult.OK;
 
@@ -358,7 +359,7 @@ namespace TestWindows_WCF_Reserva
             {
                 try
                 {
-                    int resultado = Convert.ToInt32(Interaction.InputBox("Ingresa el codigo enviado al cliente", "Verificacion"));
+                    resultado = Convert.ToInt32(Interaction.InputBox("Ingresa el codigo enviado al cliente", "Verificacion"));
 
 
                 }
@@ -366,6 +367,11 @@ namespace TestWindows_WCF_Reserva
                 {
                     MessageBox.Show("Codigo ingresado no valido");
 
+                }
+                if (numero == resultado)
+                {
+                    MessageBox.Show("Correo validado");
+                    btnGrabar.Enabled = true;
                 }
             }
             else

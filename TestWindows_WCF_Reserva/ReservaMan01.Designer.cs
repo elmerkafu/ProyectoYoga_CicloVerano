@@ -142,7 +142,7 @@
             // 
             // btnBuscar
             // 
-            btnBuscar.Location = new Point(353, 30);
+            btnBuscar.Location = new Point(342, 30);
             btnBuscar.Name = "btnBuscar";
             btnBuscar.Size = new Size(75, 23);
             btnBuscar.TabIndex = 11;
@@ -160,7 +160,7 @@
             // 
             btnCapturarFec.Location = new Point(516, 229);
             btnCapturarFec.Name = "btnCapturarFec";
-            btnCapturarFec.Size = new Size(192, 23);
+            btnCapturarFec.Size = new Size(248, 23);
             btnCapturarFec.TabIndex = 13;
             btnCapturarFec.Text = "Buscar";
             btnCapturarFec.UseVisualStyleBackColor = true;
@@ -169,7 +169,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(34, 312);
+            label6.Location = new Point(35, 345);
             label6.Name = "label6";
             label6.Size = new Size(116, 15);
             label6.TabIndex = 14;
@@ -181,7 +181,7 @@
             dtgClasesReserva.AllowUserToDeleteRows = false;
             dtgClasesReserva.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dtgClasesReserva.Columns.AddRange(new DataGridViewColumn[] { Id_Clase_Prog, Nombre, NombreInstructor, Fec_Clase, Hora_Emp, Hora_Term, Est_clase, Capacidad, Reservar });
-            dtgClasesReserva.Location = new Point(34, 348);
+            dtgClasesReserva.Location = new Point(35, 381);
             dtgClasesReserva.Name = "dtgClasesReserva";
             dtgClasesReserva.ReadOnly = true;
             dtgClasesReserva.RowHeadersVisible = false;
@@ -255,11 +255,11 @@
             // 
             // btnConsultar
             // 
-            btnConsultar.Location = new Point(415, 708);
+            btnConsultar.Location = new Point(208, 277);
             btnConsultar.Name = "btnConsultar";
             btnConsultar.Size = new Size(168, 28);
             btnConsultar.TabIndex = 16;
-            btnConsultar.Text = "Consultar";
+            btnConsultar.Text = "Consultar Clases Inscritas";
             btnConsultar.UseVisualStyleBackColor = true;
             btnConsultar.Click += btnConsultar_Click;
             // 

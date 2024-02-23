@@ -36,17 +36,18 @@
             clasesToolStripMenuItem = new ToolStripMenuItem();
             salonToolStripMenuItem = new ToolStripMenuItem();
             usuarioToolStripMenuItem = new ToolStripMenuItem();
+            reservaToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // menuStrip1
             // 
             menuStrip1.ImageScalingSize = new Size(32, 32);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { mantenimientosToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { mantenimientosToolStripMenuItem, reservaToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Padding = new Padding(3, 1, 0, 1);
-            menuStrip1.Size = new Size(1110, 26);
+            menuStrip1.Size = new Size(971, 24);
             menuStrip1.TabIndex = 1;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -54,58 +55,66 @@
             // 
             mantenimientosToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { clienteToolStripMenuItem, instructorToolStripMenuItem, disciplinaToolStripMenuItem, clasesToolStripMenuItem, salonToolStripMenuItem, usuarioToolStripMenuItem });
             mantenimientosToolStripMenuItem.Name = "mantenimientosToolStripMenuItem";
-            mantenimientosToolStripMenuItem.Size = new Size(130, 24);
+            mantenimientosToolStripMenuItem.Size = new Size(106, 22);
             mantenimientosToolStripMenuItem.Text = "Mantenimientos";
+            mantenimientosToolStripMenuItem.Click += mantenimientosToolStripMenuItem_Click;
             // 
             // clienteToolStripMenuItem
             // 
             clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
-            clienteToolStripMenuItem.Size = new Size(224, 26);
+            clienteToolStripMenuItem.Size = new Size(180, 22);
             clienteToolStripMenuItem.Text = "Cliente";
             clienteToolStripMenuItem.Click += clienteToolStripMenuItem_Click;
             // 
             // instructorToolStripMenuItem
             // 
             instructorToolStripMenuItem.Name = "instructorToolStripMenuItem";
-            instructorToolStripMenuItem.Size = new Size(224, 26);
+            instructorToolStripMenuItem.Size = new Size(180, 22);
             instructorToolStripMenuItem.Text = "Instructor";
             instructorToolStripMenuItem.Click += instructorToolStripMenuItem_Click;
             // 
             // disciplinaToolStripMenuItem
             // 
             disciplinaToolStripMenuItem.Name = "disciplinaToolStripMenuItem";
-            disciplinaToolStripMenuItem.Size = new Size(224, 26);
+            disciplinaToolStripMenuItem.Size = new Size(180, 22);
             disciplinaToolStripMenuItem.Text = "Disciplina";
             disciplinaToolStripMenuItem.Click += disciplinaToolStripMenuItem_Click;
             // 
             // clasesToolStripMenuItem
             // 
             clasesToolStripMenuItem.Name = "clasesToolStripMenuItem";
-            clasesToolStripMenuItem.Size = new Size(224, 26);
+            clasesToolStripMenuItem.Size = new Size(180, 22);
             clasesToolStripMenuItem.Text = "Clase";
             clasesToolStripMenuItem.Click += clasesToolStripMenuItem_Click;
             // 
             // salonToolStripMenuItem
             // 
             salonToolStripMenuItem.Name = "salonToolStripMenuItem";
-            salonToolStripMenuItem.Size = new Size(224, 26);
+            salonToolStripMenuItem.Size = new Size(180, 22);
             salonToolStripMenuItem.Text = "Salon";
             salonToolStripMenuItem.Click += salonToolStripMenuItem_Click;
             // 
             // usuarioToolStripMenuItem
             // 
             usuarioToolStripMenuItem.Name = "usuarioToolStripMenuItem";
-            usuarioToolStripMenuItem.Size = new Size(224, 26);
+            usuarioToolStripMenuItem.Size = new Size(180, 22);
             usuarioToolStripMenuItem.Text = "Usuario";
             usuarioToolStripMenuItem.Click += usuarioToolStripMenuItem_Click;
             // 
+            // reservaToolStripMenuItem
+            // 
+            reservaToolStripMenuItem.Name = "reservaToolStripMenuItem";
+            reservaToolStripMenuItem.Size = new Size(59, 22);
+            reservaToolStripMenuItem.Text = "Reserva";
+            reservaToolStripMenuItem.Click += reservaToolStripMenuItem_Click;
+            // 
             // MDIPrincipal
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.yoga_portada;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1110, 557);
+            ClientSize = new Size(971, 418);
             Controls.Add(menuStrip1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             IsMdiContainer = true;
@@ -131,5 +140,6 @@
         private ToolStripMenuItem clasesToolStripMenuItem;
         private ToolStripMenuItem salonToolStripMenuItem;
         private ToolStripMenuItem usuarioToolStripMenuItem;
+        private ToolStripMenuItem reservaToolStripMenuItem;
     }
 }

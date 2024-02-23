@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             grpDatos = new GroupBox();
+            btnValidar = new Button();
             btnBuscarDatosReniec = new Button();
             label11 = new Label();
             label10 = new Label();
@@ -56,7 +57,6 @@
             label2 = new Label();
             txtNombre = new TextBox();
             label1 = new Label();
-            btnValidar = new Button();
             grpDatos.SuspendLayout();
             SuspendLayout();
             // 
@@ -96,6 +96,16 @@
             grpDatos.TabIndex = 1;
             grpDatos.TabStop = false;
             grpDatos.Text = "Datos ";
+            // 
+            // btnValidar
+            // 
+            btnValidar.Location = new Point(387, 157);
+            btnValidar.Margin = new Padding(4, 3, 4, 3);
+            btnValidar.Name = "btnValidar";
+            btnValidar.Size = new Size(84, 28);
+            btnValidar.TabIndex = 35;
+            btnValidar.Text = "Validar";
+            btnValidar.Click += btnValidar_Click_1;
             // 
             // btnBuscarDatosReniec
             // 
@@ -172,6 +182,7 @@
             // 
             // btnGrabar
             // 
+            btnGrabar.Enabled = false;
             btnGrabar.Location = new Point(421, 448);
             btnGrabar.Margin = new Padding(4, 3, 4, 3);
             btnGrabar.Name = "btnGrabar";
@@ -333,16 +344,6 @@
             label1.Size = new Size(59, 15);
             label1.TabIndex = 0;
             label1.Text = "Nombres:";
-            // 
-            // btnValidar
-            // 
-            btnValidar.Location = new Point(387, 157);
-            btnValidar.Margin = new Padding(4, 3, 4, 3);
-            btnValidar.Name = "btnValidar";
-            btnValidar.Size = new Size(84, 28);
-            btnValidar.TabIndex = 35;
-            btnValidar.Text = "Validar";
-            btnValidar.Click += btnValidar_Click_1;
             // 
             // InstructorMan02
             // 
