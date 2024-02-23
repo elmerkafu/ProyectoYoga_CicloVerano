@@ -120,6 +120,7 @@ namespace WCF_ReservaYoga
                 var query = (from miDisp in MisReservas.Tb_Disciplina
                              join misCateg in MisReservas.Tb_Categoria
                              on miDisp.Id_Cat equals misCateg.Id_Cat
+                             where miDisp.Estado == 1
                              orderby miDisp.Cod_disp
                              select miDisp).ToList();
 
@@ -172,7 +173,27 @@ namespace WCF_ReservaYoga
             {
                 throw new Exception(ex.Message);
             }
-        }       
+        }
+
+        public Boolean UpdateDisciplinaEstado(DisciplinaDC objDisciplinaDC)
+        {
+            try
+            {
+                ReservaYogaEntities MisReservas = new ReservaYogaEntities();
+                MisReservas.usp_ActualizarDisciplinaEstado(
+                    objDisciplinaDC.Cod_disp,
+                    objDisciplinaDC.Comentario
+                    );
+
+                MisReservas.SaveChanges();
+                return true;
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception(ex.Message);
+            }
+        }
 
     }
 }

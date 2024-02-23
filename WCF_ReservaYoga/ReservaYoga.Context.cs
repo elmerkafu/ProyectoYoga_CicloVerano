@@ -634,5 +634,69 @@ namespace WCF_ReservaYoga
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("usp_RegistrarReserva_TEST", vId_CliParameter, vUsu_regParameter, vIdclaseParameter);
         }
+    
+        public virtual int usp_ActualizarSalonEstado(Nullable<int> vcod, string vcoment)
+        {
+            var vcodParameter = vcod.HasValue ?
+                new ObjectParameter("vcod", vcod) :
+                new ObjectParameter("vcod", typeof(int));
+    
+            var vcomentParameter = vcoment != null ?
+                new ObjectParameter("vcoment", vcoment) :
+                new ObjectParameter("vcoment", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("usp_ActualizarSalonEstado", vcodParameter, vcomentParameter);
+        }
+    
+        public virtual int usp_ActualizarUsuarioEstado(string vcod, string vcoment)
+        {
+            var vcodParameter = vcod != null ?
+                new ObjectParameter("vcod", vcod) :
+                new ObjectParameter("vcod", typeof(string));
+    
+            var vcomentParameter = vcoment != null ?
+                new ObjectParameter("vcoment", vcoment) :
+                new ObjectParameter("vcoment", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("usp_ActualizarUsuarioEstado", vcodParameter, vcomentParameter);
+        }
+    
+        public virtual int usp_InsertarUsuario(string vLogin, string vPass, Nullable<int> vNivel, Nullable<int> vEstado, string vUsu_Reg)
+        {
+            var vLoginParameter = vLogin != null ?
+                new ObjectParameter("vLogin", vLogin) :
+                new ObjectParameter("vLogin", typeof(string));
+    
+            var vPassParameter = vPass != null ?
+                new ObjectParameter("vPass", vPass) :
+                new ObjectParameter("vPass", typeof(string));
+    
+            var vNivelParameter = vNivel.HasValue ?
+                new ObjectParameter("vNivel", vNivel) :
+                new ObjectParameter("vNivel", typeof(int));
+    
+            var vEstadoParameter = vEstado.HasValue ?
+                new ObjectParameter("vEstado", vEstado) :
+                new ObjectParameter("vEstado", typeof(int));
+    
+            var vUsu_RegParameter = vUsu_Reg != null ?
+                new ObjectParameter("vUsu_Reg", vUsu_Reg) :
+                new ObjectParameter("vUsu_Reg", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("usp_InsertarUsuario", vLoginParameter, vPassParameter, vNivelParameter, vEstadoParameter, vUsu_RegParameter);
+        }
+    
+        public virtual int usp_ActualizarDisciplinaEstado(string vcod, string vcoment)
+        {
+            var vcodParameter = vcod != null ?
+                new ObjectParameter("vcod", vcod) :
+                new ObjectParameter("vcod", typeof(string));
+    
+            var vcomentParameter = vcoment != null ?
+                new ObjectParameter("vcoment", vcoment) :
+                new ObjectParameter("vcoment", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("usp_ActualizarDisciplinaEstado", vcodParameter, vcomentParameter);
+        }
     }
 }

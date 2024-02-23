@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
+using System.Security.Cryptography.Pkcs;
 using System.ServiceModel;
 using System.Text;
 
@@ -17,14 +18,14 @@ namespace WCF_ReservaYoga
         [OperationContract]
         Boolean ActualizarUsuario(UsuarioDC objUsuarioDC);
 
-        //[OperationContract]
-        //Boolean EliminarUsuario(String strCodigo);
-
         [OperationContract]
         UsuarioDC ConsultarUsuario(String strCodigo);
 
         [OperationContract]
-        List<UsuarioDC> ListarUsuario();
+        List<UsuarioDC> ListarUsuarioEstado();
+
+        [OperationContract]
+        Boolean UpdateUsuarioEstado(UsuarioDC objUsuarioDC);
 
     }
 
@@ -45,6 +46,9 @@ namespace WCF_ReservaYoga
         public DateTime Fec_Registro { get; set; }
         [DataMember]
         public String Usu_Registro { get; set; }
+
+        [DataMember]
+        public String Comentario { get; set; }
         
     }
 }

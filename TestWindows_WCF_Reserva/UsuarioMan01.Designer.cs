@@ -51,14 +51,15 @@
             dtgUsuarios.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dtgUsuarios.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dtgUsuarios.Columns.AddRange(new DataGridViewColumn[] { Login_Usuario, Pass_Usuario, Niv_Usuario, Est_Usuario, Fec_Registro, Usu_Registro });
-            dtgUsuarios.Location = new Point(29, 74);
+            dtgUsuarios.Location = new Point(25, 56);
+            dtgUsuarios.Margin = new Padding(3, 2, 3, 2);
             dtgUsuarios.Name = "dtgUsuarios";
             dtgUsuarios.ReadOnly = true;
             dtgUsuarios.RowHeadersVisible = false;
             dtgUsuarios.RowHeadersWidth = 51;
             dtgUsuarios.RowTemplate.Height = 29;
             dtgUsuarios.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dtgUsuarios.Size = new Size(896, 267);
+            dtgUsuarios.Size = new Size(784, 200);
             dtgUsuarios.TabIndex = 0;
             dtgUsuarios.DoubleClick += dtgUsuarios_DoubleClick;
             // 
@@ -112,9 +113,10 @@
             // 
             // btnRegistrar
             // 
-            btnRegistrar.Location = new Point(407, 388);
+            btnRegistrar.Location = new Point(463, 313);
+            btnRegistrar.Margin = new Padding(3, 2, 3, 2);
             btnRegistrar.Name = "btnRegistrar";
-            btnRegistrar.Size = new Size(94, 29);
+            btnRegistrar.Size = new Size(82, 22);
             btnRegistrar.TabIndex = 1;
             btnRegistrar.Text = "Registrar";
             btnRegistrar.UseVisualStyleBackColor = true;
@@ -122,9 +124,10 @@
             // 
             // btnActualizar
             // 
-            btnActualizar.Location = new Point(530, 388);
+            btnActualizar.Location = new Point(551, 313);
+            btnActualizar.Margin = new Padding(3, 2, 3, 2);
             btnActualizar.Name = "btnActualizar";
-            btnActualizar.Size = new Size(94, 29);
+            btnActualizar.Size = new Size(82, 22);
             btnActualizar.TabIndex = 1;
             btnActualizar.Text = "Actualizar";
             btnActualizar.UseVisualStyleBackColor = true;
@@ -132,18 +135,21 @@
             // 
             // btnEliminar
             // 
-            btnEliminar.Location = new Point(655, 388);
+            btnEliminar.Location = new Point(639, 313);
+            btnEliminar.Margin = new Padding(3, 2, 3, 2);
             btnEliminar.Name = "btnEliminar";
-            btnEliminar.Size = new Size(94, 29);
+            btnEliminar.Size = new Size(82, 22);
             btnEliminar.TabIndex = 1;
             btnEliminar.Text = "Eliminar";
             btnEliminar.UseVisualStyleBackColor = true;
+            btnEliminar.Click += btnEliminar_Click;
             // 
             // btnSalir
             // 
-            btnSalir.Location = new Point(831, 388);
+            btnSalir.Location = new Point(727, 313);
+            btnSalir.Margin = new Padding(3, 2, 3, 2);
             btnSalir.Name = "btnSalir";
-            btnSalir.Size = new Size(94, 29);
+            btnSalir.Size = new Size(82, 22);
             btnSalir.TabIndex = 1;
             btnSalir.Text = "Salir";
             btnSalir.UseVisualStyleBackColor = true;
@@ -152,25 +158,25 @@
             // lbl1
             // 
             lbl1.AutoSize = true;
-            lbl1.Location = new Point(38, 396);
+            lbl1.Location = new Point(33, 297);
             lbl1.Name = "lbl1";
-            lbl1.Size = new Size(73, 20);
+            lbl1.Size = new Size(58, 15);
             lbl1.TabIndex = 2;
             lbl1.Text = "Registros:";
             // 
             // lblRegistros
             // 
             lblRegistros.BorderStyle = BorderStyle.FixedSingle;
-            lblRegistros.Location = new Point(126, 381);
+            lblRegistros.Location = new Point(110, 286);
             lblRegistros.Name = "lblRegistros";
-            lblRegistros.Size = new Size(78, 36);
+            lblRegistros.Size = new Size(68, 28);
             lblRegistros.TabIndex = 3;
             // 
             // UsuarioMan01
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(956, 462);
+            ClientSize = new Size(836, 346);
             Controls.Add(lblRegistros);
             Controls.Add(lbl1);
             Controls.Add(btnSalir);
@@ -178,6 +184,7 @@
             Controls.Add(btnActualizar);
             Controls.Add(btnRegistrar);
             Controls.Add(dtgUsuarios);
+            Margin = new Padding(3, 2, 3, 2);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "UsuarioMan01";

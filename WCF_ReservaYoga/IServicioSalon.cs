@@ -25,6 +25,9 @@ namespace WCF_ReservaYoga
 
         [OperationContract]
         SalonDC ConsultarSalon(Int16 strId);
+
+        [OperationContract]
+        Boolean UpdateSalonEstado(SalonDC objSalonDC);
     }
     [DataContract]
     [Serializable]
@@ -50,5 +53,8 @@ namespace WCF_ReservaYoga
 
         [DataMember]
         public String EstadoTexto { get; set; }
+
+        [DataMember]
+        public String Comentario { get; set; }
      }
 }

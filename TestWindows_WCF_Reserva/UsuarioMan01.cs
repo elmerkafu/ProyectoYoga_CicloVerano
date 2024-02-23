@@ -20,7 +20,7 @@ namespace TestWindows_WCF_Reserva
 
         public void CargarDatos()
         {
-            dtgUsuarios.DataSource = objServiceUsuario.ListarUsuario();
+            dtgUsuarios.DataSource = objServiceUsuario.ListarUsuarioEstado();
             lblRegistros.Text = dtgUsuarios.Rows.Count.ToString();
         }
 
@@ -80,6 +80,39 @@ namespace TestWindows_WCF_Reserva
         private void dtgUsuarios_DoubleClick(object sender, EventArgs e)
         {
             btnActualizar.PerformClick();
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                if (dtgUsuarios.SelectedRows.Count > 0)
+                {
+
+                    DialogResult result = MessageBox.Show("¿Estás seguro de querer eliminar al usuario?", "Confirmar Eliminación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+
+                    if (result == DialogResult.Yes)
+                    {
+
+                        Comentario04 comentario4 = new Comentario04();
+                        String Codigo = dtgUsuarios.CurrentRow.Cells[0].Value.ToString();
+                        comentario4.Codigo = Codigo;
+                        comentario4.ShowDialog();
+
+                        CargarDatos();
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Por favor, seleccione un usuario antes de intentar eliminarlo.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
         }
     }
 }

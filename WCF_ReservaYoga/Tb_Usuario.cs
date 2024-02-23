@@ -20,5 +20,6 @@ namespace WCF_ReservaYoga
         public Nullable<int> Est_Usuario { get; set; }
         public Nullable<System.DateTime> Fec_Registro { get; set; }
         public string Usu_Registro { get; set; }
+        public string Comentario { get; set; }
     }
 }

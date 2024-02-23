@@ -85,11 +85,14 @@ namespace TestWindows_WCF_Reserva
 
                     if (result == DialogResult.Yes)
                     {
-                        String idDisciplina = dtgDisciplina.SelectedRows[0].Cells["Cod_disp"].Value.ToString();
-                        objServiceDisciplina.EliminarDisciplina(idDisciplina);
+
+                        Comentario05 comentario5 = new Comentario05();
+                        String Codigo = dtgDisciplina.CurrentRow.Cells[0].Value.ToString();
+                        comentario5.Codigo = Codigo;
+                        comentario5.ShowDialog();
+
                         CargarDatos();
                     }
-
                 }
                 else
                 {

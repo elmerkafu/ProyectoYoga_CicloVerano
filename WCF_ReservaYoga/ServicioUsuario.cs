@@ -17,17 +17,15 @@ namespace WCF_ReservaYoga
             try
             {
                 ReservaYogaEntities MisReservas = new ReservaYogaEntities();
-                Tb_Usuario nuevoUsuario = new Tb_Usuario
-                {
-                    Login_Usuario = objUsuarioDC.Login_Usuario,
-                    Pass_Usuario = objUsuarioDC.Pass_Usuario,
-                    Niv_Usuario = objUsuarioDC.Niv_Usuario,
-                    Est_Usuario = objUsuarioDC.Est_Usuario,
-                    Fec_Registro = objUsuarioDC.Fec_Registro,
-                    Usu_Registro = objUsuarioDC.Usu_Registro
-                };
 
-                MisReservas.Tb_Usuario.Add(nuevoUsuario);
+                MisReservas.usp_InsertarUsuario(
+                    objUsuarioDC.Login_Usuario,
+                    objUsuarioDC.Pass_Usuario,
+                    objUsuarioDC.Niv_Usuario,
+                    objUsuarioDC.Est_Usuario,
+                    objUsuarioDC.Usu_Registro
+                  );
+
                 MisReservas.SaveChanges();
                 return true;
 
@@ -113,7 +111,7 @@ namespace WCF_ReservaYoga
             }
         }
 
-        public List<UsuarioDC> ListarUsuario()
+        public List<UsuarioDC> ListarUsuarioEstado()
         {
             try
             {
@@ -121,7 +119,7 @@ namespace WCF_ReservaYoga
 
                 using (ReservaYogaEntities MisReservas = new ReservaYogaEntities())
                 {
-                    var usuariosBD = MisReservas.Tb_Usuario.ToList();
+                    var usuariosBD = (from miUsuario in MisReservas.Tb_Usuario where miUsuario.Est_Usuario == 1 select miUsuario).ToList() ;
 
                     foreach (var usuario in usuariosBD)
                     {
@@ -146,7 +144,25 @@ namespace WCF_ReservaYoga
             }
         }
 
+        public Boolean UpdateUsuarioEstado(UsuarioDC objUsuarioDC)
+        {
+            try
+            {
+                ReservaYogaEntities MisReservas = new ReservaYogaEntities();
+                MisReservas.usp_ActualizarUsuarioEstado(
+                    objUsuarioDC.Login_Usuario,
+                    objUsuarioDC.Comentario
+                    );
 
+                MisReservas.SaveChanges();
+                return true;
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception(ex.Message);
+            }
+        }
 
     }
 }

@@ -67,6 +67,8 @@
     <EntitySetMapping Name="Tb_Disciplina">
       <EntityTypeMapping TypeName="ReservaYogaModel.Tb_Disciplina">
         <MappingFragment StoreEntitySet="Tb_Disciplina">
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Comentario" ColumnName="Comentario" />
           <ScalarProperty Name="Cod_disp" ColumnName="Cod_disp" />
           <ScalarProperty Name="Nombre" ColumnName="Nombre" />
           <ScalarProperty Name="Duracion" ColumnName="Duracion" />
@@ -127,6 +129,7 @@
     <EntitySetMapping Name="Tb_Salon">
       <EntityTypeMapping TypeName="ReservaYogaModel.Tb_Salon">
         <MappingFragment StoreEntitySet="Tb_Salon">
+          <ScalarProperty Name="Comentario" ColumnName="Comentario" />
           <ScalarProperty Name="Id_Salon" ColumnName="Id_Salon" />
           <ScalarProperty Name="Nombre" ColumnName="Nombre" />
           <ScalarProperty Name="Area" ColumnName="Area" />
@@ -152,6 +155,7 @@
     <EntitySetMapping Name="Tb_Usuario">
       <EntityTypeMapping TypeName="ReservaYogaModel.Tb_Usuario">
         <MappingFragment StoreEntitySet="Tb_Usuario">
+          <ScalarProperty Name="Comentario" ColumnName="Comentario" />
           <ScalarProperty Name="Login_Usuario" ColumnName="Login_Usuario" />
           <ScalarProperty Name="Pass_Usuario" ColumnName="Pass_Usuario" />
           <ScalarProperty Name="Niv_Usuario" ColumnName="Niv_Usuario" />
@@ -256,5 +260,9 @@
     <FunctionImportMapping FunctionImportName="usp_InsertarCliente_TEST" FunctionName="ReservaYogaModel.Store.usp_InsertarCliente_TEST" />
     <FunctionImportMapping FunctionImportName="usp_ActualizarInstructorEstado" FunctionName="ReservaYogaModel.Store.usp_ActualizarInstructorEstado" />
     <FunctionImportMapping FunctionImportName="usp_RegistrarReserva_TEST" FunctionName="ReservaYogaModel.Store.usp_RegistrarReserva_TEST" />
+    <FunctionImportMapping FunctionImportName="usp_ActualizarSalonEstado" FunctionName="ReservaYogaModel.Store.usp_ActualizarSalonEstado" />
+    <FunctionImportMapping FunctionImportName="usp_ActualizarUsuarioEstado" FunctionName="ReservaYogaModel.Store.usp_ActualizarUsuarioEstado" />
+    <FunctionImportMapping FunctionImportName="usp_InsertarUsuario" FunctionName="ReservaYogaModel.Store.usp_InsertarUsuario" />
+    <FunctionImportMapping FunctionImportName="usp_ActualizarDisciplinaEstado" FunctionName="ReservaYogaModel.Store.usp_ActualizarDisciplinaEstado" />
   </EntityContainerMapping>
 </Mapping>

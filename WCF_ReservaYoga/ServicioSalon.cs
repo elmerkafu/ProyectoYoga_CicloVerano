@@ -48,6 +48,7 @@ namespace WCF_ReservaYoga
                 List<SalonDC> objListaSalonDC = new List<SalonDC>();
 
                 var query = (from miSalon in MisReservas.Tb_Salon
+                             where miSalon.Estado == 1
                              select miSalon).ToList();
 
                 foreach(var objSalon in query)
@@ -59,15 +60,8 @@ namespace WCF_ReservaYoga
                     objSalonDC.Area = objSalon.Area;
                     objSalonDC.Capacidad = Convert.ToInt16(objSalon.Capacidad);
                     objSalonDC.Estado = Convert.ToInt16(objSalon.Estado);
-                    objSalonDC.Descripcion = objSalon.Descripcion;
-                    if (objSalonDC.Estado == 1)
-                    {
-                        objSalonDC.EstadoTexto = "Activo";
-                    }
-                    else if (objSalonDC.Estado == 0)
-                    {
-                        objSalonDC.EstadoTexto = "Inactivo";
-                    }
+                    objSalonDC.EstadoTexto = "Activo";
+                    objSalonDC.Descripcion = objSalon.Descripcion;                   
 
                     objListaSalonDC.Add(objSalonDC);
                 }
@@ -152,6 +146,26 @@ namespace WCF_ReservaYoga
                 throw new Exception(ex.Message);
             }
            
+        }
+
+        public Boolean UpdateSalonEstado(SalonDC objSalonDC)
+        {
+            try
+            {
+                ReservaYogaEntities MisReservas = new ReservaYogaEntities();
+                MisReservas.usp_ActualizarSalonEstado(
+                    objSalonDC.Id_Salon,
+                    objSalonDC.Comentario
+                    );
+
+                MisReservas.SaveChanges();
+                return true;
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception(ex.Message);
+            }
         }
     }
 }

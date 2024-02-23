@@ -26,6 +26,7 @@ namespace WCF_ReservaYoga
         public Nullable<int> Capacidad { get; set; }
         public Nullable<int> Estado { get; set; }
         public string Descripcion { get; set; }
+        public string Comentario { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Tb_Clase_Programada> Tb_Clase_Programada { get; set; }

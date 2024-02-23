@@ -26,6 +26,8 @@ namespace WCF_ReservaYoga
         public string Intensidad { get; set; }
         public Nullable<decimal> Precio { get; set; }
         public Nullable<int> Id_Cat { get; set; }
+        public string Comentario { get; set; }
+        public Nullable<int> Estado { get; set; }
     
         public virtual Tb_Categoria Tb_Categoria { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

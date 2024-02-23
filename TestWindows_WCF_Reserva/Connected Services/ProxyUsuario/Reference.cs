@@ -18,6 +18,8 @@ namespace ProxyUsuario
     public partial class UsuarioDC : object
     {
         
+        private string ComentarioField;
+        
         private short Est_UsuarioField;
         
         private System.DateTime Fec_RegistroField;
@@ -29,6 +31,19 @@ namespace ProxyUsuario
         private string Pass_UsuarioField;
         
         private string Usu_RegistroField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Comentario
+        {
+            get
+            {
+                return this.ComentarioField;
+            }
+            set
+            {
+                this.ComentarioField = value;
+            }
+        }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
         public short Est_Usuario
@@ -132,11 +147,17 @@ namespace ProxyUsuario
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServicioUsuario/ConsultarUsuario", ReplyAction="http://tempuri.org/IServicioUsuario/ConsultarUsuarioResponse")]
         System.Threading.Tasks.Task<ProxyUsuario.UsuarioDC> ConsultarUsuarioAsync(string strCodigo);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServicioUsuario/ListarUsuario", ReplyAction="http://tempuri.org/IServicioUsuario/ListarUsuarioResponse")]
-        System.Collections.Generic.List<ProxyUsuario.UsuarioDC> ListarUsuario();
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServicioUsuario/ListarUsuarioEstado", ReplyAction="http://tempuri.org/IServicioUsuario/ListarUsuarioEstadoResponse")]
+        System.Collections.Generic.List<ProxyUsuario.UsuarioDC> ListarUsuarioEstado();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServicioUsuario/ListarUsuario", ReplyAction="http://tempuri.org/IServicioUsuario/ListarUsuarioResponse")]
-        System.Threading.Tasks.Task<System.Collections.Generic.List<ProxyUsuario.UsuarioDC>> ListarUsuarioAsync();
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServicioUsuario/ListarUsuarioEstado", ReplyAction="http://tempuri.org/IServicioUsuario/ListarUsuarioEstadoResponse")]
+        System.Threading.Tasks.Task<System.Collections.Generic.List<ProxyUsuario.UsuarioDC>> ListarUsuarioEstadoAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServicioUsuario/UpdateUsuarioEstado", ReplyAction="http://tempuri.org/IServicioUsuario/UpdateUsuarioEstadoResponse")]
+        bool UpdateUsuarioEstado(ProxyUsuario.UsuarioDC objUsuarioDC);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServicioUsuario/UpdateUsuarioEstado", ReplyAction="http://tempuri.org/IServicioUsuario/UpdateUsuarioEstadoResponse")]
+        System.Threading.Tasks.Task<bool> UpdateUsuarioEstadoAsync(ProxyUsuario.UsuarioDC objUsuarioDC);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
@@ -219,14 +240,24 @@ namespace ProxyUsuario
             return base.Channel.ConsultarUsuarioAsync(strCodigo);
         }
         
-        public System.Collections.Generic.List<ProxyUsuario.UsuarioDC> ListarUsuario()
+        public System.Collections.Generic.List<ProxyUsuario.UsuarioDC> ListarUsuarioEstado()
         {
-            return base.Channel.ListarUsuario();
+            return base.Channel.ListarUsuarioEstado();
         }
         
-        public System.Threading.Tasks.Task<System.Collections.Generic.List<ProxyUsuario.UsuarioDC>> ListarUsuarioAsync()
+        public System.Threading.Tasks.Task<System.Collections.Generic.List<ProxyUsuario.UsuarioDC>> ListarUsuarioEstadoAsync()
         {
-            return base.Channel.ListarUsuarioAsync();
+            return base.Channel.ListarUsuarioEstadoAsync();
+        }
+        
+        public bool UpdateUsuarioEstado(ProxyUsuario.UsuarioDC objUsuarioDC)
+        {
+            return base.Channel.UpdateUsuarioEstado(objUsuarioDC);
+        }
+        
+        public System.Threading.Tasks.Task<bool> UpdateUsuarioEstadoAsync(ProxyUsuario.UsuarioDC objUsuarioDC)
+        {
+            return base.Channel.UpdateUsuarioEstadoAsync(objUsuarioDC);
         }
         
         public virtual System.Threading.Tasks.Task OpenAsync()

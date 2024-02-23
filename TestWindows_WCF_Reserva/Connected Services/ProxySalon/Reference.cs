@@ -22,6 +22,8 @@ namespace ProxySalon
         
         private short CapacidadField;
         
+        private string ComentarioField;
+        
         private string DescripcionField;
         
         private short EstadoField;
@@ -55,6 +57,19 @@ namespace ProxySalon
             set
             {
                 this.CapacidadField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Comentario
+        {
+            get
+            {
+                return this.ComentarioField;
+            }
+            set
+            {
+                this.ComentarioField = value;
             }
         }
         
@@ -158,6 +173,12 @@ namespace ProxySalon
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServicioSalon/ConsultarSalon", ReplyAction="http://tempuri.org/IServicioSalon/ConsultarSalonResponse")]
         System.Threading.Tasks.Task<ProxySalon.SalonDC> ConsultarSalonAsync(short strId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServicioSalon/UpdateSalonEstado", ReplyAction="http://tempuri.org/IServicioSalon/UpdateSalonEstadoResponse")]
+        bool UpdateSalonEstado(ProxySalon.SalonDC objSalonDC);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServicioSalon/UpdateSalonEstado", ReplyAction="http://tempuri.org/IServicioSalon/UpdateSalonEstadoResponse")]
+        System.Threading.Tasks.Task<bool> UpdateSalonEstadoAsync(ProxySalon.SalonDC objSalonDC);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
@@ -258,6 +279,16 @@ namespace ProxySalon
         public System.Threading.Tasks.Task<ProxySalon.SalonDC> ConsultarSalonAsync(short strId)
         {
             return base.Channel.ConsultarSalonAsync(strId);
+        }
+        
+        public bool UpdateSalonEstado(ProxySalon.SalonDC objSalonDC)
+        {
+            return base.Channel.UpdateSalonEstado(objSalonDC);
+        }
+        
+        public System.Threading.Tasks.Task<bool> UpdateSalonEstadoAsync(ProxySalon.SalonDC objSalonDC)
+        {
+            return base.Channel.UpdateSalonEstadoAsync(objSalonDC);
         }
         
         public virtual System.Threading.Tasks.Task OpenAsync()

@@ -77,6 +77,8 @@
     <Property Name="Intensidad" Type="varchar" MaxLength="20" />
     <Property Name="Precio" Type="money" />
     <Property Name="Id_Cat" Type="int" />
+    <Property Name="Comentario" Type="varchar" MaxLength="300" />
+    <Property Name="Estado" Type="int" />
   </EntityType>
   <EntityType Name="Tb_Instructor">
     <Key>
@@ -133,6 +135,7 @@
     <Property Name="Capacidad" Type="int" />
     <Property Name="Estado" Type="int" />
     <Property Name="Descripcion" Type="varchar" MaxLength="100" />
+    <Property Name="Comentario" Type="varchar" MaxLength="300" />
   </EntityType>
   <EntityType Name="Tb_Ubigeo">
     <Key>
@@ -156,6 +159,7 @@
     <Property Name="Est_Usuario" Type="int" />
     <Property Name="Fec_Registro" Type="datetime" />
     <Property Name="Usu_Registro" Type="varchar" MaxLength="20" />
+    <Property Name="Comentario" Type="varchar" MaxLength="300" />
   </EntityType>
   <Association Name="FKCat">
     <End Role="Tb_Categoria" Type="Self.Tb_Categoria" Multiplicity="0..1" />
@@ -181,7 +185,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FKClaseProg">
+  <Association Name="FKClassP">
     <End Role="Tb_Clase_Programada" Type="Self.Tb_Clase_Programada" Multiplicity="0..1" />
     <End Role="Tb_Reserva" Type="Self.Tb_Reserva" Multiplicity="*" />
     <ReferentialConstraint>
@@ -336,6 +340,10 @@
     <Parameter Name="vPrecio" Type="money" Mode="In" />
     <Parameter Name="vId_Cat" Type="int" Mode="In" />
   </Function>
+  <Function Name="usp_ActualizarDisciplinaEstado" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="vcod" Type="nchar" Mode="In" />
+    <Parameter Name="vcoment" Type="varchar" Mode="In" />
+  </Function>
   <Function Name="usp_ActualizarInstructor" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="vCod" Type="nchar" Mode="In" />
     <Parameter Name="vNombre" Type="varchar" Mode="In" />
@@ -361,6 +369,14 @@
     <Parameter Name="vCapacidad" Type="int" Mode="In" />
     <Parameter Name="vEstado" Type="int" Mode="In" />
     <Parameter Name="vDescripcion" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="usp_ActualizarSalonEstado" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="vcod" Type="int" Mode="In" />
+    <Parameter Name="vcoment" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="usp_ActualizarUsuarioEstado" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="vcod" Type="varchar" Mode="In" />
+    <Parameter Name="vcoment" Type="varchar" Mode="In" />
   </Function>
   <Function Name="usp_Combo_Instructor" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
   <Function Name="usp_Combo_InstructorDisciplina" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
@@ -439,6 +455,13 @@
     <Parameter Name="vEstado" Type="int" Mode="In" />
     <Parameter Name="vDescripcion" Type="varchar" Mode="In" />
   </Function>
+  <Function Name="usp_InsertarUsuario" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="vLogin" Type="varchar" Mode="In" />
+    <Parameter Name="vPass" Type="varchar" Mode="In" />
+    <Parameter Name="vNivel" Type="int" Mode="In" />
+    <Parameter Name="vEstado" Type="int" Mode="In" />
+    <Parameter Name="vUsu_Reg" Type="varchar" Mode="In" />
+  </Function>
   <Function Name="usp_ListarCliente" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
   <Function Name="usp_RegistrarReserva_TEST" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="vId_Cli" Type="int" Mode="In" />
@@ -474,7 +497,7 @@
       <End Role="Tb_Clase_Programada" EntitySet="Tb_Clase_Programada" />
       <End Role="Tb_Detalle_Reserva" EntitySet="Tb_Detalle_Reserva" />
     </AssociationSet>
-    <AssociationSet Name="FKClaseProg" Association="Self.FKClaseProg">
+    <AssociationSet Name="FKClassP" Association="Self.FKClassP">
       <End Role="Tb_Clase_Programada" EntitySet="Tb_Clase_Programada" />
       <End Role="Tb_Reserva" EntitySet="Tb_Reserva" />
     </AssociationSet>

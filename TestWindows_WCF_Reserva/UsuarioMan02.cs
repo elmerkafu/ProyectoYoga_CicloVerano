@@ -40,6 +40,7 @@ namespace TestWindows_WCF_Reserva
                 objUsuarioDC.Niv_Usuario = Convert.ToInt16(cboNivel.SelectedValue);
                 objUsuarioDC.Est_Usuario = Convert.ToInt16(chkEstado.Checked);
                 objUsuarioDC.Usu_Registro = "Rivera";
+                
 
                 if (objServiceUsuario.InsertarUsuario(objUsuarioDC) == true)
                 {

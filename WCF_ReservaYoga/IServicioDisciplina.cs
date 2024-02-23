@@ -14,7 +14,6 @@ namespace WCF_ReservaYoga
         [OperationContract]
         Boolean InsertarDisciplina(DisciplinaDC objDisciplinaDC);
 
-
         [OperationContract]
         Boolean ActualizarDisciplina(DisciplinaDC objDisciplinaDC);
 
@@ -30,7 +29,10 @@ namespace WCF_ReservaYoga
         [OperationContract]
         List<DisciplinaDC> ListarCategoria();
 
-        
+        [OperationContract]
+        Boolean UpdateDisciplinaEstado(DisciplinaDC objDisciplinaDC);
+
+
     }
     [DataContract]
     [Serializable]
@@ -57,7 +59,11 @@ namespace WCF_ReservaYoga
         [DataMember]
         public String Categoria { get; set; }
 
-        
+        [DataMember]
+        public String Comentario { get; set; }
+
+        [DataMember]
+        public Int16 Estado { get; set; }
 
     }
 }

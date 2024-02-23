@@ -22,7 +22,11 @@ namespace ProxyDisciplina
         
         private string Cod_dispField;
         
+        private string ComentarioField;
+        
         private string DuracionField;
+        
+        private short EstadoField;
         
         private short Id_CatField;
         
@@ -59,6 +63,19 @@ namespace ProxyDisciplina
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Comentario
+        {
+            get
+            {
+                return this.ComentarioField;
+            }
+            set
+            {
+                this.ComentarioField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
         public string Duracion
         {
             get
@@ -68,6 +85,19 @@ namespace ProxyDisciplina
             set
             {
                 this.DuracionField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public short Estado
+        {
+            get
+            {
+                return this.EstadoField;
+            }
+            set
+            {
+                this.EstadoField = value;
             }
         }
         
@@ -164,6 +194,12 @@ namespace ProxyDisciplina
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServicioDisciplina/ListarCategoria", ReplyAction="http://tempuri.org/IServicioDisciplina/ListarCategoriaResponse")]
         System.Threading.Tasks.Task<System.Collections.Generic.List<ProxyDisciplina.DisciplinaDC>> ListarCategoriaAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServicioDisciplina/UpdateDisciplinaEstado", ReplyAction="http://tempuri.org/IServicioDisciplina/UpdateDisciplinaEstadoResponse")]
+        bool UpdateDisciplinaEstado(ProxyDisciplina.DisciplinaDC objDisciplinaDC);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServicioDisciplina/UpdateDisciplinaEstado", ReplyAction="http://tempuri.org/IServicioDisciplina/UpdateDisciplinaEstadoResponse")]
+        System.Threading.Tasks.Task<bool> UpdateDisciplinaEstadoAsync(ProxyDisciplina.DisciplinaDC objDisciplinaDC);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
@@ -274,6 +310,16 @@ namespace ProxyDisciplina
         public System.Threading.Tasks.Task<System.Collections.Generic.List<ProxyDisciplina.DisciplinaDC>> ListarCategoriaAsync()
         {
             return base.Channel.ListarCategoriaAsync();
+        }
+        
+        public bool UpdateDisciplinaEstado(ProxyDisciplina.DisciplinaDC objDisciplinaDC)
+        {
+            return base.Channel.UpdateDisciplinaEstado(objDisciplinaDC);
+        }
+        
+        public System.Threading.Tasks.Task<bool> UpdateDisciplinaEstadoAsync(ProxyDisciplina.DisciplinaDC objDisciplinaDC)
+        {
+            return base.Channel.UpdateDisciplinaEstadoAsync(objDisciplinaDC);
         }
         
         public virtual System.Threading.Tasks.Task OpenAsync()

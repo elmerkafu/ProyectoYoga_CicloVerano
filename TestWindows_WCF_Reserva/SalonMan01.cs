@@ -37,7 +37,7 @@ namespace TestWindows_WCF_Reserva
 
                 MessageBox.Show("Error: " + ex.Message);
             }
-        }        
+        }
 
         private void dtgSalon_DoubleClick(object sender, EventArgs e)
         {
@@ -75,5 +75,36 @@ namespace TestWindows_WCF_Reserva
             this.Close();
         }
 
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (dtgSalon.SelectedRows.Count > 0)
+                {
+
+                    DialogResult result = MessageBox.Show("¿Estás seguro de querer eliminar el salón?", "Confirmar Eliminación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+
+                    if (result == DialogResult.Yes)
+                    {
+
+                        Comentario03 comentario3 = new Comentario03();
+                        Int16 Codigo = Convert.ToInt16(dtgSalon.CurrentRow.Cells[0].Value.ToString());
+                        comentario3.Codigo = Codigo;
+                        comentario3.ShowDialog();
+
+                        CargarDatos();
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Por favor, selecciona un salón antes de intentar eliminarlo.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+        }
     }
 }

@@ -55,7 +55,7 @@
             dtgInstructor.AllowUserToResizeRows = false;
             dtgInstructor.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             dtgInstructor.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dtgInstructor.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dtgInstructor.ColumnHeadersHeight = 30;
             dtgInstructor.Columns.AddRange(new DataGridViewColumn[] { Id_Instructor, NombreCompleto, Correo, Tel_inst, Dni_inst, Dir_inst, Departamento, Provincia, Distrito, EstadoInst });
             dtgInstructor.Location = new Point(12, 12);
             dtgInstructor.Margin = new Padding(2, 1, 2, 1);

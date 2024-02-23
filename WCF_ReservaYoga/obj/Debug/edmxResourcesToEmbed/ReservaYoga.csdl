@@ -78,6 +78,8 @@
     <Property Name="Id_Cat" Type="Int32" />
     <NavigationProperty Name="Tb_Categoria" Relationship="Self.FKCat" FromRole="Tb_Disciplina" ToRole="Tb_Categoria" />
     <NavigationProperty Name="Tb_Instructor_Disciplina" Relationship="Self.FKDisp" FromRole="Tb_Disciplina" ToRole="Tb_Instructor_Disciplina" />
+    <Property Name="Comentario" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="Estado" Type="Int32" />
   </EntityType>
   <EntityType Name="Tb_Instructor">
     <Key>
@@ -143,6 +145,7 @@
     <Property Name="Estado" Type="Int32" />
     <Property Name="Descripcion" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
     <NavigationProperty Name="Tb_Clase_Programada" Relationship="Self.FKSalon" FromRole="Tb_Salon" ToRole="Tb_Clase_Programada" />
+    <Property Name="Comentario" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
   </EntityType>
   <EntityType Name="Tb_Ubigeo">
     <Key>
@@ -168,6 +171,7 @@
     <Property Name="Est_Usuario" Type="Int32" />
     <Property Name="Fec_Registro" Type="DateTime" Precision="3" />
     <Property Name="Usu_Registro" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Comentario" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
   </EntityType>
   <Association Name="FKCat">
     <End Role="Tb_Categoria" Type="Self.Tb_Categoria" Multiplicity="0..1" />
@@ -484,6 +488,25 @@
       <Parameter Name="vId_Cli" Mode="In" Type="Int32" />
       <Parameter Name="vUsu_reg" Mode="In" Type="String" />
       <Parameter Name="vIdclase" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="usp_ActualizarSalonEstado">
+      <Parameter Name="vcod" Mode="In" Type="Int32" />
+      <Parameter Name="vcoment" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_ActualizarUsuarioEstado">
+      <Parameter Name="vcod" Mode="In" Type="String" />
+      <Parameter Name="vcoment" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_InsertarUsuario">
+      <Parameter Name="vLogin" Mode="In" Type="String" />
+      <Parameter Name="vPass" Mode="In" Type="String" />
+      <Parameter Name="vNivel" Mode="In" Type="Int32" />
+      <Parameter Name="vEstado" Mode="In" Type="Int32" />
+      <Parameter Name="vUsu_Reg" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_ActualizarDisciplinaEstado">
+      <Parameter Name="vcod" Mode="In" Type="String" />
+      <Parameter Name="vcoment" Mode="In" Type="String" />
     </FunctionImport>
   </EntityContainer>
   <ComplexType Name="usp_ListarCliente_Result">
