@@ -20,9 +20,15 @@ namespace ProxyReserva
         
         private string Cod_resvField;
         
+        private string DisciplinaField;
+        
+        private string DuracionField;
+        
         private string EstRevField;
         
         private short Est_resvField;
+        
+        private System.DateTime Fec_ClaseField;
         
         private System.DateTime Fec_Ult_ModField;
         
@@ -30,13 +36,23 @@ namespace ProxyReserva
         
         private System.DateTime Fec_resvField;
         
+        private System.DateTime Hora_EmpField;
+        
+        private System.DateTime Hora_TermField;
+        
         private short Id_Clase_ProgField;
         
         private short Id_ClienteField;
         
+        private string IntensidadField;
+        
         private string NombreField;
         
+        private string NombreInstructorField;
+        
         private string ObservacionField;
+        
+        private string SalonField;
         
         private string Usu_Ult_ModField;
         
@@ -52,6 +68,32 @@ namespace ProxyReserva
             set
             {
                 this.Cod_resvField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Disciplina
+        {
+            get
+            {
+                return this.DisciplinaField;
+            }
+            set
+            {
+                this.DisciplinaField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Duracion
+        {
+            get
+            {
+                return this.DuracionField;
+            }
+            set
+            {
+                this.DuracionField = value;
             }
         }
         
@@ -78,6 +120,19 @@ namespace ProxyReserva
             set
             {
                 this.Est_resvField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.DateTime Fec_Clase
+        {
+            get
+            {
+                return this.Fec_ClaseField;
+            }
+            set
+            {
+                this.Fec_ClaseField = value;
             }
         }
         
@@ -121,6 +176,32 @@ namespace ProxyReserva
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.DateTime Hora_Emp
+        {
+            get
+            {
+                return this.Hora_EmpField;
+            }
+            set
+            {
+                this.Hora_EmpField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.DateTime Hora_Term
+        {
+            get
+            {
+                return this.Hora_TermField;
+            }
+            set
+            {
+                this.Hora_TermField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
         public short Id_Clase_Prog
         {
             get
@@ -147,6 +228,19 @@ namespace ProxyReserva
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Intensidad
+        {
+            get
+            {
+                return this.IntensidadField;
+            }
+            set
+            {
+                this.IntensidadField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
         public string Nombre
         {
             get
@@ -160,6 +254,19 @@ namespace ProxyReserva
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
+        public string NombreInstructor
+        {
+            get
+            {
+                return this.NombreInstructorField;
+            }
+            set
+            {
+                this.NombreInstructorField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
         public string Observacion
         {
             get
@@ -169,6 +276,19 @@ namespace ProxyReserva
             set
             {
                 this.ObservacionField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Salon
+        {
+            get
+            {
+                return this.SalonField;
+            }
+            set
+            {
+                this.SalonField = value;
             }
         }
         
@@ -233,6 +353,12 @@ namespace ProxyReserva
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServicioReserva/InsertarReserva", ReplyAction="http://tempuri.org/IServicioReserva/InsertarReservaResponse")]
         System.Threading.Tasks.Task<bool> InsertarReservaAsync(ProxyReserva.ReservaDC objReservaDC);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServicioReserva/ListarReservasCliente", ReplyAction="http://tempuri.org/IServicioReserva/ListarReservasClienteResponse")]
+        System.Collections.Generic.List<ProxyReserva.ReservaDC> ListarReservasCliente(short intCod);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServicioReserva/ListarReservasCliente", ReplyAction="http://tempuri.org/IServicioReserva/ListarReservasClienteResponse")]
+        System.Threading.Tasks.Task<System.Collections.Generic.List<ProxyReserva.ReservaDC>> ListarReservasClienteAsync(short intCod);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
@@ -333,6 +459,16 @@ namespace ProxyReserva
         public System.Threading.Tasks.Task<bool> InsertarReservaAsync(ProxyReserva.ReservaDC objReservaDC)
         {
             return base.Channel.InsertarReservaAsync(objReservaDC);
+        }
+        
+        public System.Collections.Generic.List<ProxyReserva.ReservaDC> ListarReservasCliente(short intCod)
+        {
+            return base.Channel.ListarReservasCliente(intCod);
+        }
+        
+        public System.Threading.Tasks.Task<System.Collections.Generic.List<ProxyReserva.ReservaDC>> ListarReservasClienteAsync(short intCod)
+        {
+            return base.Channel.ListarReservasClienteAsync(intCod);
         }
         
         public virtual System.Threading.Tasks.Task OpenAsync()

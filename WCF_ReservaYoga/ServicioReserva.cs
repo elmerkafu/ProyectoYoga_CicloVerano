@@ -149,5 +149,46 @@ namespace WCF_ReservaYoga
                 throw new Exception(ex.Message);
             }
         }
+
+        public List<ReservaDC> ListarReservasCliente(Int16 intCod)
+        {
+            try
+            {
+                ReservaYogaEntities MisReservas = new ReservaYogaEntities();
+
+                List<ReservaDC> objListarReservasDC = new List<ReservaDC>();
+
+                var query = (from miReserva in MisReservas.Tb_Reserva
+                             join miClase in MisReservas.Tb_Clase_Programada on miReserva.Id_Clase_Prog equals miClase.Id_Clase_Prog
+                             //oin miSalon in MisReservas.Tb_Salon on miReserva.Id_Clase_Prog 
+                             where miReserva.Id_Cliente == intCod
+                             select miReserva).ToList();
+                             
+                foreach (var objReserva in query)
+                {
+                    ReservaDC objReservaDC = new ReservaDC();
+                    objReservaDC.Cod_resv = objReserva.Cod_resv;
+                    objReservaDC.Fec_Clase = objReserva.Tb_Clase_Programada1.Fec_Clase;
+                    objReservaDC.Hora_Emp = Convert.ToDateTime(objReserva.Tb_Clase_Programada1.Hora_Emp);
+                    objReservaDC.Hora_Term = Convert.ToDateTime(objReserva.Tb_Clase_Programada1.Hora_Term);
+                    objReservaDC.NombreInstructor = objReserva.Tb_Clase_Programada1.Tb_Instructor_Disciplina.Tb_Instructor.Nombre + ' ' + objReserva.Tb_Clase_Programada1.Tb_Instructor_Disciplina.Tb_Instructor.ApePaterno + ' ' + objReserva.Tb_Clase_Programada1.Tb_Instructor_Disciplina.Tb_Instructor.ApeMaterno;
+                    objReservaDC.Disciplina = objReserva.Tb_Clase_Programada1.Tb_Instructor_Disciplina.Tb_Disciplina.Nombre;
+                    objReservaDC.Duracion = objReserva.Tb_Clase_Programada1.Tb_Instructor_Disciplina.Tb_Disciplina.Duracion;
+                    objReservaDC.Intensidad = objReserva.Tb_Clase_Programada1.Tb_Instructor_Disciplina.Tb_Disciplina.Intensidad;
+                    objReservaDC.Salon = objReserva.Tb_Clase_Programada1.Tb_Salon.Nombre;
+
+
+                    objListarReservasDC.Add(objReservaDC);
+                }
+                return objListarReservasDC;
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception(ex.Message);
+            }
+           
+        }
+
     }
 }

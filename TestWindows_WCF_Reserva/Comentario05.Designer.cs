@@ -82,6 +82,7 @@
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "Comentario05";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Comentario ";
             Load += Comentario05_Load;
             ResumeLayout(false);

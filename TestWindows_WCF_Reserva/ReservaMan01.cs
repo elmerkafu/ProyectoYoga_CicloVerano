@@ -94,5 +94,24 @@ namespace TestWindows_WCF_Reserva
             }
 
         }
+
+        private void btnConsultar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                ReservaMan02 objRv02 = new ReservaMan02();
+
+                Int16 intCod = Convert.ToInt16(lblIdCli.Text);
+                objRv02.intCod = intCod;
+                objRv02.ShowDialog();
+
+                // CargarDatos();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Error : " + ex.Message);
+            }
+        }
     }
 }

@@ -26,6 +26,9 @@ namespace WCF_ReservaYoga
         [OperationContract]
         Boolean InsertarReserva(ReservaDC objReservaDC);
 
+        [OperationContract]
+        List<ReservaDC> ListarReservasCliente(Int16 intCod);
+
 
     }
     [DataContract]
@@ -68,5 +71,38 @@ namespace WCF_ReservaYoga
         [DataMember]
         public DateTime Fec_Ult_Mod { get; set; }
 
+        // VIENE DE CLASE PROGRAMADA
+
+        [DataMember]
+        public DateTime Fec_Clase { get; set; }
+
+        [DataMember]
+        public DateTime Hora_Emp { get; set; }
+
+        [DataMember]
+        public DateTime Hora_Term { get; set; }
+
+
+        // VIENE DE INSTRUCTOR
+
+        [DataMember]
+        public String NombreInstructor { get; set; }
+
+        // VIENE DE DISCIPLINA
+
+        [DataMember]
+        public String Disciplina { get; set; }
+
+        [DataMember]
+        public String Duracion { get; set; }    
+
+        [DataMember]
+        public String Intensidad { get; set; }
+
+       
+        // VIENE DE SALON 
+
+        [DataMember]
+        public String Salon { get; set; }      // Nombre del salón       
     }
 }

@@ -52,6 +52,7 @@
             Est_clase = new DataGridViewTextBoxColumn();
             Capacidad = new DataGridViewTextBoxColumn();
             Reservar = new DataGridViewButtonColumn();
+            btnConsultar = new Button();
             ((System.ComponentModel.ISupportInitialize)dtgClasesReserva).BeginInit();
             SuspendLayout();
             // 
@@ -252,11 +253,22 @@
             Reservar.Name = "Reservar";
             Reservar.ReadOnly = true;
             // 
+            // btnConsultar
+            // 
+            btnConsultar.Location = new Point(415, 708);
+            btnConsultar.Name = "btnConsultar";
+            btnConsultar.Size = new Size(168, 28);
+            btnConsultar.TabIndex = 16;
+            btnConsultar.Text = "Consultar";
+            btnConsultar.UseVisualStyleBackColor = true;
+            btnConsultar.Click += btnConsultar_Click;
+            // 
             // ReservaMan01
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(972, 748);
+            Controls.Add(btnConsultar);
             Controls.Add(dtgClasesReserva);
             Controls.Add(label6);
             Controls.Add(btnCapturarFec);
@@ -273,6 +285,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "ReservaMan01";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "ReservaMan01";
             Load += ReservaMan01_Load;
             ((System.ComponentModel.ISupportInitialize)dtgClasesReserva).EndInit();
@@ -306,5 +319,6 @@
         private DataGridViewTextBoxColumn Est_clase;
         private DataGridViewTextBoxColumn Capacidad;
         private DataGridViewButtonColumn Reservar;
+        private Button btnConsultar;
     }
 }

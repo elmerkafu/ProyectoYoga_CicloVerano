@@ -61,6 +61,9 @@
     <Compile Update="ReservaMan01.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="ReservaMan02.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="SalonMan01.cs">
       <SubType>Form</SubType>
     </Compile>
