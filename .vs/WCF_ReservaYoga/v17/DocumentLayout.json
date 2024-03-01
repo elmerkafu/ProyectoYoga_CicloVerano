@@ -3,15 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\Lita\\Documents\\ElmerPaucarpura\\Proyecto_Final\\ProyectoYoga_CicloVerano\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EE232C3F-A7CA-4F0A-AC21-A293CC4DFB41}|TestWindows_WCF_Reserva\\TestWindows_WCF_Reserva.csproj|c:\\users\\lita\\documents\\elmerpaucarpura\\proyecto_final\\proyectoyoga_cicloverano\\testwindows_wcf_reserva\\instructorman02.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EE232C3F-A7CA-4F0A-AC21-A293CC4DFB41}|TestWindows_WCF_Reserva\\TestWindows_WCF_Reserva.csproj|solutionrelative:testwindows_wcf_reserva\\instructorman02.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EE232C3F-A7CA-4F0A-AC21-A293CC4DFB41}|TestWindows_WCF_Reserva\\TestWindows_WCF_Reserva.csproj|c:\\users\\lita\\documents\\elmerpaucarpura\\proyecto_final\\proyectoyoga_cicloverano\\testwindows_wcf_reserva\\reservaman01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE232C3F-A7CA-4F0A-AC21-A293CC4DFB41}|TestWindows_WCF_Reserva\\TestWindows_WCF_Reserva.csproj|solutionrelative:testwindows_wcf_reserva\\reservaman01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EE232C3F-A7CA-4F0A-AC21-A293CC4DFB41}|TestWindows_WCF_Reserva\\TestWindows_WCF_Reserva.csproj|c:\\users\\lita\\documents\\elmerpaucarpura\\proyecto_final\\proyectoyoga_cicloverano\\testwindows_wcf_reserva\\clienteman02.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EE232C3F-A7CA-4F0A-AC21-A293CC4DFB41}|TestWindows_WCF_Reserva\\TestWindows_WCF_Reserva.csproj|solutionrelative:testwindows_wcf_reserva\\clienteman02.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EE232C3F-A7CA-4F0A-AC21-A293CC4DFB41}|TestWindows_WCF_Reserva\\TestWindows_WCF_Reserva.csproj|c:\\users\\lita\\documents\\elmerpaucarpura\\proyecto_final\\proyectoyoga_cicloverano\\testwindows_wcf_reserva\\reservaman01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{EE232C3F-A7CA-4F0A-AC21-A293CC4DFB41}|TestWindows_WCF_Reserva\\TestWindows_WCF_Reserva.csproj|C:\\Users\\Lita\\Documents\\ElmerPaucarpura\\Proyecto_Final\\ProyectoYoga_CicloVerano\\testwindows_wcf_reserva\\reservaman01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{EE232C3F-A7CA-4F0A-AC21-A293CC4DFB41}|TestWindows_WCF_Reserva\\TestWindows_WCF_Reserva.csproj|solutionrelative:testwindows_wcf_reserva\\reservaman01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -55,40 +51,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "InstructorMan02.cs",
-              "DocumentMoniker": "C:\\Users\\Lita\\Documents\\ElmerPaucarpura\\Proyecto_Final\\ProyectoYoga_CicloVerano\\TestWindows_WCF_Reserva\\InstructorMan02.cs",
-              "RelativeDocumentMoniker": "TestWindows_WCF_Reserva\\InstructorMan02.cs",
-              "ToolTip": "C:\\Users\\Lita\\Documents\\ElmerPaucarpura\\Proyecto_Final\\ProyectoYoga_CicloVerano\\TestWindows_WCF_Reserva\\InstructorMan02.cs",
-              "RelativeToolTip": "TestWindows_WCF_Reserva\\InstructorMan02.cs",
-              "ViewState": "AQIAADkBAAAAAAAAAAAUwF8BAAAwAAAA",
+              "Title": "ReservaMan01.cs",
+              "DocumentMoniker": "C:\\Users\\Lita\\Documents\\ElmerPaucarpura\\Proyecto_Final\\ProyectoYoga_CicloVerano\\TestWindows_WCF_Reserva\\ReservaMan01.cs",
+              "RelativeDocumentMoniker": "TestWindows_WCF_Reserva\\ReservaMan01.cs",
+              "ToolTip": "C:\\Users\\Lita\\Documents\\ElmerPaucarpura\\Proyecto_Final\\ProyectoYoga_CicloVerano\\TestWindows_WCF_Reserva\\ReservaMan01.cs",
+              "RelativeToolTip": "TestWindows_WCF_Reserva\\ReservaMan01.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAJoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-23T16:48:19.817Z",
+              "WhenOpened": "2024-02-24T01:23:39.351Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ClienteMan02.cs",
-              "DocumentMoniker": "C:\\Users\\Lita\\Documents\\ElmerPaucarpura\\Proyecto_Final\\ProyectoYoga_CicloVerano\\TestWindows_WCF_Reserva\\ClienteMan02.cs",
-              "RelativeDocumentMoniker": "TestWindows_WCF_Reserva\\ClienteMan02.cs",
-              "ToolTip": "C:\\Users\\Lita\\Documents\\ElmerPaucarpura\\Proyecto_Final\\ProyectoYoga_CicloVerano\\TestWindows_WCF_Reserva\\ClienteMan02.cs",
-              "RelativeToolTip": "TestWindows_WCF_Reserva\\ClienteMan02.cs",
-              "ViewState": "AQIAAFcBAAAAAAAAAAAUwGkBAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-23T16:48:14.075Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ReservaMan01.cs [Design]",
+              "Title": "ReservaMan01.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Lita\\Documents\\ElmerPaucarpura\\Proyecto_Final\\ProyectoYoga_CicloVerano\\TestWindows_WCF_Reserva\\ReservaMan01.cs",
               "RelativeDocumentMoniker": "TestWindows_WCF_Reserva\\ReservaMan01.cs",
-              "ToolTip": "C:\\Users\\Lita\\Documents\\ElmerPaucarpura\\Proyecto_Final\\ProyectoYoga_CicloVerano\\TestWindows_WCF_Reserva\\ReservaMan01.cs [Design]",
-              "RelativeToolTip": "TestWindows_WCF_Reserva\\ReservaMan01.cs [Design]",
+              "ToolTip": "C:\\Users\\Lita\\Documents\\ElmerPaucarpura\\Proyecto_Final\\ProyectoYoga_CicloVerano\\TestWindows_WCF_Reserva\\ReservaMan01.cs [Dise\u00F1o]",
+              "RelativeToolTip": "TestWindows_WCF_Reserva\\ReservaMan01.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-23T16:29:38.366Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-02-24T01:17:36.407Z",
+              "EditorCaption": " [Dise\u00F1o]"
             }
           ]
         },

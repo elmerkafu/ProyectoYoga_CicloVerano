@@ -33,9 +33,13 @@ namespace TestWindows_WCF_Reserva
 
         private void btnCapturarFec_Click(object sender, EventArgs e)
         {
+
             String strId = monthCalendar1.SelectionStart.ToShortDateString();
             dtgClasesReserva.AutoGenerateColumns = false;
             dtgClasesReserva.DataSource = objServiceClaseProgramada.ListarClasesPorFecha(Convert.ToDateTime(strId));
+
+
+
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
@@ -66,6 +70,7 @@ namespace TestWindows_WCF_Reserva
             }
         }
 
+
         private void dtgClasesReserva_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
@@ -84,6 +89,19 @@ namespace TestWindows_WCF_Reserva
 
                         objServiceReserva.InsertarReserva(objReservaDC);
 
+                        // Desactivar el botón y cambiar su texto por "Inscrito"
+                        DataGridViewButtonCell cell = (DataGridViewButtonCell)dtgClasesReserva.Rows[e.RowIndex].Cells["Reservar"];
+                        cell.Value = "Inscrito";
+                        cell.FlatStyle = FlatStyle.Flat;
+
+                        cell.Style.BackColor = Color.Orange; 
+                        cell.Style.ForeColor = Color.White;
+
+                        //Me bloquea toda la columna, buscar alternativas
+                        dtgClasesReserva.CellContentClick -= dtgClasesReserva_CellContentClick;
+
+
+
                     }
                     // Falta a agregar que se cambie el estado cada vez que se cancela la reserva. DONDE LO PONGO??? !!!
                 }
@@ -94,6 +112,7 @@ namespace TestWindows_WCF_Reserva
             }
 
         }
+
 
         private void btnConsultar_Click(object sender, EventArgs e)
         {
@@ -111,6 +130,24 @@ namespace TestWindows_WCF_Reserva
             {
 
                 MessageBox.Show("Error : " + ex.Message);
+            }
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dtgClasesReserva_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            if (e.ColumnIndex >= 0 && dtgClasesReserva.Columns[e.ColumnIndex].Name == "Reservar")
+            {
+                // Verificar si la celda no tiene valor o no es "Inscrito"
+                if (string.IsNullOrEmpty(e.Value?.ToString()) || e.Value.ToString() != "Inscrito")
+                {
+                    e.Value = "Inscribir"; // Establecer el texto inicial del botón
+
+                }
             }
         }
     }

@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
@@ -49,7 +51,6 @@
             Fec_Clase = new DataGridViewTextBoxColumn();
             Hora_Emp = new DataGridViewTextBoxColumn();
             Hora_Term = new DataGridViewTextBoxColumn();
-            Est_clase = new DataGridViewTextBoxColumn();
             Capacidad = new DataGridViewTextBoxColumn();
             Reservar = new DataGridViewButtonColumn();
             btnConsultar = new Button();
@@ -106,7 +107,7 @@
             lblIdCli.BorderStyle = BorderStyle.FixedSingle;
             lblIdCli.Location = new Point(188, 79);
             lblIdCli.Name = "lblIdCli";
-            lblIdCli.Size = new Size(188, 23);
+            lblIdCli.Size = new Size(199, 23);
             lblIdCli.TabIndex = 6;
             // 
             // lblNombre
@@ -114,7 +115,7 @@
             lblNombre.BorderStyle = BorderStyle.FixedSingle;
             lblNombre.Location = new Point(188, 127);
             lblNombre.Name = "lblNombre";
-            lblNombre.Size = new Size(188, 23);
+            lblNombre.Size = new Size(199, 23);
             lblNombre.TabIndex = 7;
             // 
             // lblApePa
@@ -122,7 +123,7 @@
             lblApePa.BorderStyle = BorderStyle.FixedSingle;
             lblApePa.Location = new Point(188, 175);
             lblApePa.Name = "lblApePa";
-            lblApePa.Size = new Size(188, 23);
+            lblApePa.Size = new Size(199, 23);
             lblApePa.TabIndex = 8;
             // 
             // lblApaMa
@@ -130,7 +131,7 @@
             lblApaMa.BorderStyle = BorderStyle.FixedSingle;
             lblApaMa.Location = new Point(188, 229);
             lblApaMa.Name = "lblApaMa";
-            lblApaMa.Size = new Size(188, 23);
+            lblApaMa.Size = new Size(199, 23);
             lblApaMa.TabIndex = 9;
             // 
             // mskDNI
@@ -142,7 +143,7 @@
             // 
             // btnBuscar
             // 
-            btnBuscar.Location = new Point(342, 30);
+            btnBuscar.Location = new Point(312, 30);
             btnBuscar.Name = "btnBuscar";
             btnBuscar.Size = new Size(75, 23);
             btnBuscar.TabIndex = 11;
@@ -152,44 +153,48 @@
             // 
             // monthCalendar1
             // 
-            monthCalendar1.Location = new Point(516, 63);
+            monthCalendar1.Location = new Point(595, 30);
             monthCalendar1.Name = "monthCalendar1";
             monthCalendar1.TabIndex = 12;
             // 
             // btnCapturarFec
             // 
-            btnCapturarFec.Location = new Point(516, 229);
+            btnCapturarFec.Location = new Point(595, 204);
             btnCapturarFec.Name = "btnCapturarFec";
             btnCapturarFec.Size = new Size(248, 23);
             btnCapturarFec.TabIndex = 13;
-            btnCapturarFec.Text = "Buscar";
+            btnCapturarFec.Text = "Buscar clases disponibles";
             btnCapturarFec.UseVisualStyleBackColor = true;
             btnCapturarFec.Click += btnCapturarFec_Click;
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(35, 345);
+            label6.Location = new Point(39, 281);
             label6.Name = "label6";
-            label6.Size = new Size(116, 15);
+            label6.Size = new Size(185, 15);
             label6.TabIndex = 14;
-            label6.Text = "Clases Programadas:";
+            label6.Text = "Clases disponibles para matricula:";
+            label6.Click += label6_Click;
             // 
             // dtgClasesReserva
             // 
             dtgClasesReserva.AllowUserToAddRows = false;
             dtgClasesReserva.AllowUserToDeleteRows = false;
             dtgClasesReserva.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dtgClasesReserva.Columns.AddRange(new DataGridViewColumn[] { Id_Clase_Prog, Nombre, NombreInstructor, Fec_Clase, Hora_Emp, Hora_Term, Est_clase, Capacidad, Reservar });
-            dtgClasesReserva.Location = new Point(35, 381);
+            dtgClasesReserva.Columns.AddRange(new DataGridViewColumn[] { Id_Clase_Prog, Nombre, NombreInstructor, Fec_Clase, Hora_Emp, Hora_Term, Capacidad, Reservar });
+            dtgClasesReserva.Location = new Point(39, 317);
             dtgClasesReserva.Name = "dtgClasesReserva";
             dtgClasesReserva.ReadOnly = true;
             dtgClasesReserva.RowHeadersVisible = false;
+            dataGridViewCellStyle2.ForeColor = Color.Black;
+            dtgClasesReserva.RowsDefaultCellStyle = dataGridViewCellStyle2;
             dtgClasesReserva.RowTemplate.Height = 25;
             dtgClasesReserva.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dtgClasesReserva.Size = new Size(903, 341);
+            dtgClasesReserva.Size = new Size(804, 211);
             dtgClasesReserva.TabIndex = 15;
             dtgClasesReserva.CellContentClick += dtgClasesReserva_CellContentClick;
+            dtgClasesReserva.CellFormatting += dtgClasesReserva_CellFormatting;
             // 
             // Id_Clase_Prog
             // 
@@ -233,13 +238,6 @@
             Hora_Term.Name = "Hora_Term";
             Hora_Term.ReadOnly = true;
             // 
-            // Est_clase
-            // 
-            Est_clase.DataPropertyName = "Est_clase";
-            Est_clase.HeaderText = "Estado";
-            Est_clase.Name = "Est_clase";
-            Est_clase.ReadOnly = true;
-            // 
             // Capacidad
             // 
             Capacidad.DataPropertyName = "Capacidad";
@@ -249,13 +247,18 @@
             // 
             // Reservar
             // 
-            Reservar.HeaderText = "Reservar";
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = Color.Transparent;
+            dataGridViewCellStyle1.ForeColor = Color.Black;
+            Reservar.DefaultCellStyle = dataGridViewCellStyle1;
+            Reservar.HeaderText = "Reserva";
             Reservar.Name = "Reservar";
             Reservar.ReadOnly = true;
+            Reservar.Text = "Inscribir";
             // 
             // btnConsultar
             // 
-            btnConsultar.Location = new Point(208, 277);
+            btnConsultar.Location = new Point(675, 283);
             btnConsultar.Name = "btnConsultar";
             btnConsultar.Size = new Size(168, 28);
             btnConsultar.TabIndex = 16;
@@ -267,7 +270,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(972, 748);
+            ClientSize = new Size(888, 540);
             Controls.Add(btnConsultar);
             Controls.Add(dtgClasesReserva);
             Controls.Add(label6);
@@ -310,15 +313,14 @@
         private Button btnCapturarFec;
         private Label label6;
         private DataGridView dtgClasesReserva;
+        private Button btnConsultar;
         private DataGridViewTextBoxColumn Id_Clase_Prog;
         private DataGridViewTextBoxColumn Nombre;
         private DataGridViewTextBoxColumn NombreInstructor;
         private DataGridViewTextBoxColumn Fec_Clase;
         private DataGridViewTextBoxColumn Hora_Emp;
         private DataGridViewTextBoxColumn Hora_Term;
-        private DataGridViewTextBoxColumn Est_clase;
         private DataGridViewTextBoxColumn Capacidad;
         private DataGridViewButtonColumn Reservar;
-        private Button btnConsultar;
     }
 }
