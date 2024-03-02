@@ -14,12 +14,15 @@ namespace WCF_ReservaYoga
     
     public partial class Tb_Usuario
     {
-        public string Login_Usuario { get; set; }
         public string Pass_Usuario { get; set; }
-        public Nullable<int> Niv_Usuario { get; set; }
         public Nullable<int> Est_Usuario { get; set; }
         public Nullable<System.DateTime> Fec_Registro { get; set; }
         public string Usu_Registro { get; set; }
-        public string Comentario { get; set; }
+        public string Login_Usuario_Correo { get; set; }
+        public string Usu_Ult_Mod { get; set; }
+        public Nullable<System.DateTime> Fec_Ult_Mod { get; set; }
+        public Nullable<int> Id_Rol { get; set; }
+    
+        public virtual Tb_Rol Tb_Rol { get; set; }
     }
 }

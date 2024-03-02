@@ -3019,23 +3019,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Lita\\.nuget\\packages\\": {},
+    "C:\\Users\\Computer\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lita\\Documents\\ElmerPaucarpura\\Proyecto_Final\\ProyectoYoga_CicloVerano\\TestWindows_WCF_Reserva\\TestWindows_WCF_Reserva.csproj",
+      "projectUniqueName": "C:\\Users\\Computer\\Desktop\\WCF_Yoga_Clon_Ultimo\\ProyectoYoga_CicloVerano\\TestWindows_WCF_Reserva\\TestWindows_WCF_Reserva.csproj",
       "projectName": "TestWindows_WCF_Reserva",
-      "projectPath": "C:\\Users\\Lita\\Documents\\ElmerPaucarpura\\Proyecto_Final\\ProyectoYoga_CicloVerano\\TestWindows_WCF_Reserva\\TestWindows_WCF_Reserva.csproj",
-      "packagesPath": "C:\\Users\\Lita\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lita\\Documents\\ElmerPaucarpura\\Proyecto_Final\\ProyectoYoga_CicloVerano\\TestWindows_WCF_Reserva\\obj\\",
+      "projectPath": "C:\\Users\\Computer\\Desktop\\WCF_Yoga_Clon_Ultimo\\ProyectoYoga_CicloVerano\\TestWindows_WCF_Reserva\\TestWindows_WCF_Reserva.csproj",
+      "packagesPath": "C:\\Users\\Computer\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Computer\\Desktop\\WCF_Yoga_Clon_Ultimo\\ProyectoYoga_CicloVerano\\TestWindows_WCF_Reserva\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Lita\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Computer\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3044,6 +3044,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -3056,11 +3057,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -3107,7 +3103,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

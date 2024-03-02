@@ -110,6 +110,27 @@
     <Property Name="Id_Instructor" Type="nchar" MaxLength="3" />
     <Property Name="Cod_disp" Type="nchar" MaxLength="3" />
   </EntityType>
+  <EntityType Name="Tb_Personal">
+    <Key>
+      <PropertyRef Name="Id_Personal" />
+    </Key>
+    <Property Name="Id_Personal" Type="char" MaxLength="4" Nullable="false" />
+    <Property Name="Nombres" Type="varchar" MaxLength="25" />
+    <Property Name="ApePaterno" Type="varchar" MaxLength="50" />
+    <Property Name="ApeMaterno" Type="varchar" MaxLength="50" />
+    <Property Name="Dni_Personal" Type="nchar" MaxLength="8" />
+    <Property Name="Fec_Nac" Type="datetime" />
+    <Property Name="Correo" Type="varchar" MaxLength="50" />
+    <Property Name="Telefono" Type="varchar" MaxLength="10" />
+    <Property Name="Direccion" Type="varchar" MaxLength="50" />
+    <Property Name="Id_Ubigeo" Type="nchar" MaxLength="6" />
+    <Property Name="Estado" Type="int" />
+    <Property Name="Fec_Reg" Type="datetime" />
+    <Property Name="Usu_Reg" Type="varchar" MaxLength="20" />
+    <Property Name="Usu_Ult_Mod" Type="varchar" MaxLength="20" />
+    <Property Name="Fec_Ult_Mod" Type="datetime" />
+    <Property Name="Comentario" Type="varchar" MaxLength="300" />
+  </EntityType>
   <EntityType Name="Tb_Reserva">
     <Key>
       <PropertyRef Name="Cod_resv" />
@@ -124,6 +145,14 @@
     <Property Name="Fec_Ult_Mod" Type="datetime" />
     <Property Name="Cod_resv" Type="char" MaxLength="4" Nullable="false" />
     <Property Name="Id_Clase_Prog" Type="int" />
+  </EntityType>
+  <EntityType Name="Tb_Rol">
+    <Key>
+      <PropertyRef Name="Id_Rol" />
+    </Key>
+    <Property Name="Id_Rol" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="100" />
+    <Property Name="Nivel" Type="int" />
   </EntityType>
   <EntityType Name="Tb_Salon">
     <Key>
@@ -151,15 +180,16 @@
   </EntityType>
   <EntityType Name="Tb_Usuario">
     <Key>
-      <PropertyRef Name="Login_Usuario" />
+      <PropertyRef Name="Login_Usuario_Correo" />
     </Key>
-    <Property Name="Login_Usuario" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Login_Usuario_Correo" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="Pass_Usuario" Type="varchar" MaxLength="20" />
-    <Property Name="Niv_Usuario" Type="int" />
     <Property Name="Est_Usuario" Type="int" />
     <Property Name="Fec_Registro" Type="datetime" />
     <Property Name="Usu_Registro" Type="varchar" MaxLength="20" />
-    <Property Name="Comentario" Type="varchar" MaxLength="300" />
+    <Property Name="Usu_Ult_Mod" Type="varchar" MaxLength="20" />
+    <Property Name="Fec_Ult_Mod" Type="datetime" />
+    <Property Name="Id_Rol" Type="int" />
   </EntityType>
   <Association Name="FKCat">
     <End Role="Tb_Categoria" Type="Self.Tb_Categoria" Multiplicity="0..1" />
@@ -218,6 +248,18 @@
       </Principal>
       <Dependent Role="Tb_Instructor_Disciplina">
         <PropertyRef Name="Cod_disp" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKEmail">
+    <End Role="Tb_Rol" Type="Self.Tb_Rol" Multiplicity="0..1" />
+    <End Role="Tb_Usuario" Type="Self.Tb_Usuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tb_Rol">
+        <PropertyRef Name="Id_Rol" />
+      </Principal>
+      <Dependent Role="Tb_Usuario">
+        <PropertyRef Name="Id_Rol" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -462,6 +504,20 @@
     <Parameter Name="vEstado" Type="int" Mode="In" />
     <Parameter Name="vUsu_Reg" Type="varchar" Mode="In" />
   </Function>
+  <Function Name="usp_InsertarUsuario_Personal" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="vPass" Type="varchar" Mode="In" />
+    <Parameter Name="vId_Rol" Type="int" Mode="In" />
+    <Parameter Name="vNom" Type="varchar" Mode="In" />
+    <Parameter Name="vApePa" Type="varchar" Mode="In" />
+    <Parameter Name="vApeMa" Type="varchar" Mode="In" />
+    <Parameter Name="vDni" Type="nchar" Mode="In" />
+    <Parameter Name="vFec_nac" Type="datetime" Mode="In" />
+    <Parameter Name="vCorreo_Usu" Type="varchar" Mode="In" />
+    <Parameter Name="vTel" Type="varchar" Mode="In" />
+    <Parameter Name="vDir" Type="varchar" Mode="In" />
+    <Parameter Name="vId_Ubigeo" Type="nchar" Mode="In" />
+    <Parameter Name="vUsu_reg" Type="varchar" Mode="In" />
+  </Function>
   <Function Name="usp_ListarCliente" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
   <Function Name="usp_RegistrarReserva_TEST" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="vId_Cli" Type="int" Mode="In" />
@@ -485,7 +541,9 @@
     <EntitySet Name="Tb_Disciplina" EntityType="Self.Tb_Disciplina" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Tb_Instructor" EntityType="Self.Tb_Instructor" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Tb_Instructor_Disciplina" EntityType="Self.Tb_Instructor_Disciplina" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tb_Personal" EntityType="Self.Tb_Personal" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Tb_Reserva" EntityType="Self.Tb_Reserva" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tb_Rol" EntityType="Self.Tb_Rol" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Tb_Salon" EntityType="Self.Tb_Salon" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Tb_Ubigeo" EntityType="Self.Tb_Ubigeo" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Tb_Usuario" EntityType="Self.Tb_Usuario" Schema="dbo" store:Type="Tables" />
@@ -508,6 +566,10 @@
     <AssociationSet Name="FKDisp" Association="Self.FKDisp">
       <End Role="Tb_Disciplina" EntitySet="Tb_Disciplina" />
       <End Role="Tb_Instructor_Disciplina" EntitySet="Tb_Instructor_Disciplina" />
+    </AssociationSet>
+    <AssociationSet Name="FKEmail" Association="Self.FKEmail">
+      <End Role="Tb_Rol" EntitySet="Tb_Rol" />
+      <End Role="Tb_Usuario" EntitySet="Tb_Usuario" />
     </AssociationSet>
     <AssociationSet Name="FKID" Association="Self.FKID">
       <End Role="Tb_Instructor_Disciplina" EntitySet="Tb_Instructor_Disciplina" />

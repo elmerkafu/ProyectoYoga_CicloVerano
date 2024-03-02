@@ -26,6 +26,9 @@
         <AssociationConnector Association="ReservaYogaModel.FKUbig" ManuallyRouted="false" />
         <AssociationConnector Association="ReservaYogaModel.Tb_Detalle_Reserva" ManuallyRouted="false" />
         <AssociationConnector Association="ReservaYogaModel.FKClaseProg" />
+        <EntityTypeShape EntityType="ReservaYogaModel.Tb_Personal" Width="1.5" PointX="10.375" PointY="5.75" />
+        <EntityTypeShape EntityType="ReservaYogaModel.Tb_Rol" Width="1.5" PointX="7.5" PointY="4.5" />
+        <AssociationConnector Association="ReservaYogaModel.FKEmail" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

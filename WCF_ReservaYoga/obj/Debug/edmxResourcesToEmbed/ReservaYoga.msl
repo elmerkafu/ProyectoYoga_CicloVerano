@@ -155,10 +155,11 @@
     <EntitySetMapping Name="Tb_Usuario">
       <EntityTypeMapping TypeName="ReservaYogaModel.Tb_Usuario">
         <MappingFragment StoreEntitySet="Tb_Usuario">
-          <ScalarProperty Name="Comentario" ColumnName="Comentario" />
-          <ScalarProperty Name="Login_Usuario" ColumnName="Login_Usuario" />
+          <ScalarProperty Name="Id_Rol" ColumnName="Id_Rol" />
+          <ScalarProperty Name="Fec_Ult_Mod" ColumnName="Fec_Ult_Mod" />
+          <ScalarProperty Name="Usu_Ult_Mod" ColumnName="Usu_Ult_Mod" />
+          <ScalarProperty Name="Login_Usuario_Correo" ColumnName="Login_Usuario_Correo" />
           <ScalarProperty Name="Pass_Usuario" ColumnName="Pass_Usuario" />
-          <ScalarProperty Name="Niv_Usuario" ColumnName="Niv_Usuario" />
           <ScalarProperty Name="Est_Usuario" ColumnName="Est_Usuario" />
           <ScalarProperty Name="Fec_Registro" ColumnName="Fec_Registro" />
           <ScalarProperty Name="Usu_Registro" ColumnName="Usu_Registro" />
@@ -264,5 +265,37 @@
     <FunctionImportMapping FunctionImportName="usp_ActualizarUsuarioEstado" FunctionName="ReservaYogaModel.Store.usp_ActualizarUsuarioEstado" />
     <FunctionImportMapping FunctionImportName="usp_InsertarUsuario" FunctionName="ReservaYogaModel.Store.usp_InsertarUsuario" />
     <FunctionImportMapping FunctionImportName="usp_ActualizarDisciplinaEstado" FunctionName="ReservaYogaModel.Store.usp_ActualizarDisciplinaEstado" />
+    <EntitySetMapping Name="Tb_Personal">
+      <EntityTypeMapping TypeName="ReservaYogaModel.Tb_Personal">
+        <MappingFragment StoreEntitySet="Tb_Personal">
+          <ScalarProperty Name="Comentario" ColumnName="Comentario" />
+          <ScalarProperty Name="Fec_Ult_Mod" ColumnName="Fec_Ult_Mod" />
+          <ScalarProperty Name="Usu_Ult_Mod" ColumnName="Usu_Ult_Mod" />
+          <ScalarProperty Name="Usu_Reg" ColumnName="Usu_Reg" />
+          <ScalarProperty Name="Fec_Reg" ColumnName="Fec_Reg" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="Id_Ubigeo" ColumnName="Id_Ubigeo" />
+          <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="Correo" ColumnName="Correo" />
+          <ScalarProperty Name="Fec_Nac" ColumnName="Fec_Nac" />
+          <ScalarProperty Name="Dni_Personal" ColumnName="Dni_Personal" />
+          <ScalarProperty Name="ApeMaterno" ColumnName="ApeMaterno" />
+          <ScalarProperty Name="ApePaterno" ColumnName="ApePaterno" />
+          <ScalarProperty Name="Nombres" ColumnName="Nombres" />
+          <ScalarProperty Name="Id_Personal" ColumnName="Id_Personal" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tb_Rol">
+      <EntityTypeMapping TypeName="ReservaYogaModel.Tb_Rol">
+        <MappingFragment StoreEntitySet="Tb_Rol">
+          <ScalarProperty Name="Nivel" ColumnName="Nivel" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Id_Rol" ColumnName="Id_Rol" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="usp_InsertarUsuario_Personal" FunctionName="ReservaYogaModel.Store.usp_InsertarUsuario_Personal" />
   </EntityContainerMapping>
 </Mapping>

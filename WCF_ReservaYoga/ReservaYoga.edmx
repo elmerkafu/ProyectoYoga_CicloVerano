@@ -115,6 +115,27 @@
           <Property Name="Id_Instructor" Type="nchar" MaxLength="3" />
           <Property Name="Cod_disp" Type="nchar" MaxLength="3" />
         </EntityType>
+        <EntityType Name="Tb_Personal">
+          <Key>
+            <PropertyRef Name="Id_Personal" />
+          </Key>
+          <Property Name="Id_Personal" Type="char" MaxLength="4" Nullable="false" />
+          <Property Name="Nombres" Type="varchar" MaxLength="25" />
+          <Property Name="ApePaterno" Type="varchar" MaxLength="50" />
+          <Property Name="ApeMaterno" Type="varchar" MaxLength="50" />
+          <Property Name="Dni_Personal" Type="nchar" MaxLength="8" />
+          <Property Name="Fec_Nac" Type="datetime" />
+          <Property Name="Correo" Type="varchar" MaxLength="50" />
+          <Property Name="Telefono" Type="varchar" MaxLength="10" />
+          <Property Name="Direccion" Type="varchar" MaxLength="50" />
+          <Property Name="Id_Ubigeo" Type="nchar" MaxLength="6" />
+          <Property Name="Estado" Type="int" />
+          <Property Name="Fec_Reg" Type="datetime" />
+          <Property Name="Usu_Reg" Type="varchar" MaxLength="20" />
+          <Property Name="Usu_Ult_Mod" Type="varchar" MaxLength="20" />
+          <Property Name="Fec_Ult_Mod" Type="datetime" />
+          <Property Name="Comentario" Type="varchar" MaxLength="300" />
+        </EntityType>
         <EntityType Name="Tb_Reserva">
           <Key>
             <PropertyRef Name="Cod_resv" />
@@ -129,6 +150,14 @@
           <Property Name="Fec_Ult_Mod" Type="datetime" />
           <Property Name="Cod_resv" Type="char" MaxLength="4" Nullable="false" />
           <Property Name="Id_Clase_Prog" Type="int" />
+        </EntityType>
+        <EntityType Name="Tb_Rol">
+          <Key>
+            <PropertyRef Name="Id_Rol" />
+          </Key>
+          <Property Name="Id_Rol" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nombre" Type="varchar" MaxLength="100" />
+          <Property Name="Nivel" Type="int" />
         </EntityType>
         <EntityType Name="Tb_Salon">
           <Key>
@@ -156,15 +185,16 @@
         </EntityType>
         <EntityType Name="Tb_Usuario">
           <Key>
-            <PropertyRef Name="Login_Usuario" />
+            <PropertyRef Name="Login_Usuario_Correo" />
           </Key>
-          <Property Name="Login_Usuario" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Login_Usuario_Correo" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="Pass_Usuario" Type="varchar" MaxLength="20" />
-          <Property Name="Niv_Usuario" Type="int" />
           <Property Name="Est_Usuario" Type="int" />
           <Property Name="Fec_Registro" Type="datetime" />
           <Property Name="Usu_Registro" Type="varchar" MaxLength="20" />
-          <Property Name="Comentario" Type="varchar" MaxLength="300" />
+          <Property Name="Usu_Ult_Mod" Type="varchar" MaxLength="20" />
+          <Property Name="Fec_Ult_Mod" Type="datetime" />
+          <Property Name="Id_Rol" Type="int" />
         </EntityType>
         <Association Name="FKCat">
           <End Role="Tb_Categoria" Type="Self.Tb_Categoria" Multiplicity="0..1" />
@@ -223,6 +253,18 @@
             </Principal>
             <Dependent Role="Tb_Instructor_Disciplina">
               <PropertyRef Name="Cod_disp" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FKEmail">
+          <End Role="Tb_Rol" Type="Self.Tb_Rol" Multiplicity="0..1" />
+          <End Role="Tb_Usuario" Type="Self.Tb_Usuario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Tb_Rol">
+              <PropertyRef Name="Id_Rol" />
+            </Principal>
+            <Dependent Role="Tb_Usuario">
+              <PropertyRef Name="Id_Rol" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -467,6 +509,20 @@
           <Parameter Name="vEstado" Type="int" Mode="In" />
           <Parameter Name="vUsu_Reg" Type="varchar" Mode="In" />
         </Function>
+        <Function Name="usp_InsertarUsuario_Personal" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="vPass" Type="varchar" Mode="In" />
+          <Parameter Name="vId_Rol" Type="int" Mode="In" />
+          <Parameter Name="vNom" Type="varchar" Mode="In" />
+          <Parameter Name="vApePa" Type="varchar" Mode="In" />
+          <Parameter Name="vApeMa" Type="varchar" Mode="In" />
+          <Parameter Name="vDni" Type="nchar" Mode="In" />
+          <Parameter Name="vFec_nac" Type="datetime" Mode="In" />
+          <Parameter Name="vCorreo_Usu" Type="varchar" Mode="In" />
+          <Parameter Name="vTel" Type="varchar" Mode="In" />
+          <Parameter Name="vDir" Type="varchar" Mode="In" />
+          <Parameter Name="vId_Ubigeo" Type="nchar" Mode="In" />
+          <Parameter Name="vUsu_reg" Type="varchar" Mode="In" />
+        </Function>
         <Function Name="usp_ListarCliente" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <Function Name="usp_RegistrarReserva_TEST" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="vId_Cli" Type="int" Mode="In" />
@@ -490,7 +546,9 @@
           <EntitySet Name="Tb_Disciplina" EntityType="Self.Tb_Disciplina" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Tb_Instructor" EntityType="Self.Tb_Instructor" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Tb_Instructor_Disciplina" EntityType="Self.Tb_Instructor_Disciplina" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Tb_Personal" EntityType="Self.Tb_Personal" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Tb_Reserva" EntityType="Self.Tb_Reserva" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Tb_Rol" EntityType="Self.Tb_Rol" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Tb_Salon" EntityType="Self.Tb_Salon" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Tb_Ubigeo" EntityType="Self.Tb_Ubigeo" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Tb_Usuario" EntityType="Self.Tb_Usuario" Schema="dbo" store:Type="Tables" />
@@ -513,6 +571,10 @@
           <AssociationSet Name="FKDisp" Association="Self.FKDisp">
             <End Role="Tb_Disciplina" EntitySet="Tb_Disciplina" />
             <End Role="Tb_Instructor_Disciplina" EntitySet="Tb_Instructor_Disciplina" />
+          </AssociationSet>
+          <AssociationSet Name="FKEmail" Association="Self.FKEmail">
+            <End Role="Tb_Rol" EntitySet="Tb_Rol" />
+            <End Role="Tb_Usuario" EntitySet="Tb_Usuario" />
           </AssociationSet>
           <AssociationSet Name="FKID" Association="Self.FKID">
             <End Role="Tb_Instructor_Disciplina" EntitySet="Tb_Instructor_Disciplina" />
@@ -706,15 +768,17 @@
         </EntityType>
         <EntityType Name="Tb_Usuario">
           <Key>
-            <PropertyRef Name="Login_Usuario" />
+            <PropertyRef Name="Login_Usuario_Correo" />
           </Key>
-          <Property Name="Login_Usuario" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="Pass_Usuario" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
-          <Property Name="Niv_Usuario" Type="Int32" />
           <Property Name="Est_Usuario" Type="Int32" />
           <Property Name="Fec_Registro" Type="DateTime" Precision="3" />
           <Property Name="Usu_Registro" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
-          <Property Name="Comentario" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="Login_Usuario_Correo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Usu_Ult_Mod" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Fec_Ult_Mod" Type="DateTime" Precision="3" />
+          <Property Name="Id_Rol" Type="Int32" />
+          <NavigationProperty Name="Tb_Rol" Relationship="ReservaYogaModel.FKEmail" FromRole="Tb_Usuario" ToRole="Tb_Rol" />
         </EntityType>
         <Association Name="FKCat">
           <End Role="Tb_Categoria" Type="Self.Tb_Categoria" Multiplicity="0..1" />
@@ -1051,6 +1115,26 @@
             <Parameter Name="vcod" Mode="In" Type="String" />
             <Parameter Name="vcoment" Mode="In" Type="String" />
           </FunctionImport>
+          <EntitySet Name="Tb_Personal" EntityType="ReservaYogaModel.Tb_Personal" />
+          <EntitySet Name="Tb_Rol" EntityType="ReservaYogaModel.Tb_Rol" />
+          <AssociationSet Name="FKEmail" Association="ReservaYogaModel.FKEmail">
+            <End Role="Tb_Rol" EntitySet="Tb_Rol" />
+            <End Role="Tb_Usuario" EntitySet="Tb_Usuario" />
+          </AssociationSet>
+          <FunctionImport Name="usp_InsertarUsuario_Personal" ReturnType="Collection(String)">
+            <Parameter Name="vPass" Mode="In" Type="String" />
+            <Parameter Name="vId_Rol" Mode="In" Type="Int32" />
+            <Parameter Name="vNom" Mode="In" Type="String" />
+            <Parameter Name="vApePa" Mode="In" Type="String" />
+            <Parameter Name="vApeMa" Mode="In" Type="String" />
+            <Parameter Name="vDni" Mode="In" Type="String" />
+            <Parameter Name="vFec_nac" Mode="In" Type="DateTime" />
+            <Parameter Name="vCorreo_Usu" Mode="In" Type="String" />
+            <Parameter Name="vTel" Mode="In" Type="String" />
+            <Parameter Name="vDir" Mode="In" Type="String" />
+            <Parameter Name="vId_Ubigeo" Mode="In" Type="String" />
+            <Parameter Name="vUsu_reg" Mode="In" Type="String" />
+          </FunctionImport>
         </EntityContainer>
         <ComplexType Name="usp_ListarCliente_Result">
           <Property Type="Int32" Name="Id_Cliente" Nullable="false" />
@@ -1106,6 +1190,48 @@
             </Principal>
             <Dependent Role="Tb_Reserva">
               <PropertyRef Name="Id_Clase_Prog" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Tb_Personal">
+          <Key>
+            <PropertyRef Name="Id_Personal" />
+          </Key>
+          <Property Name="Id_Personal" Type="String" Nullable="false" MaxLength="4" FixedLength="true" Unicode="false" />
+          <Property Name="Nombres" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+          <Property Name="ApePaterno" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ApeMaterno" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Dni_Personal" Type="String" MaxLength="8" FixedLength="true" Unicode="true" />
+          <Property Name="Fec_Nac" Type="DateTime" Precision="3" />
+          <Property Name="Correo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Telefono" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="Direccion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Id_Ubigeo" Type="String" MaxLength="6" FixedLength="true" Unicode="true" />
+          <Property Name="Estado" Type="Int32" />
+          <Property Name="Fec_Reg" Type="DateTime" Precision="3" />
+          <Property Name="Usu_Reg" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Usu_Ult_Mod" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Fec_Ult_Mod" Type="DateTime" Precision="3" />
+          <Property Name="Comentario" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Tb_Rol">
+          <Key>
+            <PropertyRef Name="Id_Rol" />
+          </Key>
+          <Property Name="Id_Rol" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Nivel" Type="Int32" />
+          <NavigationProperty Name="Tb_Usuario" Relationship="ReservaYogaModel.FKEmail" FromRole="Tb_Rol" ToRole="Tb_Usuario" />
+        </EntityType>
+        <Association Name="FKEmail">
+          <End Type="ReservaYogaModel.Tb_Rol" Role="Tb_Rol" Multiplicity="0..1" />
+          <End Type="ReservaYogaModel.Tb_Usuario" Role="Tb_Usuario" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Tb_Rol">
+              <PropertyRef Name="Id_Rol" />
+            </Principal>
+            <Dependent Role="Tb_Usuario">
+              <PropertyRef Name="Id_Rol" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -1269,10 +1395,11 @@
           <EntitySetMapping Name="Tb_Usuario">
             <EntityTypeMapping TypeName="ReservaYogaModel.Tb_Usuario">
               <MappingFragment StoreEntitySet="Tb_Usuario">
-                <ScalarProperty Name="Comentario" ColumnName="Comentario" />
-                <ScalarProperty Name="Login_Usuario" ColumnName="Login_Usuario" />
+                <ScalarProperty Name="Id_Rol" ColumnName="Id_Rol" />
+                <ScalarProperty Name="Fec_Ult_Mod" ColumnName="Fec_Ult_Mod" />
+                <ScalarProperty Name="Usu_Ult_Mod" ColumnName="Usu_Ult_Mod" />
+                <ScalarProperty Name="Login_Usuario_Correo" ColumnName="Login_Usuario_Correo" />
                 <ScalarProperty Name="Pass_Usuario" ColumnName="Pass_Usuario" />
-                <ScalarProperty Name="Niv_Usuario" ColumnName="Niv_Usuario" />
                 <ScalarProperty Name="Est_Usuario" ColumnName="Est_Usuario" />
                 <ScalarProperty Name="Fec_Registro" ColumnName="Fec_Registro" />
                 <ScalarProperty Name="Usu_Registro" ColumnName="Usu_Registro" />
@@ -1378,6 +1505,38 @@
           <FunctionImportMapping FunctionImportName="usp_ActualizarUsuarioEstado" FunctionName="ReservaYogaModel.Store.usp_ActualizarUsuarioEstado" />
           <FunctionImportMapping FunctionImportName="usp_InsertarUsuario" FunctionName="ReservaYogaModel.Store.usp_InsertarUsuario" />
           <FunctionImportMapping FunctionImportName="usp_ActualizarDisciplinaEstado" FunctionName="ReservaYogaModel.Store.usp_ActualizarDisciplinaEstado" />
+          <EntitySetMapping Name="Tb_Personal">
+            <EntityTypeMapping TypeName="ReservaYogaModel.Tb_Personal">
+              <MappingFragment StoreEntitySet="Tb_Personal">
+                <ScalarProperty Name="Comentario" ColumnName="Comentario" />
+                <ScalarProperty Name="Fec_Ult_Mod" ColumnName="Fec_Ult_Mod" />
+                <ScalarProperty Name="Usu_Ult_Mod" ColumnName="Usu_Ult_Mod" />
+                <ScalarProperty Name="Usu_Reg" ColumnName="Usu_Reg" />
+                <ScalarProperty Name="Fec_Reg" ColumnName="Fec_Reg" />
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+                <ScalarProperty Name="Id_Ubigeo" ColumnName="Id_Ubigeo" />
+                <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+                <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+                <ScalarProperty Name="Correo" ColumnName="Correo" />
+                <ScalarProperty Name="Fec_Nac" ColumnName="Fec_Nac" />
+                <ScalarProperty Name="Dni_Personal" ColumnName="Dni_Personal" />
+                <ScalarProperty Name="ApeMaterno" ColumnName="ApeMaterno" />
+                <ScalarProperty Name="ApePaterno" ColumnName="ApePaterno" />
+                <ScalarProperty Name="Nombres" ColumnName="Nombres" />
+                <ScalarProperty Name="Id_Personal" ColumnName="Id_Personal" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Tb_Rol">
+            <EntityTypeMapping TypeName="ReservaYogaModel.Tb_Rol">
+              <MappingFragment StoreEntitySet="Tb_Rol">
+                <ScalarProperty Name="Nivel" ColumnName="Nivel" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Id_Rol" ColumnName="Id_Rol" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="usp_InsertarUsuario_Personal" FunctionName="ReservaYogaModel.Store.usp_InsertarUsuario_Personal" />
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

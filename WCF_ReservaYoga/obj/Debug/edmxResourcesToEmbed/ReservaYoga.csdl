@@ -163,15 +163,17 @@
   </EntityType>
   <EntityType Name="Tb_Usuario">
     <Key>
-      <PropertyRef Name="Login_Usuario" />
+      <PropertyRef Name="Login_Usuario_Correo" />
     </Key>
-    <Property Name="Login_Usuario" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="Pass_Usuario" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
-    <Property Name="Niv_Usuario" Type="Int32" />
     <Property Name="Est_Usuario" Type="Int32" />
     <Property Name="Fec_Registro" Type="DateTime" Precision="3" />
     <Property Name="Usu_Registro" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
-    <Property Name="Comentario" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="Login_Usuario_Correo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Usu_Ult_Mod" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Fec_Ult_Mod" Type="DateTime" Precision="3" />
+    <Property Name="Id_Rol" Type="Int32" />
+    <NavigationProperty Name="Tb_Rol" Relationship="ReservaYogaModel.FKEmail" FromRole="Tb_Usuario" ToRole="Tb_Rol" />
   </EntityType>
   <Association Name="FKCat">
     <End Role="Tb_Categoria" Type="Self.Tb_Categoria" Multiplicity="0..1" />
@@ -508,6 +510,26 @@
       <Parameter Name="vcod" Mode="In" Type="String" />
       <Parameter Name="vcoment" Mode="In" Type="String" />
     </FunctionImport>
+    <EntitySet Name="Tb_Personal" EntityType="ReservaYogaModel.Tb_Personal" />
+    <EntitySet Name="Tb_Rol" EntityType="ReservaYogaModel.Tb_Rol" />
+    <AssociationSet Name="FKEmail" Association="ReservaYogaModel.FKEmail">
+      <End Role="Tb_Rol" EntitySet="Tb_Rol" />
+      <End Role="Tb_Usuario" EntitySet="Tb_Usuario" />
+    </AssociationSet>
+    <FunctionImport Name="usp_InsertarUsuario_Personal" ReturnType="Collection(String)">
+      <Parameter Name="vPass" Mode="In" Type="String" />
+      <Parameter Name="vId_Rol" Mode="In" Type="Int32" />
+      <Parameter Name="vNom" Mode="In" Type="String" />
+      <Parameter Name="vApePa" Mode="In" Type="String" />
+      <Parameter Name="vApeMa" Mode="In" Type="String" />
+      <Parameter Name="vDni" Mode="In" Type="String" />
+      <Parameter Name="vFec_nac" Mode="In" Type="DateTime" />
+      <Parameter Name="vCorreo_Usu" Mode="In" Type="String" />
+      <Parameter Name="vTel" Mode="In" Type="String" />
+      <Parameter Name="vDir" Mode="In" Type="String" />
+      <Parameter Name="vId_Ubigeo" Mode="In" Type="String" />
+      <Parameter Name="vUsu_reg" Mode="In" Type="String" />
+    </FunctionImport>
   </EntityContainer>
   <ComplexType Name="usp_ListarCliente_Result">
     <Property Type="Int32" Name="Id_Cliente" Nullable="false" />
@@ -563,6 +585,48 @@
       </Principal>
       <Dependent Role="Tb_Reserva">
         <PropertyRef Name="Id_Clase_Prog" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Tb_Personal">
+    <Key>
+      <PropertyRef Name="Id_Personal" />
+    </Key>
+    <Property Name="Id_Personal" Type="String" Nullable="false" MaxLength="4" FixedLength="true" Unicode="false" />
+    <Property Name="Nombres" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="ApePaterno" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ApeMaterno" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Dni_Personal" Type="String" MaxLength="8" FixedLength="true" Unicode="true" />
+    <Property Name="Fec_Nac" Type="DateTime" Precision="3" />
+    <Property Name="Correo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Telefono" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Direccion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Id_Ubigeo" Type="String" MaxLength="6" FixedLength="true" Unicode="true" />
+    <Property Name="Estado" Type="Int32" />
+    <Property Name="Fec_Reg" Type="DateTime" Precision="3" />
+    <Property Name="Usu_Reg" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Usu_Ult_Mod" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Fec_Ult_Mod" Type="DateTime" Precision="3" />
+    <Property Name="Comentario" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Tb_Rol">
+    <Key>
+      <PropertyRef Name="Id_Rol" />
+    </Key>
+    <Property Name="Id_Rol" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Nivel" Type="Int32" />
+    <NavigationProperty Name="Tb_Usuario" Relationship="ReservaYogaModel.FKEmail" FromRole="Tb_Rol" ToRole="Tb_Usuario" />
+  </EntityType>
+  <Association Name="FKEmail">
+    <End Type="ReservaYogaModel.Tb_Rol" Role="Tb_Rol" Multiplicity="0..1" />
+    <End Type="ReservaYogaModel.Tb_Usuario" Role="Tb_Usuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tb_Rol">
+        <PropertyRef Name="Id_Rol" />
+      </Principal>
+      <Dependent Role="Tb_Usuario">
+        <PropertyRef Name="Id_Rol" />
       </Dependent>
     </ReferentialConstraint>
   </Association>

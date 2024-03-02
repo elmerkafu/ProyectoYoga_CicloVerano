@@ -38,6 +38,8 @@ namespace WCF_ReservaYoga
         public virtual DbSet<Tb_Salon> Tb_Salon { get; set; }
         public virtual DbSet<Tb_Ubigeo> Tb_Ubigeo { get; set; }
         public virtual DbSet<Tb_Usuario> Tb_Usuario { get; set; }
+        public virtual DbSet<Tb_Personal> Tb_Personal { get; set; }
+        public virtual DbSet<Tb_Rol> Tb_Rol { get; set; }
     
         public virtual int usp_ActualizarCliente(Nullable<int> vcod, string vNombres, string vApePaterno, string vApeMaterno, string vCorreo, string vTel_cli, string vDir_cli, string vDni_cli, string vSexo, Nullable<System.DateTime> vFec_nac, Nullable<int> vEst_cli, string vId_Ubigeo, string vUsu_Ult_Mod)
         {
@@ -697,6 +699,59 @@ namespace WCF_ReservaYoga
                 new ObjectParameter("vcoment", typeof(string));
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("usp_ActualizarDisciplinaEstado", vcodParameter, vcomentParameter);
+        }
+    
+        public virtual ObjectResult<string> usp_InsertarUsuario_Personal(string vPass, Nullable<int> vId_Rol, string vNom, string vApePa, string vApeMa, string vDni, Nullable<System.DateTime> vFec_nac, string vCorreo_Usu, string vTel, string vDir, string vId_Ubigeo, string vUsu_reg)
+        {
+            var vPassParameter = vPass != null ?
+                new ObjectParameter("vPass", vPass) :
+                new ObjectParameter("vPass", typeof(string));
+    
+            var vId_RolParameter = vId_Rol.HasValue ?
+                new ObjectParameter("vId_Rol", vId_Rol) :
+                new ObjectParameter("vId_Rol", typeof(int));
+    
+            var vNomParameter = vNom != null ?
+                new ObjectParameter("vNom", vNom) :
+                new ObjectParameter("vNom", typeof(string));
+    
+            var vApePaParameter = vApePa != null ?
+                new ObjectParameter("vApePa", vApePa) :
+                new ObjectParameter("vApePa", typeof(string));
+    
+            var vApeMaParameter = vApeMa != null ?
+                new ObjectParameter("vApeMa", vApeMa) :
+                new ObjectParameter("vApeMa", typeof(string));
+    
+            var vDniParameter = vDni != null ?
+                new ObjectParameter("vDni", vDni) :
+                new ObjectParameter("vDni", typeof(string));
+    
+            var vFec_nacParameter = vFec_nac.HasValue ?
+                new ObjectParameter("vFec_nac", vFec_nac) :
+                new ObjectParameter("vFec_nac", typeof(System.DateTime));
+    
+            var vCorreo_UsuParameter = vCorreo_Usu != null ?
+                new ObjectParameter("vCorreo_Usu", vCorreo_Usu) :
+                new ObjectParameter("vCorreo_Usu", typeof(string));
+    
+            var vTelParameter = vTel != null ?
+                new ObjectParameter("vTel", vTel) :
+                new ObjectParameter("vTel", typeof(string));
+    
+            var vDirParameter = vDir != null ?
+                new ObjectParameter("vDir", vDir) :
+                new ObjectParameter("vDir", typeof(string));
+    
+            var vId_UbigeoParameter = vId_Ubigeo != null ?
+                new ObjectParameter("vId_Ubigeo", vId_Ubigeo) :
+                new ObjectParameter("vId_Ubigeo", typeof(string));
+    
+            var vUsu_regParameter = vUsu_reg != null ?
+                new ObjectParameter("vUsu_reg", vUsu_reg) :
+                new ObjectParameter("vUsu_reg", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("usp_InsertarUsuario_Personal", vPassParameter, vId_RolParameter, vNomParameter, vApePaParameter, vApeMaParameter, vDniParameter, vFec_nacParameter, vCorreo_UsuParameter, vTelParameter, vDirParameter, vId_UbigeoParameter, vUsu_regParameter);
         }
     }
 }

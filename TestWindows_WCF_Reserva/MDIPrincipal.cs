@@ -54,9 +54,9 @@ namespace TestWindows_WCF_Reserva
 
         private void usuarioToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            UsuarioMan01 usu01 = new UsuarioMan01();
-            usu01.MdiParent = this;
-            usu01.Show();
+            //UsuarioMan01 usu01 = new UsuarioMan01();
+            //usu01.MdiParent = this;
+            //usu01.Show();
         }
 
         private void mantenimientosToolStripMenuItem_Click(object sender, EventArgs e)
