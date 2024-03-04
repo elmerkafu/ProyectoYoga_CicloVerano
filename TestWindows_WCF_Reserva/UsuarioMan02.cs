@@ -23,6 +23,7 @@ namespace TestWindows_WCF_Reserva
         public UsuarioMan02()
         {
             InitializeComponent();
+            lblUsuario.Enabled = false;
         }
 
         private string ExtraerContenidoEntreNombreString(string cadena, int posicion, string nombreInicio, string nombreFin, StringComparison reglaComparacion = StringComparison.OrdinalIgnoreCase)
@@ -332,6 +333,8 @@ namespace TestWindows_WCF_Reserva
                 {
                     MessageBox.Show("Correo validado");
                     txtCorreo.ReadOnly = true;
+                    // Copiamos el campo txtCorreo en el campo lblUsuario.
+                    lblUsuario.Text = txtCorreo.Text;
                 }
             }
             else

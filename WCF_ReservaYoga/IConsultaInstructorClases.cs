@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
+using System.Security.Permissions;
 using System.ServiceModel;
 using System.Text;
 
@@ -10,25 +11,27 @@ namespace WCF_ReservaYoga
     // NOTA: puede usar el comando "Cambiar nombre" del menú "Refactorizar" para cambiar el nombre de interfaz "IConsultaInstructorClases" en el código y en el archivo de configuración a la vez.
     [ServiceContract]
     public interface IConsultaInstructorClases
-    {
-        [TransactionFlow(TransactionFlowOption.Allowed)]
+    {        
         [OperationContract]
         List<ConsultaDC> ListarClasesProgramadasInstructor(String strCodigo, DateTime fecIni);
+
+        [OperationContract]
+        List<ConsultaDC> ListarClasesEntreFechas(String strCodigo, DateTime fecIni, DateTime fecFin);
     }
     [DataContract]
     [Serializable]
     public class ConsultaDC
-    {/*
-        
-        [DataMember]
-        public Int16 Id_Clase_Prog { get; set; }*/
+    {
+        // DE TABLA CLASE PROGRAMADA
 
         [DataMember]
-        public Int16 Id_Salon { get; set; }
-        /*
+        public Int16 Id_Clase_Prog { get; set; }
 
         [DataMember]
-        public String Id_Inst_Disp { get; set; }        */
+        public Int16 Id_Salon { get; set; }        
+
+        [DataMember]
+        public String Id_Inst_Disp { get; set; }        
 
         [DataMember]
         public DateTime Fec_Clase { get; set; }
@@ -45,19 +48,22 @@ namespace WCF_ReservaYoga
         public String EstadoClase { get; set; }
         [DataMember]
         public String NombreSalon { get; set; }
-        /*
+
+        // DE TABLA INSTRUCTOR - DISCIPLINA
 
         [DataMember]
-        public DateTime Fec_reg { get; set; }       
+        public String Cod_disp { get; set; }
+
+        // DE TABLA DISCIPLINA
 
         [DataMember]
-        public String Usu_reg { get; set; }
+        public String NombreDisciplina { get; set; }
 
         [DataMember]
-        public String Usu_Ult_Mod { get; set; }
+        public String Duracion { get; set; }
 
         [DataMember]
-        public String Fec_Ult_Mod { get; set; }*/
+        public String Intensidad { get; set; }  
 
     }
 }

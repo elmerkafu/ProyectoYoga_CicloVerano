@@ -60,6 +60,7 @@
             cboDistrito = new ComboBox();
             groupBox1 = new GroupBox();
             groupBox2 = new GroupBox();
+            lblUsuario = new Label();
             chkEspecial = new CheckBox();
             chkNum = new CheckBox();
             chkMayus = new CheckBox();
@@ -371,6 +372,7 @@
             // 
             // groupBox2
             // 
+            groupBox2.Controls.Add(lblUsuario);
             groupBox2.Controls.Add(chkEspecial);
             groupBox2.Controls.Add(chkNum);
             groupBox2.Controls.Add(chkMayus);
@@ -388,6 +390,14 @@
             groupBox2.TabIndex = 33;
             groupBox2.TabStop = false;
             groupBox2.Text = "Credenciales";
+            // 
+            // lblUsuario
+            // 
+            lblUsuario.BorderStyle = BorderStyle.FixedSingle;
+            lblUsuario.Location = new Point(190, 28);
+            lblUsuario.Name = "lblUsuario";
+            lblUsuario.Size = new Size(280, 23);
+            lblUsuario.TabIndex = 13;
             // 
             // chkEspecial
             // 
@@ -450,7 +460,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(78, 29);
+            label1.Location = new Point(78, 36);
             label1.Name = "label1";
             label1.Size = new Size(50, 15);
             label1.TabIndex = 6;
@@ -518,5 +528,6 @@
         private CheckBox chkMinus;
         private CheckBox chkMinCaracter;
         private Label label15;
+        private Label lblUsuario;
     }
 }

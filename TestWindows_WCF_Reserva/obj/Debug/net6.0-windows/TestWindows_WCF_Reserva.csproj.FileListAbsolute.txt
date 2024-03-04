@@ -881,3 +881,4 @@ C:\Users\Computer\Desktop\WCF_Yoga_Clon_Ultimo\ProyectoYoga_CicloVerano\TestWind
 C:\Users\Computer\Desktop\WCF_Yoga_Clon_Ultimo\ProyectoYoga_CicloVerano\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\ref\TestWindows_WCF_Reserva.dll
 C:\Users\Computer\Desktop\WCF_Yoga_Clon_Ultimo\ProyectoYoga_CicloVerano\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.Login.resources
 C:\Users\Computer\Desktop\WCF_Yoga_Clon_Ultimo\ProyectoYoga_CicloVerano\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.Credenciales.resources
+C:\Users\Computer\Desktop\WCF_Yoga_Clon_Ultimo\ProyectoYoga_CicloVerano\TestWindows_WCF_Reserva\obj\Debug\net6.0-windows\TestWindows_WCF_Reserva.ConsultaInstructor.resources
