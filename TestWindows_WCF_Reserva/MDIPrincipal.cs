@@ -54,14 +54,10 @@ namespace TestWindows_WCF_Reserva
 
         private void usuarioToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //UsuarioMan01 usu01 = new UsuarioMan01();
-            //usu01.MdiParent = this;
-            //usu01.Show();
-        }
-
-        private void mantenimientosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
+            // AQUI: CUANDO EXISTE FORM 1 DE USUARIO, CAMBIAR
+            UsuarioMan02 usu01 = new UsuarioMan02();
+            usu01.MdiParent = this;
+            usu01.Show();
         }
 
         private void reservaToolStripMenuItem_Click(object sender, EventArgs e)
@@ -69,6 +65,62 @@ namespace TestWindows_WCF_Reserva
             ReservaMan01 res01 = new ReservaMan01();
             res01.MdiParent = this;
             res01.Show();
+        }
+
+        private void MDIPrincipal_Load(object sender, EventArgs e)
+        {
+            this.lblUsuario.Text = clsCredenciales.Usuario;
+
+            // Manejamos la seguridad por roles 
+            // Aqui en Load que es cuando carga la plantilla, vamos a validar el nivel 
+            if (clsCredenciales.Nivel == 1 | clsCredenciales.Nivel == 2)
+            {
+                mantenimientosToolStripMenuItem.Visible = true;
+                consultasToolStripMenuItem.Visible = true;
+                reservaToolStripMenuItem.Visible = true;
+                salirDelSistemaToolStripMenuItem.Visible = true;
+            }
+            else if (clsCredenciales.Nivel == 3)
+            {
+                consultasToolStripMenuItem.Visible = true;
+                reservaToolStripMenuItem.Visible = true;
+                salirDelSistemaToolStripMenuItem.Visible = true;
+                mantenimientosToolStripMenuItem.Visible = false;
+            }
+            else
+            {
+                consultasToolStripMenuItem.Visible = true;
+                reservaToolStripMenuItem.Visible = false;
+                salirDelSistemaToolStripMenuItem.Visible = true;
+                mantenimientosToolStripMenuItem.Visible = false;
+            }
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            ConsultaInstructor con01 = new ConsultaInstructor();
+            con01.MdiParent = this;
+            con01.Show();
+        }
+
+        private void salirDelSistemaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void MDIPrincipal_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void MDIPrincipal_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult vrpta;
+            vrpta = MessageBox.Show("Seguro de salir del aplicativo?", "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (vrpta == DialogResult.No)
+            {
+                e.Cancel = true;
+            }
         }
     }
 }

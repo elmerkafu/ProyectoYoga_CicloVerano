@@ -79,7 +79,6 @@ namespace TestWindows_WCF_Reserva
                     "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Application.Exit();
             }
-
         }
 
     }
