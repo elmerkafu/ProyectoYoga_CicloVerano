@@ -31,6 +31,9 @@
     <Compile Update="Comentario05.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Credenciales.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="DisciplinaMan01.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -50,6 +53,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="InstructorMan03.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="MDIPrincipal.cs">

@@ -11,6 +11,7 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.VisualBasic;
 
 namespace TestWindows_WCF_Reserva
 {
@@ -79,8 +80,8 @@ namespace TestWindows_WCF_Reserva
                 objUsuarioRolDC.Id_Ubigeo = cboDepartamento.SelectedValue.ToString() +
                     cboProvincia.SelectedValue.ToString() +
                     cboDistrito.SelectedValue.ToString();
-                objUsuarioRolDC.Usu_Reg= "Leslye";
-                objUsuarioRolDC.Pass_Usuario = txtPassword.Text.Trim();
+                objUsuarioRolDC.Usu_Reg = "Leslye";
+                objUsuarioRolDC.Pass_Usuario = txtPass.Text.Trim();
                 objUsuarioRolDC.Id_Rol = Convert.ToInt16(cboRol.SelectedValue);
 
                 if (objServiceUsuarioRol.InsertarUsuario(objUsuarioRolDC) == true)
@@ -303,6 +304,87 @@ namespace TestWindows_WCF_Reserva
         private void cboProvincia_SelectionChangeCommitted(object sender, EventArgs e)
         {
             CargarUbigeo(cboDepartamento.SelectedValue.ToString(), cboProvincia.SelectedValue.ToString(), "01");
+        }
+
+        private void btnValidar_Click(object sender, EventArgs e)
+        {
+            EnviarEmail email = new EnviarEmail();
+            string txtEmisor = "gestionyogacomunicados@gmail.com";
+            string txtPass = "simxtipmaglmdeok";
+            int numero = email.Enviar(txtCorreo.Text, txtEmisor, txtPass);
+            int resultado = 0;
+            DialogResult result = DialogResult.OK;
+
+            if (numero != 0)
+            {
+                try
+                {
+                    resultado = Convert.ToInt32(Interaction.InputBox("Ingresa el codigo enviado al cliente", "Verificacion"));
+
+
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Codigo ingresado no valido");
+
+                }
+                if (numero == resultado)
+                {
+                    MessageBox.Show("Correo validado");
+                    txtCorreo.ReadOnly = true;
+                }
+            }
+            else
+            {
+                result = MessageBox.Show("Reenviar correo", "Advertencia", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            }
+        }
+
+        private bool AlgoritmoContrasenaSegura(String password)
+        {
+            //bool mayuscula = false, minuscula = false, numero = false, carespecial = false;
+            chkMayus.Checked = false; chkMinus.Checked = false; chkNum.Checked = false; chkEspecial.Checked = false; chkMinCaracter.Checked = false;
+
+            for (int i = 0; i < password.Length; i++)
+            {
+                if (password.Length >= 8)
+                {
+                    chkMinCaracter.Checked = true;
+                }
+                if (char.IsUpper(password, i))
+                {
+                    chkMayus.Checked = true;
+                }
+                else if (char.IsLower(password, i))
+                {
+                    chkMinus.Checked = true;
+                }
+                else if (char.IsDigit(password, i))
+                {
+                    chkNum.Checked = true;
+                }
+                else
+                {
+                    chkEspecial.Checked = true;
+                }
+            }
+            if (chkMayus.Checked && chkMayus.Checked && chkNum.Checked && chkEspecial.Checked && password.Length >= 8)
+            {
+                return true;
+            }
+            return false;
+        }
+
+        private void txtPass_TextChanged(object sender, EventArgs e)
+        {
+            if (AlgoritmoContrasenaSegura(txtPass.Text))
+            {
+                btnGrabar.Enabled = true;
+            }
+            else
+            {
+                btnGrabar.Enabled = false;
+            }
         }
     }
 }

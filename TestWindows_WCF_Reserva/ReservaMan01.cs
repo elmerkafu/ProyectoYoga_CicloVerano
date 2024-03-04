@@ -38,8 +38,6 @@ namespace TestWindows_WCF_Reserva
             dtgClasesReserva.AutoGenerateColumns = false;
             dtgClasesReserva.DataSource = objServiceClaseProgramada.ListarClasesPorFecha(Convert.ToDateTime(strId));
 
-
-
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)

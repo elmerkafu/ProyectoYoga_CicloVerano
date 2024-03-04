@@ -34,15 +34,25 @@ namespace ProxyUsuarioRol
         
         private string Dni_PersonalField;
         
+        private int Est_UsuarioField;
+        
         private short EstadoField;
         
         private System.DateTime Fec_RegField;
+        
+        private System.DateTime Fec_RegistroField;
+        
+        private System.DateTime Fec_Ult_ModField;
         
         private System.DateTime Fec_nacField;
         
         private short Id_RolField;
         
         private string Id_UbigeoField;
+        
+        private string Login_Usuario_CorreoField;
+        
+        private short NivelField;
         
         private string NombreField;
         
@@ -55,6 +65,10 @@ namespace ProxyUsuarioRol
         private string TelefonoField;
         
         private string Usu_RegField;
+        
+        private string Usu_RegistroField;
+        
+        private string Usu_Ult_ModField;
         
         [System.Runtime.Serialization.DataMemberAttribute()]
         public string ApeMaterno
@@ -161,6 +175,19 @@ namespace ProxyUsuarioRol
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Est_Usuario
+        {
+            get
+            {
+                return this.Est_UsuarioField;
+            }
+            set
+            {
+                this.Est_UsuarioField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
         public short Estado
         {
             get
@@ -183,6 +210,32 @@ namespace ProxyUsuarioRol
             set
             {
                 this.Fec_RegField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.DateTime Fec_Registro
+        {
+            get
+            {
+                return this.Fec_RegistroField;
+            }
+            set
+            {
+                this.Fec_RegistroField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.DateTime Fec_Ult_Mod
+        {
+            get
+            {
+                return this.Fec_Ult_ModField;
+            }
+            set
+            {
+                this.Fec_Ult_ModField = value;
             }
         }
         
@@ -222,6 +275,32 @@ namespace ProxyUsuarioRol
             set
             {
                 this.Id_UbigeoField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Login_Usuario_Correo
+        {
+            get
+            {
+                return this.Login_Usuario_CorreoField;
+            }
+            set
+            {
+                this.Login_Usuario_CorreoField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public short Nivel
+        {
+            get
+            {
+                return this.NivelField;
+            }
+            set
+            {
+                this.NivelField = value;
             }
         }
         
@@ -302,6 +381,32 @@ namespace ProxyUsuarioRol
                 this.Usu_RegField = value;
             }
         }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Usu_Registro
+        {
+            get
+            {
+                return this.Usu_RegistroField;
+            }
+            set
+            {
+                this.Usu_RegistroField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Usu_Ult_Mod
+        {
+            get
+            {
+                return this.Usu_Ult_ModField;
+            }
+            set
+            {
+                this.Usu_Ult_ModField = value;
+            }
+        }
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
@@ -320,6 +425,12 @@ namespace ProxyUsuarioRol
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServicioUsuarioRol/ListarRol", ReplyAction="http://tempuri.org/IServicioUsuarioRol/ListarRolResponse")]
         System.Threading.Tasks.Task<System.Collections.Generic.List<ProxyUsuarioRol.UsuarioRolDC>> ListarRolAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServicioUsuarioRol/ConsultarUsuario", ReplyAction="http://tempuri.org/IServicioUsuarioRol/ConsultarUsuarioResponse")]
+        ProxyUsuarioRol.UsuarioRolDC ConsultarUsuario(string Login);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServicioUsuarioRol/ConsultarUsuario", ReplyAction="http://tempuri.org/IServicioUsuarioRol/ConsultarUsuarioResponse")]
+        System.Threading.Tasks.Task<ProxyUsuarioRol.UsuarioRolDC> ConsultarUsuarioAsync(string Login);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
@@ -390,6 +501,16 @@ namespace ProxyUsuarioRol
         public System.Threading.Tasks.Task<System.Collections.Generic.List<ProxyUsuarioRol.UsuarioRolDC>> ListarRolAsync()
         {
             return base.Channel.ListarRolAsync();
+        }
+        
+        public ProxyUsuarioRol.UsuarioRolDC ConsultarUsuario(string Login)
+        {
+            return base.Channel.ConsultarUsuario(Login);
+        }
+        
+        public System.Threading.Tasks.Task<ProxyUsuarioRol.UsuarioRolDC> ConsultarUsuarioAsync(string Login)
+        {
+            return base.Channel.ConsultarUsuarioAsync(Login);
         }
         
         public virtual System.Threading.Tasks.Task OpenAsync()

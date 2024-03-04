@@ -70,5 +70,36 @@ namespace WCF_ReservaYoga
                 throw new Exception(ex.Message);
             }
         }
+
+        public UsuarioRolDC ConsultarUsuario(String Login)
+
+        {
+            ReservaYogaEntities MisReservas = new ReservaYogaEntities();
+            try
+            {
+                Tb_Usuario objUsuario = (from objUsu in MisReservas.Tb_Usuario
+                                               join objRol in MisReservas.Tb_Rol on objUsu.Id_Rol equals objRol.Id_Rol
+                                               where objUsu.Login_Usuario_Correo == Login
+                                               select objUsu).FirstOrDefault();
+
+                UsuarioRolDC objUsuarioDC = new UsuarioRolDC();
+                objUsuarioDC.Login_Usuario_Correo = objUsuario.Login_Usuario_Correo;
+                objUsuarioDC.Pass_Usuario = objUsuario.Pass_Usuario;
+                objUsuarioDC.Est_Usuario = Convert.ToInt16(objUsuario.Est_Usuario);
+                objUsuarioDC.Fec_Registro = Convert.ToDateTime(objUsuario.Fec_Registro);
+                objUsuarioDC.Id_Rol = Convert.ToInt16(objUsuario.Id_Rol);
+                objUsuarioDC.Nombre = objUsuario.Tb_Rol.Nombre;
+                objUsuarioDC.Nivel = Convert.ToInt16(objUsuario.Tb_Rol.Nivel);
+                // quiza falte agregar el Usu_Registro 
+
+                return objUsuarioDC;
+
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception(ex.Message);
+            }
+        }
     }
 }

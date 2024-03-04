@@ -102,7 +102,7 @@
             // 
             // btnValidar
             // 
-            btnValidar.Location = new Point(405, 169);
+            btnValidar.Location = new Point(405, 165);
             btnValidar.Margin = new Padding(4, 3, 4, 3);
             btnValidar.Name = "btnValidar";
             btnValidar.Size = new Size(84, 28);
@@ -333,7 +333,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(405, 120);
+            label3.Location = new Point(387, 120);
             label3.Name = "label3";
             label3.Size = new Size(102, 15);
             label3.TabIndex = 4;
@@ -350,7 +350,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(405, 77);
+            label2.Location = new Point(387, 77);
             label2.Name = "label2";
             label2.Size = new Size(98, 15);
             label2.TabIndex = 2;
@@ -367,7 +367,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(405, 35);
+            label1.Location = new Point(387, 35);
             label1.Name = "label1";
             label1.Size = new Size(59, 15);
             label1.TabIndex = 0;

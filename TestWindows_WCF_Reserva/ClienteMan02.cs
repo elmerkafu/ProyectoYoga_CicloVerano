@@ -378,7 +378,7 @@ namespace TestWindows_WCF_Reserva
                     MessageBox.Show("Codigo ingresado no valido");
 
                 }
-                if(numero==resultado)
+                if (numero == resultado)
                 {
                     MessageBox.Show("Correo validado");
                     btnGrabar.Enabled = true;

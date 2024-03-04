@@ -16,13 +16,33 @@ namespace WCF_ReservaYoga
 
         [OperationContract]
         List<UsuarioRolDC> ListarRol();
+
+        [OperationContract]
+        UsuarioRolDC ConsultarUsuario(String Login);
     }
     [DataContract]
     [Serializable]
     public class UsuarioRolDC
     {
         // DE TABLA USUARIO
-       
+        [DataMember]
+        public String Login_Usuario_Correo { get; set; }
+
+        [DataMember]
+        public int Est_Usuario { get; set; }
+
+        [DataMember]
+        public DateTime Fec_Registro { get; set; }
+
+        [DataMember]
+        public String Usu_Registro { get; set; }
+
+        [DataMember]
+        public String Usu_Ult_Mod {  get; set; }
+
+        [DataMember]
+        public DateTime Fec_Ult_Mod { get; set; }
+
         [DataMember]
         public String Pass_Usuario { get; set; }
        
@@ -33,6 +53,9 @@ namespace WCF_ReservaYoga
         // DE TABLA ROLES
         [DataMember]
         public String Nombre { get; set; }
+
+        [DataMember]
+        public Int16 Nivel { get; set; }
 
         // DE TABLA PERSONAL
         [DataMember]
